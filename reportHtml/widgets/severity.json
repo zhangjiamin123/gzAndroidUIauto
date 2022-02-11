@@ -1,0 +1,31 @@
+[ {
+  "uid" : "3bd773ccf9c6f6dd",
+  "name" : "test_logOut",
+  "time" : {
+    "start" : 1643976571541,
+    "stop" : 1643976576358,
+    "duration" : 4817
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85bb61c9b861a9da",
+  "name" : "test_gzLoginClearShowHide",
+  "time" : {
+    "start" : 1643976509588,
+    "stop" : 1643976522886,
+    "duration" : 13298
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "841fbdf0bbad2cec",
+  "name" : "test_gzLogin",
+  "time" : {
+    "start" : 1643976526683,
+    "stop" : 1643976567158,
+    "duration" : 40475
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

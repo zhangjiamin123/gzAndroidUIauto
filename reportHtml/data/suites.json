@@ -1,0 +1,56 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "test_gzAndroidAuto",
+    "children" : [ {
+      "name" : "TestGzLogin",
+      "children" : [ {
+        "name" : "test_gzLoginClearShowHide",
+        "uid" : "85bb61c9b861a9da",
+        "parentUid" : "54c316a88267986f213c9e70033ff575",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643976509588,
+          "stop" : 1643976522886,
+          "duration" : 13298
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_gzLogin",
+        "uid" : "841fbdf0bbad2cec",
+        "parentUid" : "54c316a88267986f213c9e70033ff575",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643976526683,
+          "stop" : 1643976567158,
+          "duration" : 40475
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "54c316a88267986f213c9e70033ff575"
+    }, {
+      "name" : "TestUserCenter",
+      "children" : [ {
+        "name" : "test_logOut",
+        "uid" : "3bd773ccf9c6f6dd",
+        "parentUid" : "d56d18ddf5335c8e9bac4dfd81d4e2e0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643976571541,
+          "stop" : 1643976576358,
+          "duration" : 4817
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d56d18ddf5335c8e9bac4dfd81d4e2e0"
+    } ],
+    "uid" : "2612249927073d9320d28c8b32c2caf3"
+  } ]
+}
