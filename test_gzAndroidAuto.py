@@ -10,12 +10,34 @@ import gz_public
 import pytest
 import allure
 import time
+import os
+from appium.webdriver.connectiontype import ConnectionType
 
 
 def setup_module():
     global driver
     driver = StartAppium.start_appium()
     driver.implicitly_wait(10)
+
+
+def initPhone(self):
+    # 当前没有网络连接，设置WiFi连接
+    if driver.network_connection == 0:
+        driver.set_network_connection(ConnectionType.WIFI_ONLY)
+
+    # 检查屏幕是否点亮
+
+    def isAwake(deviceId=''):
+        if deviceId == '':
+            cmd = 'adb shell dumpsys window policy'
+        else:
+            cmd = 'adb shell' + deviceId + 'dumsys window policy'
+        screenAwakeValue = '      screenState=SCREEN_STATE_ON\n'
+        allList = os.popen(cmd).readlines()
+        if screenAwakeValue in allList:
+            return True
+        else:
+            return False
 
 
 def teardown_module():
@@ -85,6 +107,14 @@ class TestGzLogin(object):
 
         # 隐藏键盘
         driver.hide_keyboard()
+
+        # 点击 右上角的关闭按钮
+        driver.find_element_by_id("com.glazero.android:id/img_title_close").click()
+        driver.implicitly_wait(10)
+
+        # 回到 splash页面，断言登录和创建账号按钮（不断言文本，因为跟语言变化）
+        assert driver.find_element_by_id("com.glazero.android:id/splash_login")
+        assert driver.find_element_by_id("com.glazero.android:id/splash_create_account")
 
     @allure.story('输入用户名和密码登录aosu app')
     def test_gzLogin(self):

@@ -1,4 +1,13 @@
 import random
+import re
+import os
+import time
+
+
+readDevicesId = list(os.popen('adb devices').readlines())
+deviceId = re.findall(r'^\w*\b', readDevicesId[1])[0]
+
+
 
 # 远程Appium服务地址
 # gzAppiumH = "http://10.10.1.123:4723/wd/hub"
