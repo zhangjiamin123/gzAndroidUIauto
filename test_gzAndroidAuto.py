@@ -12,7 +12,6 @@ import initPhone
 import pytest
 import allure
 import time
-import os
 
 
 def setup_module():
