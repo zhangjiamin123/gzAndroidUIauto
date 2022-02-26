@@ -5,13 +5,14 @@
 @Date: 20220130
 ----------------------------------
 """
+from appium.webdriver.connectiontype import ConnectionType
 from gz_start_appium import StartAppium
 import gz_public
+import initPhone
 import pytest
 import allure
 import time
 import os
-from appium.webdriver.connectiontype import ConnectionType
 
 
 def setup_module():
@@ -19,25 +20,35 @@ def setup_module():
     driver = StartAppium.start_appium()
     driver.implicitly_wait(10)
 
-
-def initPhone(self):
-    # 当前没有网络连接，设置WiFi连接
+    # 当前没有网络连接，设置wifi连接
     if driver.network_connection == 0:
         driver.set_network_connection(ConnectionType.WIFI_ONLY)
 
     # 检查屏幕是否点亮
+    if not initPhone.InitPhone.isAwake():
+        # 26 电源键
+        initPhone.InitPhone.keyEventSend(26)
+        # 82 解锁键
+        initPhone.InitPhone.keyEventSend(82)
+        # 1
+        initPhone.InitPhone.keyEventSend(8)
+        # 2
+        initPhone.InitPhone.keyEventSend(9)
+        # 3
+        initPhone.InitPhone.keyEventSend(10)
+        # 4
+        initPhone.InitPhone.keyEventSend(11)
+        # 回车键
+        initPhone.InitPhone.keyEventSend(66)
+        # 回到桌面
+        initPhone.InitPhone.keyEventSend(3)
 
-    def isAwake(deviceId=''):
-        if deviceId == '':
-            cmd = 'adb shell dumpsys window policy'
-        else:
-            cmd = 'adb shell' + deviceId + 'dumsys window policy'
-        screenAwakeValue = '      screenState=SCREEN_STATE_ON\n'
-        allList = os.popen(cmd).readlines()
-        if screenAwakeValue in allList:
-            return True
-        else:
-            return False
+    # 已安装aosu 先卸载
+    if initPhone.InitPhone.isAppExist():
+        initPhone.InitPhone.uninstallApp()
+
+    # 安装aosu app
+    initPhone.InitPhone.installApp()
 
 
 def teardown_module():

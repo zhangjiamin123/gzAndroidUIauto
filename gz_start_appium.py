@@ -6,8 +6,8 @@ class StartAppium:
     @staticmethod
     def start_appium():
         desired_caps = dict(
-            platformName=gz_public.gzPlatformN,
             deviceName=gz_public.CONNECTTO,
+            platformName=gz_public.gzPlatformN,
             platformVersion=gz_public.PLATFORMVER,
             appPackage=gz_public.gzAppPack,
             appActivity=gz_public.gzAppActivity,

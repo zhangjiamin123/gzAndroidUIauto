@@ -1,13 +1,5 @@
 import random
-import re
-import os
-import time
-
-
-readDevicesId = list(os.popen('adb devices').readlines())
-deviceId = re.findall(r'^\w*\b', readDevicesId[1])[0]
-
-
+import initPhone
 
 # 远程Appium服务地址
 # gzAppiumH = "http://10.10.1.123:4723/wd/hub"
@@ -17,7 +9,7 @@ gzAppiumH = "http://127.0.0.1:4723/wd/hub"
 gzPlatformN = "Android"
 
 # 包信息
-gzAppPack = "com.glazero.android"
+gzAppPack = initPhone.InitPhone.getPackageName()
 gzAppActivity = "com.glazero.android.SplashActivity"
 
 # 登录账号
@@ -38,8 +30,10 @@ gzRegionList = [
 ]
 
 # default 默认连接三星A51 中国区
-CONNECTTO = gzPhoneList[0]['gzDeviceN']
-PLATFORMVER = gzPhoneList[0]['gzPlatformVer']
+# CONNECTTO = gzPhoneList[0]['gzDeviceN']
+CONNECTTO = initPhone.InitPhone.getDeviceId()
+# PLATFORMVER = gzPhoneList[0]['gzPlatformVer']
+PLATFORMVER = initPhone.InitPhone.getAndroidVersion()
 REGION = gzRegionList[0]['code']
 
 
