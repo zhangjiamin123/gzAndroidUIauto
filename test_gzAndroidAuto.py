@@ -127,7 +127,7 @@ class TestGzLogin(object):
         assert driver.find_element_by_id("com.glazero.android:id/splash_create_account")
 
     @allure.story('输入用户名和密码登录aosu app')
-    def test_gzLogin(self):
+    def test_gzLogin(self, user_name=gz_public.email, pass_word=gz_public.pwd, region=gz_public.REGION):
         with allure.step('step1：在splash页，点击 登录 按钮'):
             driver.find_element_by_id("com.glazero.android:id/splash_login").click()
             driver.implicitly_wait(10)
@@ -137,7 +137,7 @@ class TestGzLogin(object):
             driver.implicitly_wait(10)
             driver.find_elements_by_id("com.glazero.android:id/edit_text")[0].click()
             driver.implicitly_wait(10)
-            driver.find_elements_by_id("com.glazero.android:id/edit_text")[0].send_keys(gz_public.email)
+            driver.find_elements_by_id("com.glazero.android:id/edit_text")[0].send_keys(user_name)
 
         # 输入完成后隐藏键盘
         driver.hide_keyboard()
@@ -147,7 +147,7 @@ class TestGzLogin(object):
             driver.implicitly_wait(10)
             driver.find_elements_by_id("com.glazero.android:id/edit_text")[1].click()
             driver.implicitly_wait(10)
-            driver.find_elements_by_id("com.glazero.android:id/edit_text")[1].send_keys(gz_public.pwd)
+            driver.find_elements_by_id("com.glazero.android:id/edit_text")[1].send_keys(pass_word)
 
         # 输入完成后隐藏键盘
         driver.hide_keyboard()
@@ -156,10 +156,10 @@ class TestGzLogin(object):
             driver.find_elements_by_id("com.glazero.android:id/edit_text")[2].click()
             driver.implicitly_wait(10)
             driver.find_element_by_android_uiautomator(
-                'new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text("%s"))' % gz_public.REGION)
+                'new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text("%s"))' % region)
             driver.implicitly_wait(10)
             driver.find_element_by_xpath(
-                '//android.widget.TextView[@text="%s"]' % gz_public.REGION).click()  # 此时只能写类名
+                '//android.widget.TextView[@text="%s"]' % region).click()  # 此时只能写类名
             driver.implicitly_wait(10)
         # 点击登录按钮之前截图
         time.sleep(3)
@@ -211,6 +211,66 @@ class TestUserCenter(object):
         if not gz_public.isElementPresent(driver=driver, by="id", value="com.glazero.android:id/img_menu"):
             TestGzLogin.test_gzLogin(self=NotImplemented)
             driver.implicitly_wait(10)
+
+    @allure.story('修改登录密码')
+    def test_changePassword(self, old_pass_word=gz_public.pwd, new_pass_word='Qwe101010'):
+        with allure.step('step1：点击用户中心菜单'):
+            driver.find_element_by_id('com.glazero.android:id/img_menu').click()
+            driver.implicitly_wait(10)
+
+        with allure.step('step2：点击 账号管理'):
+            driver.find_elements_by_id('com.glazero.android:id/tv_menu_item_name')[0].click()
+            driver.implicitly_wait(10)
+
+        with allure.step('step3：点击 修改密码'):
+            driver.find_element_by_id('com.glazero.android:id/rl_reset_password_container').click()
+            driver.implicitly_wait(10)
+
+        assert driver.find_element_by_id('com.glazero.android:id/button').is_enabled() is False
+
+        with allure.step('step4：点击密码输入旧密码'):
+            driver.find_elements_by_id('com.glazero.android:id/edit_text')[0].click()
+            driver.implicitly_wait(10)
+
+            # 旧密码
+            driver.find_elements_by_id('com.glazero.android:id/edit_text')[0].send_keys(old_pass_word)
+            driver.implicitly_wait(10)
+
+            driver.hide_keyboard()
+
+        with allure.step('step5：点击新密码输入新密码'):
+            # 新密码
+            driver.find_elements_by_id('com.glazero.android:id/edit_text')[1].click()
+            driver.implicitly_wait(10)
+
+            driver.find_elements_by_id('com.glazero.android:id/edit_text')[1].send_keys(new_pass_word)
+            driver.implicitly_wait(10)
+            driver.hide_keyboard()
+
+        with allure.step('step6：点击重新输入新密码'):
+            # 确认新密码
+            driver.find_elements_by_id('com.glazero.android:id/edit_text')[2].click()
+            driver.implicitly_wait(10)
+
+            driver.find_elements_by_id('com.glazero.android:id/edit_text')[2].send_keys(new_pass_word)
+            driver.implicitly_wait(10)
+            driver.hide_keyboard()
+
+        assert driver.find_element_by_id('com.glazero.android:id/button').is_enabled() is True
+
+        with allure.step('step7：点击 更新密码 按钮'):
+            driver.find_element_by_id('com.glazero.android:id/button').click()
+            driver.implicitly_wait(10)
+
+        with allure.step('step8：点击 返回登录 按钮'):
+            driver.find_element_by_id('com.glazero.android:id/btn').click()
+            driver.implicitly_wait(10)
+
+        # 改回原密码
+        gz_public.change_password('Qwe101010', 'Qwe222222', '1010642719@qq.com', 1, 'api-cn.snser.wang', 'CN', '86')
+
+        # 密码复原后再回到登录状态
+        TestGzLogin.test_gzLogin(self, gz_public.email, gz_public.pwd)
 
     @allure.story('退出')
     def test_logOut(self):
