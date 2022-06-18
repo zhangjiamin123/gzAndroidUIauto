@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3beafd0e0df779eef693630efd8e6db75d8ebd08173bcd9749444092169fa0a4
-size 127
+*.apk filter=lfs diff=lfs merge=lfs -text
