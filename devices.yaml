@@ -1,0 +1,34 @@
+- desc: SamsungA51,port_4723
+  port: 4723
+  des:
+    platformName: Android
+    deviceName: R58N828LKMP
+    udid: R58N828LKMP
+    platformVersion: !!str 10
+    appPackage: com.glazero.android
+    appActivity: com.glazero.android.SplashActivity
+    noReset: !!bool True
+    autoGrantPermissions: !!bool True
+
+- desc: HuaweiMate8,port_4725
+  port: 4725
+  des:
+    platformName: Android
+    devicename: CJL5T16928000786
+    udid: CJL5T16928000786
+    platformVersion: !!str 8.0.0
+    appPackage: com.glazero.android
+    appActivity: com.glazero.android.SplashActivity
+    noReset: !!bool True
+    autoGrantPermissions: !!bool True
+
+- desc: moto_z4,port_4727
+  port: 4727
+  des:
+    platformName: Android
+    devicename: ZY226JWPJ5
+    udid: ZY226JWPJ5
+    platformVersion: !!str 10
+    appPackage: com.glazero.android
+    appActivity: com.glazero.android.SplashActivity
+    noReset: !!bool True

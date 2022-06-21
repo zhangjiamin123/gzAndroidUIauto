@@ -1,0 +1,543 @@
+[35m[Appium][39m Welcome to Appium v1.22.2
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m   address: 127.0.0.1
+[35m[Appium][39m   port: 4727
+[35m[Appium][39m Appium REST http interface listener started on 127.0.0.1:4727
+[debug] [35m[HTTP][39m Request idempotency key: d66017a2-c393-4d9e-95f5-e660df19c664
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"capabilities":{"firstMatch":[{"platformName":"Android","appium:devicename":"ZY226JWPJ5","appium:udid":"ZY226JWPJ5","appium:platformVersion":"10","appium:appPackage":"com.glazero.android","appium:appActivity":"com.glazero.android.SplashActivity","appium:noReset":true}]},"desiredCapabilities":{"platformName":"Android","devicename":"ZY226JWPJ5","udid":"ZY226JWPJ5","platformVersion":"10","appPackage":"com.glazero.android","appActivity":"com.glazero.android.SplashActivity","noReset":true}}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.createSession() with args: [{"platformName":"Android","devicename":"ZY226JWPJ5","udid":"ZY226JWPJ5","platformVersion":"10","appPackage":"com.glazero.android","appActivity":"com.glazero.android.SplashActivity","noReset":true},null,{"firstMatch":[{"platformName":"Android","appium:devicename":"ZY226JWPJ5","appium:udid":"ZY226JWPJ5","appium:platformVersion":"10","appium:appPackage":"com.glazero.android","appium:appActivity":"com.glazero.android.SplashActivity","appium:noReset":true}]}]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1648776385504 (09:26:25 GMT+0800 (中国标准时间))
+[35m[Appium][39m 
+[35m[Appium][39m ======================================================================
+[35m[Appium][39m   DEPRECATION WARNING:
+[35m[Appium][39m 
+[35m[Appium][39m   The 'automationName' capability was not provided in the desired 
+[35m[Appium][39m   capabilities for this Android session
+[35m[Appium][39m 
+[35m[Appium][39m   Setting 'automationName=UiAutomator2' by default and using the 
+[35m[Appium][39m   UiAutomator2 Driver
+[35m[Appium][39m 
+[35m[Appium][39m   The next major version of Appium (2.x) will **require** the 
+[35m[Appium][39m   'automationName' capability to be set for all sessions on all 
+[35m[Appium][39m   platforms
+[35m[Appium][39m 
+[35m[Appium][39m   In previous versions (Appium <= 1.13.x), the default was 
+[35m[Appium][39m   'automationName=UiAutomator1'
+[35m[Appium][39m 
+[35m[Appium][39m   If you wish to use that automation instead of UiAutomator2, please 
+[35m[Appium][39m   add 'automationName=UiAutomator1' to your desired capabilities
+[35m[Appium][39m 
+[35m[Appium][39m   For more information about drivers, please visit 
+[35m[Appium][39m   http://appium.io/docs/en/about-appium/intro/ and explore the 
+[35m[Appium][39m   'Drivers' menu
+[35m[Appium][39m 
+[35m[Appium][39m ======================================================================
+[35m[Appium][39m 
+[35m[Appium][39m Appium v1.22.2 creating new AndroidUiautomator2Driver (v1.70.1) session
+[debug] [35m[BaseDriver][39m W3C capabilities and MJSONWP desired capabilities were provided
+[debug] [35m[BaseDriver][39m Creating session with W3C capabilities: {
+[debug] [35m[BaseDriver][39m   "alwaysMatch": {
+[debug] [35m[BaseDriver][39m     "platformName": "Android",
+[debug] [35m[BaseDriver][39m     "appium:devicename": "ZY226JWPJ5",
+[debug] [35m[BaseDriver][39m     "appium:udid": "ZY226JWPJ5",
+[debug] [35m[BaseDriver][39m     "appium:platformVersion": "10",
+[debug] [35m[BaseDriver][39m     "appium:appPackage": "com.glazero.android",
+[debug] [35m[BaseDriver][39m     "appium:appActivity": "com.glazero.android.SplashActivity",
+[debug] [35m[BaseDriver][39m     "appium:noReset": true
+[debug] [35m[BaseDriver][39m   },
+[debug] [35m[BaseDriver][39m   "firstMatch": [
+[debug] [35m[BaseDriver][39m     {}
+[debug] [35m[BaseDriver][39m   ]
+[debug] [35m[BaseDriver][39m }
+[35m[BaseDriver][39m The following capabilities were provided, but are not recognized by Appium:
+[35m[BaseDriver][39m   devicename
+[35m[BaseDriver][39m Session created with session id: 639bf1f4-51e9-416e-bd04-5107665ffb5a
+[35m[UiAutomator2][39m Starting 'com.glazero.android' directly on the device
+[35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\Hello\AppData\Local\Android\Sdk' (newest first):
+[35m[ADB][39m     C:/Users/Hello/AppData/Local/Android/Sdk/build-tools/30.0.3
+[35m[ADB][39m Using 'adb.exe' from 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices
+[debug] [35m[ADB][39m Connected devices: [{"udid":"R58N828LKMP","state":"device"},{"udid":"ZY226JWPJ5","state":"device"}]
+[35m[AndroidDriver][39m Using device: ZY226JWPJ5
+[35m[ADB][39m Using 'adb.exe' from 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[debug] [35m[ADB][39m Setting device id to ZY226JWPJ5
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell getprop ro.build.version.sdk'
+[debug] [35m[UiAutomator2][39m Deleting UiAutomator2 session
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell am force-stop com.glazero.android'
+[35m[UiAutomator2][39m Unable to force stop app: Error executing adbExec. Original error: 'Command 'C:\\Users\\Hello\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZY226JWPJ5 shell am force-stop com.glazero.android' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell getprop ro.build.version.sdk'
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1648776446062 (09:27:26 GMT+0800 (中国标准时间))
+[debug] [35m[W3C][39m Encountered internal error running command: Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\Hello\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZY226JWPJ5 shell getprop ro.build.version.sdk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+[debug] [35m[W3C][39m     at ADB.getApiLevel (C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\adb-commands.js:159:13)
+[debug] [35m[W3C][39m     at AndroidUiautomator2Driver.deleteSession (C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:671:11)
+[debug] [35m[W3C][39m     at AndroidUiautomator2Driver.createSession (C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:238:7)
+[debug] [35m[W3C][39m     at AppiumDriver.createSession (C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\lib\appium.js:387:35)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[31m500[39m [90m60677 ms - 1287[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[HTTP][39m Request idempotency key: eb3d872e-2b52-4210-a204-c20b0a7544ae
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"capabilities":{"firstMatch":[{"platformName":"Android","appium:devicename":"ZY226JWPJ5","appium:udid":"ZY226JWPJ5","appium:platformVersion":"10","appium:appPackage":"com.glazero.android","appium:appActivity":"com.glazero.android.SplashActivity","appium:noReset":true}]},"desiredCapabilities":{"platformName":"Android","devicename":"ZY226JWPJ5","udid":"ZY226JWPJ5","platformVersion":"10","appPackage":"com.glazero.android","appActivity":"com.glazero.android.SplashActivity","noReset":true}}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.createSession() with args: [{"platformName":"Android","devicename":"ZY226JWPJ5","udid":"ZY226JWPJ5","platformVersion":"10","appPackage":"com.glazero.android","appActivity":"com.glazero.android.SplashActivity","noReset":true},null,{"firstMatch":[{"platformName":"Android","appium:devicename":"ZY226JWPJ5","appium:udid":"ZY226JWPJ5","appium:platformVersion":"10","appium:appPackage":"com.glazero.android","appium:appActivity":"com.glazero.android.SplashActivity","appium:noReset":true}]}]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1648776499987 (09:28:19 GMT+0800 (中国标准时间))
+[35m[Appium][39m 
+[35m[Appium][39m ======================================================================
+[35m[Appium][39m   DEPRECATION WARNING:
+[35m[Appium][39m 
+[35m[Appium][39m   The 'automationName' capability was not provided in the desired 
+[35m[Appium][39m   capabilities for this Android session
+[35m[Appium][39m 
+[35m[Appium][39m   Setting 'automationName=UiAutomator2' by default and using the 
+[35m[Appium][39m   UiAutomator2 Driver
+[35m[Appium][39m 
+[35m[Appium][39m   The next major version of Appium (2.x) will **require** the 
+[35m[Appium][39m   'automationName' capability to be set for all sessions on all 
+[35m[Appium][39m   platforms
+[35m[Appium][39m 
+[35m[Appium][39m   In previous versions (Appium <= 1.13.x), the default was 
+[35m[Appium][39m   'automationName=UiAutomator1'
+[35m[Appium][39m 
+[35m[Appium][39m   If you wish to use that automation instead of UiAutomator2, please 
+[35m[Appium][39m   add 'automationName=UiAutomator1' to your desired capabilities
+[35m[Appium][39m 
+[35m[Appium][39m   For more information about drivers, please visit 
+[35m[Appium][39m   http://appium.io/docs/en/about-appium/intro/ and explore the 
+[35m[Appium][39m   'Drivers' menu
+[35m[Appium][39m 
+[35m[Appium][39m ======================================================================
+[35m[Appium][39m 
+[35m[Appium][39m Appium v1.22.2 creating new AndroidUiautomator2Driver (v1.70.1) session
+[debug] [35m[BaseDriver][39m W3C capabilities and MJSONWP desired capabilities were provided
+[debug] [35m[BaseDriver][39m Creating session with W3C capabilities: {
+[debug] [35m[BaseDriver][39m   "alwaysMatch": {
+[debug] [35m[BaseDriver][39m     "platformName": "Android",
+[debug] [35m[BaseDriver][39m     "appium:devicename": "ZY226JWPJ5",
+[debug] [35m[BaseDriver][39m     "appium:udid": "ZY226JWPJ5",
+[debug] [35m[BaseDriver][39m     "appium:platformVersion": "10",
+[debug] [35m[BaseDriver][39m     "appium:appPackage": "com.glazero.android",
+[debug] [35m[BaseDriver][39m     "appium:appActivity": "com.glazero.android.SplashActivity",
+[debug] [35m[BaseDriver][39m     "appium:noReset": true
+[debug] [35m[BaseDriver][39m   },
+[debug] [35m[BaseDriver][39m   "firstMatch": [
+[debug] [35m[BaseDriver][39m     {}
+[debug] [35m[BaseDriver][39m   ]
+[debug] [35m[BaseDriver][39m }
+[35m[BaseDriver][39m The following capabilities were provided, but are not recognized by Appium:
+[35m[BaseDriver][39m   devicename
+[35m[BaseDriver][39m Session created with session id: 037c5155-1077-4ad6-9f7f-f79ffaa23c8f
+[35m[UiAutomator2][39m Starting 'com.glazero.android' directly on the device
+[35m[ADB][39m Using 'adb.exe' from 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices
+[debug] [35m[ADB][39m Connected devices: [{"udid":"R58N828LKMP","state":"device"},{"udid":"ZY226JWPJ5","state":"device"}]
+[35m[AndroidDriver][39m Using device: ZY226JWPJ5
+[35m[ADB][39m Using 'adb.exe' from 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[debug] [35m[ADB][39m Setting device id to ZY226JWPJ5
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell getprop ro.build.version.sdk'
+[debug] [35m[UiAutomator2][39m Deleting UiAutomator2 session
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell am force-stop com.glazero.android'
+[35m[UiAutomator2][39m Unable to force stop app: Error executing adbExec. Original error: 'Command 'C:\\Users\\Hello\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZY226JWPJ5 shell am force-stop com.glazero.android' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell getprop ro.build.version.sdk'
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1648776560142 (09:29:20 GMT+0800 (中国标准时间))
+[debug] [35m[W3C][39m Encountered internal error running command: Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\Hello\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZY226JWPJ5 shell getprop ro.build.version.sdk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+[debug] [35m[W3C][39m     at ADB.getApiLevel (C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\adb-commands.js:159:13)
+[debug] [35m[W3C][39m     at AndroidUiautomator2Driver.deleteSession (C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:671:11)
+[debug] [35m[W3C][39m     at AndroidUiautomator2Driver.createSession (C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:238:7)
+[debug] [35m[W3C][39m     at AppiumDriver.createSession (C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\lib\appium.js:387:35)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[31m500[39m [90m60159 ms - 1287[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[HTTP][39m Request idempotency key: 175327e8-55e2-4077-98d8-e5c4226f809e
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"capabilities":{"firstMatch":[{"platformName":"Android","appium:devicename":"ZY226JWPJ5","appium:udid":"ZY226JWPJ5","appium:platformVersion":"10","appium:appPackage":"com.glazero.android","appium:appActivity":"com.glazero.android.SplashActivity","appium:noReset":true}]},"desiredCapabilities":{"platformName":"Android","devicename":"ZY226JWPJ5","udid":"ZY226JWPJ5","platformVersion":"10","appPackage":"com.glazero.android","appActivity":"com.glazero.android.SplashActivity","noReset":true}}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.createSession() with args: [{"platformName":"Android","devicename":"ZY226JWPJ5","udid":"ZY226JWPJ5","platformVersion":"10","appPackage":"com.glazero.android","appActivity":"com.glazero.android.SplashActivity","noReset":true},null,{"firstMatch":[{"platformName":"Android","appium:devicename":"ZY226JWPJ5","appium:udid":"ZY226JWPJ5","appium:platformVersion":"10","appium:appPackage":"com.glazero.android","appium:appActivity":"com.glazero.android.SplashActivity","appium:noReset":true}]}]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1648776784309 (09:33:04 GMT+0800 (中国标准时间))
+[35m[Appium][39m 
+[35m[Appium][39m ======================================================================
+[35m[Appium][39m   DEPRECATION WARNING:
+[35m[Appium][39m 
+[35m[Appium][39m   The 'automationName' capability was not provided in the desired 
+[35m[Appium][39m   capabilities for this Android session
+[35m[Appium][39m 
+[35m[Appium][39m   Setting 'automationName=UiAutomator2' by default and using the 
+[35m[Appium][39m   UiAutomator2 Driver
+[35m[Appium][39m 
+[35m[Appium][39m   The next major version of Appium (2.x) will **require** the 
+[35m[Appium][39m   'automationName' capability to be set for all sessions on all 
+[35m[Appium][39m   platforms
+[35m[Appium][39m 
+[35m[Appium][39m   In previous versions (Appium <= 1.13.x), the default was 
+[35m[Appium][39m   'automationName=UiAutomator1'
+[35m[Appium][39m 
+[35m[Appium][39m   If you wish to use that automation instead of UiAutomator2, please 
+[35m[Appium][39m   add 'automationName=UiAutomator1' to your desired capabilities
+[35m[Appium][39m 
+[35m[Appium][39m   For more information about drivers, please visit 
+[35m[Appium][39m   http://appium.io/docs/en/about-appium/intro/ and explore the 
+[35m[Appium][39m   'Drivers' menu
+[35m[Appium][39m 
+[35m[Appium][39m ======================================================================
+[35m[Appium][39m 
+[35m[Appium][39m Appium v1.22.2 creating new AndroidUiautomator2Driver (v1.70.1) session
+[debug] [35m[BaseDriver][39m W3C capabilities and MJSONWP desired capabilities were provided
+[debug] [35m[BaseDriver][39m Creating session with W3C capabilities: {
+[debug] [35m[BaseDriver][39m   "alwaysMatch": {
+[debug] [35m[BaseDriver][39m     "platformName": "Android",
+[debug] [35m[BaseDriver][39m     "appium:devicename": "ZY226JWPJ5",
+[debug] [35m[BaseDriver][39m     "appium:udid": "ZY226JWPJ5",
+[debug] [35m[BaseDriver][39m     "appium:platformVersion": "10",
+[debug] [35m[BaseDriver][39m     "appium:appPackage": "com.glazero.android",
+[debug] [35m[BaseDriver][39m     "appium:appActivity": "com.glazero.android.SplashActivity",
+[debug] [35m[BaseDriver][39m     "appium:noReset": true
+[debug] [35m[BaseDriver][39m   },
+[debug] [35m[BaseDriver][39m   "firstMatch": [
+[debug] [35m[BaseDriver][39m     {}
+[debug] [35m[BaseDriver][39m   ]
+[debug] [35m[BaseDriver][39m }
+[35m[BaseDriver][39m The following capabilities were provided, but are not recognized by Appium:
+[35m[BaseDriver][39m   devicename
+[35m[BaseDriver][39m Session created with session id: b7832838-deca-41d4-b2e4-dffec5355d2f
+[35m[UiAutomator2][39m Starting 'com.glazero.android' directly on the device
+[35m[ADB][39m Using 'adb.exe' from 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices
+[debug] [35m[ADB][39m Connected devices: [{"udid":"R58N828LKMP","state":"device"},{"udid":"ZY226JWPJ5","state":"device"}]
+[35m[AndroidDriver][39m Using device: ZY226JWPJ5
+[35m[ADB][39m Using 'adb.exe' from 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[debug] [35m[ADB][39m Setting device id to ZY226JWPJ5
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell getprop ro.build.version.sdk'
+[debug] [35m[UiAutomator2][39m Deleting UiAutomator2 session
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell am force-stop com.glazero.android'
+[35m[UiAutomator2][39m Unable to force stop app: Error executing adbExec. Original error: 'Command 'C:\\Users\\Hello\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZY226JWPJ5 shell am force-stop com.glazero.android' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell getprop ro.build.version.sdk'
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1648776844459 (09:34:04 GMT+0800 (中国标准时间))
+[debug] [35m[W3C][39m Encountered internal error running command: Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\Hello\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZY226JWPJ5 shell getprop ro.build.version.sdk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+[debug] [35m[W3C][39m     at ADB.getApiLevel (C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\adb-commands.js:159:13)
+[debug] [35m[W3C][39m     at AndroidUiautomator2Driver.deleteSession (C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:671:11)
+[debug] [35m[W3C][39m     at AndroidUiautomator2Driver.createSession (C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:238:7)
+[debug] [35m[W3C][39m     at AppiumDriver.createSession (C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\lib\appium.js:387:35)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[31m500[39m [90m60154 ms - 1287[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[HTTP][39m Request idempotency key: 45d9e8fa-8f8b-411a-ae72-2ac10d57bcdf
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"capabilities":{"firstMatch":[{"platformName":"Android","appium:devicename":"ZY226JWPJ5","appium:udid":"ZY226JWPJ5","appium:platformVersion":"10","appium:appPackage":"com.glazero.android","appium:appActivity":"com.glazero.android.SplashActivity","appium:noReset":true}]},"desiredCapabilities":{"platformName":"Android","devicename":"ZY226JWPJ5","udid":"ZY226JWPJ5","platformVersion":"10","appPackage":"com.glazero.android","appActivity":"com.glazero.android.SplashActivity","noReset":true}}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.createSession() with args: [{"platformName":"Android","devicename":"ZY226JWPJ5","udid":"ZY226JWPJ5","platformVersion":"10","appPackage":"com.glazero.android","appActivity":"com.glazero.android.SplashActivity","noReset":true},null,{"firstMatch":[{"platformName":"Android","appium:devicename":"ZY226JWPJ5","appium:udid":"ZY226JWPJ5","appium:platformVersion":"10","appium:appPackage":"com.glazero.android","appium:appActivity":"com.glazero.android.SplashActivity","appium:noReset":true}]}]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1648776924847 (09:35:24 GMT+0800 (中国标准时间))
+[35m[Appium][39m 
+[35m[Appium][39m ======================================================================
+[35m[Appium][39m   DEPRECATION WARNING:
+[35m[Appium][39m 
+[35m[Appium][39m   The 'automationName' capability was not provided in the desired 
+[35m[Appium][39m   capabilities for this Android session
+[35m[Appium][39m 
+[35m[Appium][39m   Setting 'automationName=UiAutomator2' by default and using the 
+[35m[Appium][39m   UiAutomator2 Driver
+[35m[Appium][39m 
+[35m[Appium][39m   The next major version of Appium (2.x) will **require** the 
+[35m[Appium][39m   'automationName' capability to be set for all sessions on all 
+[35m[Appium][39m   platforms
+[35m[Appium][39m 
+[35m[Appium][39m   In previous versions (Appium <= 1.13.x), the default was 
+[35m[Appium][39m   'automationName=UiAutomator1'
+[35m[Appium][39m 
+[35m[Appium][39m   If you wish to use that automation instead of UiAutomator2, please 
+[35m[Appium][39m   add 'automationName=UiAutomator1' to your desired capabilities
+[35m[Appium][39m 
+[35m[Appium][39m   For more information about drivers, please visit 
+[35m[Appium][39m   http://appium.io/docs/en/about-appium/intro/ and explore the 
+[35m[Appium][39m   'Drivers' menu
+[35m[Appium][39m 
+[35m[Appium][39m ======================================================================
+[35m[Appium][39m 
+[35m[Appium][39m Appium v1.22.2 creating new AndroidUiautomator2Driver (v1.70.1) session
+[debug] [35m[BaseDriver][39m W3C capabilities and MJSONWP desired capabilities were provided
+[debug] [35m[BaseDriver][39m Creating session with W3C capabilities: {
+[debug] [35m[BaseDriver][39m   "alwaysMatch": {
+[debug] [35m[BaseDriver][39m     "platformName": "Android",
+[debug] [35m[BaseDriver][39m     "appium:devicename": "ZY226JWPJ5",
+[debug] [35m[BaseDriver][39m     "appium:udid": "ZY226JWPJ5",
+[debug] [35m[BaseDriver][39m     "appium:platformVersion": "10",
+[debug] [35m[BaseDriver][39m     "appium:appPackage": "com.glazero.android",
+[debug] [35m[BaseDriver][39m     "appium:appActivity": "com.glazero.android.SplashActivity",
+[debug] [35m[BaseDriver][39m     "appium:noReset": true
+[debug] [35m[BaseDriver][39m   },
+[debug] [35m[BaseDriver][39m   "firstMatch": [
+[debug] [35m[BaseDriver][39m     {}
+[debug] [35m[BaseDriver][39m   ]
+[debug] [35m[BaseDriver][39m }
+[35m[BaseDriver][39m The following capabilities were provided, but are not recognized by Appium:
+[35m[BaseDriver][39m   devicename
+[35m[BaseDriver][39m Session created with session id: 0d9fea08-5f5f-4b10-866b-7dfc4718de20
+[35m[UiAutomator2][39m Starting 'com.glazero.android' directly on the device
+[35m[ADB][39m Using 'adb.exe' from 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices
+[debug] [35m[ADB][39m Connected devices: [{"udid":"R58N828LKMP","state":"device"},{"udid":"ZY226JWPJ5","state":"device"}]
+[35m[AndroidDriver][39m Using device: ZY226JWPJ5
+[35m[ADB][39m Using 'adb.exe' from 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[debug] [35m[ADB][39m Setting device id to ZY226JWPJ5
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell getprop ro.build.version.sdk'
+[debug] [35m[UiAutomator2][39m Deleting UiAutomator2 session
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell am force-stop com.glazero.android'
+[35m[UiAutomator2][39m Unable to force stop app: Error executing adbExec. Original error: 'Command 'C:\\Users\\Hello\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZY226JWPJ5 shell am force-stop com.glazero.android' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell getprop ro.build.version.sdk'
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1648776984999 (09:36:24 GMT+0800 (中国标准时间))
+[debug] [35m[W3C][39m Encountered internal error running command: Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\Hello\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZY226JWPJ5 shell getprop ro.build.version.sdk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+[debug] [35m[W3C][39m     at ADB.getApiLevel (C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\adb-commands.js:159:13)
+[debug] [35m[W3C][39m     at AndroidUiautomator2Driver.deleteSession (C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:671:11)
+[debug] [35m[W3C][39m     at AndroidUiautomator2Driver.createSession (C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:238:7)
+[debug] [35m[W3C][39m     at AppiumDriver.createSession (C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\lib\appium.js:387:35)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[31m500[39m [90m60154 ms - 1287[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[HTTP][39m Request idempotency key: 5a68751b-44a8-4ba9-b356-705aac3956ca
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"capabilities":{"firstMatch":[{"platformName":"Android","appium:devicename":"ZY226JWPJ5","appium:udid":"ZY226JWPJ5","appium:platformVersion":"10","appium:appPackage":"com.glazero.android","appium:appActivity":"com.glazero.android.SplashActivity","appium:noReset":true}]},"desiredCapabilities":{"platformName":"Android","devicename":"ZY226JWPJ5","udid":"ZY226JWPJ5","platformVersion":"10","appPackage":"com.glazero.android","appActivity":"com.glazero.android.SplashActivity","noReset":true}}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.createSession() with args: [{"platformName":"Android","devicename":"ZY226JWPJ5","udid":"ZY226JWPJ5","platformVersion":"10","appPackage":"com.glazero.android","appActivity":"com.glazero.android.SplashActivity","noReset":true},null,{"firstMatch":[{"platformName":"Android","appium:devicename":"ZY226JWPJ5","appium:udid":"ZY226JWPJ5","appium:platformVersion":"10","appium:appPackage":"com.glazero.android","appium:appActivity":"com.glazero.android.SplashActivity","appium:noReset":true}]}]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1648778373639 (09:59:33 GMT+0800 (中国标准时间))
+[35m[Appium][39m 
+[35m[Appium][39m ======================================================================
+[35m[Appium][39m   DEPRECATION WARNING:
+[35m[Appium][39m 
+[35m[Appium][39m   The 'automationName' capability was not provided in the desired 
+[35m[Appium][39m   capabilities for this Android session
+[35m[Appium][39m 
+[35m[Appium][39m   Setting 'automationName=UiAutomator2' by default and using the 
+[35m[Appium][39m   UiAutomator2 Driver
+[35m[Appium][39m 
+[35m[Appium][39m   The next major version of Appium (2.x) will **require** the 
+[35m[Appium][39m   'automationName' capability to be set for all sessions on all 
+[35m[Appium][39m   platforms
+[35m[Appium][39m 
+[35m[Appium][39m   In previous versions (Appium <= 1.13.x), the default was 
+[35m[Appium][39m   'automationName=UiAutomator1'
+[35m[Appium][39m 
+[35m[Appium][39m   If you wish to use that automation instead of UiAutomator2, please 
+[35m[Appium][39m   add 'automationName=UiAutomator1' to your desired capabilities
+[35m[Appium][39m 
+[35m[Appium][39m   For more information about drivers, please visit 
+[35m[Appium][39m   http://appium.io/docs/en/about-appium/intro/ and explore the 
+[35m[Appium][39m   'Drivers' menu
+[35m[Appium][39m 
+[35m[Appium][39m ======================================================================
+[35m[Appium][39m 
+[35m[Appium][39m Appium v1.22.2 creating new AndroidUiautomator2Driver (v1.70.1) session
+[debug] [35m[BaseDriver][39m W3C capabilities and MJSONWP desired capabilities were provided
+[debug] [35m[BaseDriver][39m Creating session with W3C capabilities: {
+[debug] [35m[BaseDriver][39m   "alwaysMatch": {
+[debug] [35m[BaseDriver][39m     "platformName": "Android",
+[debug] [35m[BaseDriver][39m     "appium:devicename": "ZY226JWPJ5",
+[debug] [35m[BaseDriver][39m     "appium:udid": "ZY226JWPJ5",
+[debug] [35m[BaseDriver][39m     "appium:platformVersion": "10",
+[debug] [35m[BaseDriver][39m     "appium:appPackage": "com.glazero.android",
+[debug] [35m[BaseDriver][39m     "appium:appActivity": "com.glazero.android.SplashActivity",
+[debug] [35m[BaseDriver][39m     "appium:noReset": true
+[debug] [35m[BaseDriver][39m   },
+[debug] [35m[BaseDriver][39m   "firstMatch": [
+[debug] [35m[BaseDriver][39m     {}
+[debug] [35m[BaseDriver][39m   ]
+[debug] [35m[BaseDriver][39m }
+[35m[BaseDriver][39m The following capabilities were provided, but are not recognized by Appium:
+[35m[BaseDriver][39m   devicename
+[35m[BaseDriver][39m Session created with session id: c17cff18-15f6-4620-aea0-c2ea303506f6
+[35m[UiAutomator2][39m Starting 'com.glazero.android' directly on the device
+[35m[ADB][39m Using 'adb.exe' from 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices
+[debug] [35m[ADB][39m Connected devices: [{"udid":"R58N828LKMP","state":"device"},{"udid":"ZY226JWPJ5","state":"device"}]
+[35m[AndroidDriver][39m Using device: ZY226JWPJ5
+[35m[ADB][39m Using 'adb.exe' from 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[debug] [35m[ADB][39m Setting device id to ZY226JWPJ5
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell getprop ro.build.version.sdk'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 29
+[35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell getprop ro.build.version.release'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 10
+[debug] [35m[ADB][39m Device API level: 29
+[35m[UiAutomator2][39m Relaxing hidden api policy
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+[35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 wait-for-device'
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell echo ping'
+[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell dumpsys package io.appium.settings'
+[debug] [35m[ADB][39m 'io.appium.settings' is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.settings'
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell dumpsys package io.appium.settings'
+[debug] [35m[ADB][39m The installed 'io.appium.settings' package is older than 'C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk' (19 < 30 or '2.14.2' < '3.4.0')'
+[debug] [35m[ADB][39m Executing upgrade of 'C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 help'
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 features'
+[35m[ADB][39m The application at 'C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 install -r -g C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+[35m[ADB][39m The installation of 'settings_apk-debug.apk' took 2047ms
+[debug] [35m[ADB][39m Install command stdout: Performing Streamed Install
+[debug] [35m[ADB][39m Success
+[debug] [35m[ADB][39m Getting IDs of all 'io.appium.settings' processes
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell 'pgrep --help; echo $?''
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+[debug] [35m[ADB][39m Getting IDs of all 'io.appium.settings' processes
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+[debug] [35m[ADB][39m Starting Appium Settings app
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell am start -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER'
+[debug] [35m[ADB][39m Getting IDs of all 'io.appium.settings' processes
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell appops set io.appium.settings android:mock_location allow'
+[debug] [35m[Logcat][39m Starting logs capture with command: C:\\Users\\Hello\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZY226JWPJ5 logcat -v threadtime
+[debug] [35m[UiAutomator2][39m Forwarding UiAutomator2 Server port 6790 to local port 8201
+[debug] [35m[ADB][39m Forwarding system: 8201 to device: 6790
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 forward tcp:8201 tcp:6790'
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell dumpsys package io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m 'io.appium.uiautomator2.server' is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell dumpsys package io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m The installed 'io.appium.uiautomator2.server' package is older than 'C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.27.0.apk' (41 < 95 or '4.3.0' < '4.27.0')'
+[debug] [35m[UiAutomator2][39m io.appium.uiautomator2.server installation state: olderVersionInstalled
+[debug] [35m[ADB][39m Checking app cert for C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.27.0.apk
+[35m[ADB][39m Using 'apksigner.jar' from 'C:\Users\Hello\AppData\Local\Android\Sdk\build-tools\30.0.3\lib\apksigner.jar'
+[debug] [35m[ADB][39m Starting apksigner: 'C:\\Program Files\\Java\\jdk1.8.0_321\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\Hello\\AppData\\Local\\Android\\Sdk\\build-tools\\30.0.3\\lib\\apksigner.jar verify --print-certs C:\\Users\\Hello\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v4.27.0.apk
+[debug] [35m[ADB][39m apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+[debug] [35m[ADB][39m Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+[debug] [35m[ADB][39m Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+[debug] [35m[ADB][39m Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+[debug] [35m[ADB][39m 
+[debug] [35m[ADB][39m sha256 hash did match for 'appium-uiautomator2-server-v4.27.0.apk'
+[35m[ADB][39m 'C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.27.0.apk' is signed with the default certificate
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server.test
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell dumpsys package io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m 'io.appium.uiautomator2.server.test' is installed
+[debug] [35m[ADB][39m Checking app cert for C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+[debug] [35m[ADB][39m Starting apksigner: 'C:\\Program Files\\Java\\jdk1.8.0_321\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\Hello\\AppData\\Local\\Android\\Sdk\\build-tools\\30.0.3\\lib\\apksigner.jar verify --print-certs C:\\Users\\Hello\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk
+[debug] [35m[ADB][39m apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+[debug] [35m[ADB][39m Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+[debug] [35m[ADB][39m Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+[debug] [35m[ADB][39m Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+[debug] [35m[ADB][39m 
+[debug] [35m[ADB][39m sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+[35m[ADB][39m 'C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+[35m[UiAutomator2][39m Server packages are going to be (re)installed
+[35m[UiAutomator2][39m Full packages reinstall is going to be performed
+[debug] [35m[ADB][39m Uninstalling io.appium.uiautomator2.server
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell dumpsys package io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m 'io.appium.uiautomator2.server' is installed
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell am force-stop io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 uninstall io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m 'adb uninstall io.appium.uiautomator2.server' command output: Success
+[35m[ADB][39m io.appium.uiautomator2.server was successfully uninstalled
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 version'
+[35m[ADB][39m The application at 'C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.27.0.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 install -r --no-incremental C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.27.0.apk'
+[35m[ADB][39m The installation of 'appium-uiautomator2-server-v4.27.0.apk' took 3835ms
+[debug] [35m[ADB][39m Install command stdout: Performing Streamed Install
+[debug] [35m[ADB][39m Success
+[debug] [35m[ADB][39m Uninstalling io.appium.uiautomator2.server.test
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server.test
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell dumpsys package io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m 'io.appium.uiautomator2.server.test' is installed
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell am force-stop io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 uninstall io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m 'adb uninstall io.appium.uiautomator2.server.test' command output: Success
+[35m[ADB][39m io.appium.uiautomator2.server.test was successfully uninstalled
+[35m[ADB][39m The application at 'C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 install -r --no-incremental C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[35m[ADB][39m The installation of 'appium-uiautomator2-server-debug-androidTest.apk' took 934ms
+[debug] [35m[ADB][39m Install command stdout: Performing Streamed Install
+[debug] [35m[ADB][39m Success
+[debug] [35m[UiAutomator2][39m Waiting up to 30000ms for services to be available
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell pm list instrumentation'
+[debug] [35m[UiAutomator2][39m Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+[35m[ADB][39m Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+[debug] [35m[ADB][39m Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+[debug] [35m[UiAutomator2][39m No app capability. Assuming it is already on the device
+[debug] [35m[UiAutomator2][39m Performing shallow cleanup of automation leftovers
+[debug] [35m[UiAutomator2][39m No obsolete sessions have been detected (socket hang up)
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell am force-stop io.appium.uiautomator2.server.test'
+[35m[UiAutomator2][39m Starting UIAutomator2 server 4.27.0
+[35m[UiAutomator2][39m Using UIAutomator2 server from 'C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.27.0.apk' and test from 'C:\Users\Hello\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[35m[UiAutomator2][39m Waiting up to 30000ms for UiAutomator2 to be online...
+[debug] [35m[ADB][39m Creating ADB subprocess with args: ["-P",5037,"-s","ZY226JWPJ5","shell","am","instrument","-w","-e","disableAnalytics",true,"io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://127.0.0.1:8201/wd/hub/status] with no body
+[35m[WD Proxy][39m socket hang up
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://127.0.0.1:8201/wd/hub/status] with no body
+[35m[WD Proxy][39m socket hang up
+[debug] [35m[Instrumentation][39m io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://127.0.0.1:8201/wd/hub/status] with no body
+[35m[WD Proxy][39m socket hang up
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://127.0.0.1:8201/wd/hub/status] with no body
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+[debug] [35m[UiAutomator2][39m The initialization of the instrumentation process took 3148ms
+[debug] [35m[WD Proxy][39m Matched '/session' to command name 'createSession'
+[debug] [35m[WD Proxy][39m Proxying [POST /session] to [POST http://127.0.0.1:8201/wd/hub/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","devicename":"ZY226JWPJ5","udid":"ZY226JWPJ5","platformVersion":"10","appPackage":"com.glazero.android","appActivity":"com.glazero.android.SplashActivity","noReset":true},"platformName":"Android","devicename":"ZY226JWPJ5","udid":"ZY226JWPJ5","platformVersion":"10","appPackage":"com.glazero.android","appActivity":"com.glazero.android.SplashActivity","noReset":true,"deviceName":"ZY226JWPJ5","deviceUDID":"ZY226JWPJ5"}],"alwaysMatch":{}}}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"28d2347f-0399-4d7b-a27a-39a5c4b4d531","value":{"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","devicename":"ZY226JWPJ5","udid":"ZY226JWPJ5","platformVersion":"10","appPackage":"com.glazero.android","appActivity":"com.glazero.android.SplashActivity","noReset":true},"platformName":"Android","devicename":"ZY226JWPJ5","udid":"ZY226JWPJ5","platformVersion":"10","appPackage":"com.glazero.android","appActivity":"com.glazero.android.SplashActivity","noReset":true,"deviceName":"ZY226JWPJ5","deviceUDID":"ZY226JWPJ5"}],"alwaysMatch":{}},"sessionId":"28d2347f-0399-4d7b-a27a-39a5c4b4d531"}}
+[35m[WD Proxy][39m Determined the downstream protocol as 'W3C'
+[debug] [35m[WD Proxy][39m Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8201/wd/hub/session/28d2347f-0399-4d7b-a27a-39a5c4b4d531/appium/device/info] with no body
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"28d2347f-0399-4d7b-a27a-39a5c4b4d531","value":{"androidId":"898b7e92e5c7c948","apiVersion":"29","bluetooth":{"state":"ON"},"brand":"motorola","carrierName":"","displayDensity":480,"locale":"zh_CN_#Hans","manufacturer":"motorola","model":"moto z4","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":1048576,"linkUpstreamBandwidthKbps":1048576,"networkCapabilities":"NET_CAPABILITY_NOT_METERED,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-47,"transportTypes":"TRANSPORT_WIFI"},"detailedState":"CONNECTED","extraInfo":null,"isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":0,"subtypeName":"","type":1,"typeName":"WIFI"}],"platformVersion":"10","realDisplaySize":"1080x2340","timeZone":"Asia/Shanghai"}}
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell dumpsys window'
+[35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[35m[UiAutomator2][39m Starting 'com.glazero.android/com.glazero.android.SplashActivity and waiting for 'com.glazero.android/com.glazero.android.SplashActivity'
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell am start -W -n com.glazero.android/com.glazero.android.SplashActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[debug] [35m[WD Proxy][39m Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8201/wd/hub/session/28d2347f-0399-4d7b-a27a-39a5c4b4d531/appium/device/pixel_ratio] with no body
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"28d2347f-0399-4d7b-a27a-39a5c4b4d531","value":3}
+[debug] [35m[WD Proxy][39m Matched '/appium/device/system_bars' to command name 'getSystemBars'
+[debug] [35m[WD Proxy][39m Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8201/wd/hub/session/28d2347f-0399-4d7b-a27a-39a5c4b4d531/appium/device/system_bars] with no body
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"28d2347f-0399-4d7b-a27a-39a5c4b4d531","value":{"statusBar":75}}
+[debug] [35m[WD Proxy][39m Matched '/window/current/size' to command name 'getWindowSize'
+[debug] [35m[WD Proxy][39m Proxying [GET /window/current/size] to [GET http://127.0.0.1:8201/wd/hub/session/28d2347f-0399-4d7b-a27a-39a5c4b4d531/window/current/size] with no body
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"28d2347f-0399-4d7b-a27a-39a5c4b4d531","value":{"height":2192,"width":1080}}
+[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session c17cff18-15f6-4620-aea0-c2ea303506f6 added to master session list
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1648778392227 (09:59:52 GMT+0800 (中国标准时间))
+[debug] [35m[W3C (c17cff18)][39m Cached the protocol value 'W3C' for the new session c17cff18-15f6-4620-aea0-c2ea303506f6
+[debug] [35m[W3C (c17cff18)][39m Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","devicename":"ZY226JWPJ5","udid":"ZY226JWPJ5","platformVersion":"10","appPackage":"com.glazero.android","appActivity":"com.glazero.android.SplashActivity","noReset":true},"platformName":"Android","devicename":"ZY226JWPJ5","udid":"ZY226JWPJ5","platformVersion":"10","appPackage":"com.glazero.android","appActivity":"com.glazero.android.SplashActivity","noReset":true,"deviceName":"ZY226JWPJ5","deviceUDID":"ZY226JWPJ5","deviceApiLevel":29,"deviceScreenSize":"1080x2340","deviceScreenDensity":480,"deviceModel":"moto z4","deviceManufacturer":"motorola","pixelRatio":3,"statBarHeight":75,"viewportRect":{"left":0,"top":75,"width":1080,"height":2117}}}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m18590 ms - 956[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/c17cff18-15f6-4620-aea0-c2ea303506f6/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":10000}[39m
+[debug] [35m[W3C (c17cff18)][39m Calling AppiumDriver.timeouts() with args: [null,null,null,null,10000,"c17cff18-15f6-4620-aea0-c2ea303506f6"]
+[debug] [35m[BaseDriver][39m W3C timeout argument: {"implicit":10000}}
+[debug] [35m[BaseDriver][39m Set implicit wait to 10000ms
+[debug] [35m[W3C (c17cff18)][39m Responding to client with driver.timeouts() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/c17cff18-15f6-4620-aea0-c2ea303506f6/timeouts [39m[32m200[39m [90m5 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[BaseDriver][39m Shutting down because we waited 60 seconds for a command
+[35m[Appium][39m Closing session, cause was 'New Command Timeout of 60 seconds expired. Try customizing the timeout using the 'newCommandTimeout' desired capability'
+[35m[Appium][39m Removing session 'c17cff18-15f6-4620-aea0-c2ea303506f6' from our master session list
+[debug] [35m[UiAutomator2][39m Deleting UiAutomator2 session
+[debug] [35m[UiAutomator2][39m Deleting UiAutomator2 server session
+[debug] [35m[WD Proxy][39m Matched '/' to command name 'deleteSession'
+[debug] [35m[WD Proxy][39m Proxying [DELETE /] to [DELETE http://127.0.0.1:8201/wd/hub/session/28d2347f-0399-4d7b-a27a-39a5c4b4d531] with no body
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"28d2347f-0399-4d7b-a27a-39a5c4b4d531","value":null}
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell am force-stop com.glazero.android'
+[debug] [35m[Logcat][39m Stopping logcat capture
+[debug] [35m[ADB][39m Removing forwarded port socket connection: 8201 
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 forward --remove tcp:8201'
+[35m[UiAutomator2][39m Restoring hidden api policy to the device default configuration
+[debug] [35m[ADB][39m Running 'C:\Users\Hello\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s ZY226JWPJ5 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+[debug] [35m[Instrumentation][39m .
+[debug] [35m[Instrumentation][39m Time: 65.118
+[debug] [35m[Instrumentation][39m 
+[debug] [35m[Instrumentation][39m OK (1 test)
+[debug] [35m[Instrumentation][39m The process has exited with code 0
+
+(venv) C:\Users\Hello\PycharmProjects\gz_ui_auto>
