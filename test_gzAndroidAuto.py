@@ -288,9 +288,9 @@ class TestAddDevices(object):
         # 调用解绑接口，默认是中国区‘api-cn.aosulife.com’
         # gz_public._unbind('V8P1AH110002353', 1, 1)
         # 335
-        # gz_public._unbind('C2E2BH110000278', 1, 1)
+        gz_public._unbind('C2E2BH110000278', 1, 1)
         # 337
-        gz_public._unbind('C2E2BH110000233', 1, 1)
+        # gz_public._unbind('C2E2BH110000233', 1, 1)
         time.sleep(2)
 
         # 如果绑定失败的话，会停留在失败页面，每次执行完成后要回到首页
@@ -305,7 +305,7 @@ class TestAddDevices(object):
         # c2e特殊场景验证，等待1小时后进行绑定
         # 强制等待时间过程driver会断开
         # time.sleep(600)
-        for _i in range(1, 720):
+        for _i in range(1, 2):
             time.sleep(10)
             master.find_element_by_id('com.glazero.android:id/img_tab_device').click()
 

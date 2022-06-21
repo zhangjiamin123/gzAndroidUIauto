@@ -5,6 +5,9 @@ import requests
 import json
 from hashlib import md5
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
+import logging
+# import gz_public
+
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 
@@ -122,9 +125,38 @@ def change_password(old_pwd, new_pwd, _email, _type, gz_host, _region, country_c
     rsp = requests.post(url, headers=headers, data=data, verify=False)
     rsp_json = rsp.json()
 
-if __name__ == '__main__':
-    # change_password('Qwe101010', 'Qwe222222', '1010642719@qq.com', 1, 'api-cn.snser.wang', 'CN', '86')
+def _unbind(sn='V8P1AH110002353', dev_type=1, delete_cloud_data=0, gz_host='api-cn.aosulife.com'):
+    pwd_md5 = _md5('Qwe222222')
+    _login(gz_host, _email='1010642719@qq.com', _region='CN', country_code='86', _password=pwd_md5, _type=1)
+    url = 'https://' + gz_host + '/v1/bind/unbind' + '?' + 'uuid=' + 'android_ui_auto' + '&' + 't=' + '003'
+    data = 'sn=' + sn + '&' + 'devType=%d' % dev_type + '&' + 'deleteCloudData=%d' % delete_cloud_data
+    headers = _headers()
+    headers['Gz-Sid'] = SID
+    headers['Gz-Uid'] = UID
+    rsp = requests.post(url, headers=headers, data=data, verify=False)
+    # if rsp.json() == {'errno': 0, 'errmsg': '成功', 'data': {}}:
+    print(rsp.json())
 
+# 通过将字符串根据空格转换成列表，之后取列表中得最后一个元素获取pid
+def get_pid(port):
+    netstat_info = os.popen("netstat -ano | findstr %s" % port)
+    netstat_info_read = netstat_info.read()
+    list_tmp = netstat_info_read.split()
+    print(netstat_info_read)
+    print(type(netstat_info_read))
+    print('转换成列表： ', list_tmp)
+    print("提取pid: ", list_tmp[-1])
+
+
+if __name__ == '__main__':
+    # get_pid(4723)
+    # change_password('Qwe101010', 'Qwe222222', '1010642719@qq.com', 1, 'api-cn.snser.wang', 'CN', '86')
+    _unbind('V8P1AH110002353', 1, 1)
+    # print('时间是：%fs' % time.process_time())
+    # print (time.time())
+    # print(time.localtime(time.time()))
+    # print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+    # print(logging.basicConfig())
     '''
     if isAwake() == True:
         print('screen is on')
