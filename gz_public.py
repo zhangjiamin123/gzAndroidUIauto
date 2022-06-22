@@ -5,6 +5,7 @@ import initPhone
 import requests
 import logging
 import json
+import uuid
 from hashlib import md5
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
@@ -135,6 +136,12 @@ def _headers():
     return headers
 
 
+def aosu_headers():
+    headers = {}
+    headers['Content-Type'] = 'application/x-www-form-urlencoded'
+    return headers
+
+
 # 登录接口，获取sessionId，为修改密码接口提供必要的header
 def _login(gz_host, _email, _region, country_code, _password, _type=1):
     global SID, UID
@@ -173,6 +180,31 @@ def _unbind(sn='V8P1AH110002353', dev_type=1, delete_cloud_data=0, gz_host=gzHos
         print('解绑成功：', rsp.json())
     elif rsp.json() == {'errno': 701, 'errmsg': '已解绑或者未绑定', 'data': {}}:
         print('已解绑：', rsp.json())
+
+
+def aosu_admin_login(aosu_host='admin-cn.aosulife.com', pid='glazero', username='zhangjiamin', password='123'):
+    pwd_md5 = _md5(password)
+    headers = aosu_headers()
+    url = 'https://' + aosu_host + '/admin/adminUser/login' + '?' + 'pid=' + pid + '&' + 'uuid=' + str(uuid.uuid1())
+    data = 'pid=' + pid + '&' + 'username=' + username + '&' + 'password=' + pwd_md5 + '&' + 'uuid=' + str(uuid.uuid1())
+    rsp = requests.post(url, headers=headers, data=data, timeout=(10, 10), verify=False)
+    token = rsp.json()['data']['token']
+    return token
+
+
+def aosu_admin_get_dev_info(sn_sys='H1L2AH110000650', pid='glazero', gz_username='zhangjiamin',
+                            aosu_host='admin-cn.aosulife.com'):
+    # 获取token
+    gz_sid = aosu_admin_login(aosu_host='admin-cn.aosulife.com', pid='glazero', username='zhangjiamin', password='123')
+    headers = aosu_headers()
+    url = 'https://' + aosu_host + '/admin/dev/getInfoList' + '?' + 'pid=' + pid + '&' + 'uuid=' + str(uuid.uuid1())
+    data = 'pid=' + pid + '&' + 'gz_sid=' + gz_sid + '&' + 'gz_username=' + gz_username + '&' + 'snSys=' + sn_sys + \
+           '&sn=&tuyaUuid=&devType=&' + 'uuid=' + str(uuid.uuid1())
+    rsp = requests.post(url, headers=headers, data=data, timeout=(10, 10), verify=False)
+    return rsp
+    # print(rsp.json())
+    # print("aosu状态为：", rsp.json()['data']['list'][0]['online'])
+    # print("tuya状态为：", rsp.json()['data']['list'][0]['tuyayOnline'])
 
 
 def get_dsc(device="SamsungA51"):

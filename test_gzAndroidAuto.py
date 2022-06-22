@@ -10,7 +10,7 @@
 # import pytest_repeat
 import logging
 from appium import webdriver
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from selenium.webdriver.support.ui import WebDriverWait
 from gz_public import get_dsc
 from gz_start_appium import StartAppium
@@ -555,8 +555,109 @@ class TestAddDevices(object):
                         assert master.find_element_by_id("com.glazero.android:id/img_menu")
                         assert master.find_element_by_id("com.glazero.android:id/img_logo")
 
-    def test_addC6SP(self):
-        pass
+    @allure.title('C6SP基站绑定解绑')
+    @allure.story('C6SP基站绑定后涂鸦状态和aosu状态不一致，涂鸦状态是离线，aosu状态是在线，等待一段时间后状态仍然不同步')
+    def test_addC6SP_station(self, ssid='11111111-5g', pwd='12345678', home_base_sn='H1L2AH110000650'):
+        with allure.step('step1：点击右上角的+号，开始执行时间为：%s' % time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())):
+            master.find_element_by_id('com.glazero.android:id/img_add_device').click()
+            master.implicitly_wait(10)
+
+        with allure.step('step2：选择c6sp套装'):
+            master.find_element_by_xpath('//android.widget.TextView[@text="Max/Pro   \
+            System"]').click()
+            master.implicitly_wait(10)
+
+        with allure.step('step3：弹出照相机权限后点击cancel'):
+            master.find_element_by_id('com.glazero.android:id/btn_dialog_cancel').click()
+            master.implicitly_wait(10)
+
+        with allure.step('step4：点击Use other methods'):
+            master.find_element_by_id('com.glazero.android:id/tv_other_way').click()
+            master.implicitly_wait(10)
+
+        with allure.step('step5：点击continue'):
+            master.find_element_by_id('com.glazero.android:id/button').click()
+            master.implicitly_wait(10)
+
+        with allure.step('step6：继续点击continue'):
+            master.find_element_by_id('com.glazero.android:id/button').click()
+            master.implicitly_wait(10)
+
+        with allure.step('step7：继续点击continue'):
+            master.find_element_by_xpath('//android.widget.Button[@text="CONTINUE"]').click()
+            master.implicitly_wait(10)
+
+        with allure.step('step8：等待基站SN出现后，选择基站的SN'):
+            try:
+                WebDriverWait(master, timeout=30, poll_frequency=2).until(
+                    lambda x: x.find_element_by_xpath('//android.widget.TextView[@text=%s]' % home_base_sn))
+            except NoSuchElementException:
+                logging.error('没有找到要绑定的基站sn')
+                ts_fail = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+                master.save_screenshot('./report/C6SP/fail_%s.png' % ts_fail)
+                time.sleep(3)
+                allure.attach.file("./report/C6SP/fail_%s.png" % ts_fail, name="fail",
+                                   attachment_type=allure.attachment_type.JPG)
+                master.implicitly_wait(10)
+            else:
+                logging.info('找到了要绑定的基站sn')
+                ts_success = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+                master.save_screenshot('./report/C6SP/success_%s.png' % ts_success)
+                time.sleep(3)
+                allure.attach.file("./report/C6SP/success_%s.png" % ts_success, name="success",
+                                   attachment_type=allure.attachment_type.JPG)
+                master.implicitly_wait(10)
+
+                # 出现后点击SN
+                master.find_element_by_xpath('//android.widget.TextView[@text=%s]' % home_base_sn).click()
+                master.implicitly_wait(10)
+
+        with allure.step('step9：跳转到Name Your HomeBase页面后，点击continue'):
+            try:
+                WebDriverWait(master, timeout=30, poll_frequency=2).until(
+                    lambda x: x.find_element_by_xpath('//android.widget.TextView[@text="Name Your HomeBase"]'))
+            except NoSuchElementException:
+                logging('没有找到Name Your HomeBase这个元素')
+                ts_fail = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+                master.save_screenshot('./report/C6SP/fail_%s.png' % ts_fail)
+                time.sleep(3)
+                allure.attach.file("./report/C6SP/fail_%s.png" % ts_fail, name="fail",
+                                   attachment_type=allure.attachment_type.JPG)
+                master.implicitly_wait(10)
+            else:
+                logging('已经跳转到了Name Your HomeBase')
+                master.find_element_by_xpath('//android.widget.Button[@text="CONTINUE"]').click()
+                master.implicitly_wait(10)
+
+        with allure.step('step10：跳转到绑定成功页面，关闭当前页面'):
+            try:
+                WebDriverWait(master, timeout=420, poll_frequency=2).until(
+                    lambda x: x.find_element_by_xpath('//android.widget.TextView[@text="HomeBase added successfully"]'))
+            except NoSuchElementException:
+                logging.error('绑定失败')
+                ts_fail = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+                master.save_screenshot('./report/C6SP/fail_%s.png' % ts_fail)
+                time.sleep(3)
+                allure.attach.file("./report/C6SP/fail_%s.png" % ts_fail, name="fail",
+                                   attachment_type=allure.attachment_type.JPG)
+                master.implicitly_wait(10)
+            else:
+                logging.info('绑定成功')
+                ts_success = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+                master.save_screenshot('./report/C6SP/success_%s.png' % ts_success)
+                time.sleep(3)
+                allure.attach.file("./report/C6SP/success_%s.png" % ts_success, name="success",
+                                   attachment_type=allure.attachment_type.JPG)
+                master.implicitly_wait(10)
+                # 点击右上角的关闭X按钮，回到首页
+                master.find_element_by_id('com.glazero.android:id/img_title_close').click()
+                master.implicitly_wait(10)
+                # 绑定成功后，检查设备的涂鸦状态是否为在线
+                rsp = gz_public.aosu_admin_get_dev_info('H1L2AH110000650')
+                if rsp.json()['data']['list'][0]['online'] == 1:
+                    print("aosu状态为：", rsp.json()['data']['list'][0]['online'])
+                elif rsp.json()['data']['list'][0]['tuyayOnline'] is True:
+                    print("tuya状态为：", rsp.json()['data']['list'][0]['tuyayOnline'])
 
     @staticmethod
     def teardown_class():
