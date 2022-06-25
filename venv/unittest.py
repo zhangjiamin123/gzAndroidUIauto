@@ -5,12 +5,27 @@ import requests
 import json
 from hashlib import md5
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
-import logging
-# import gz_public
 import uuid
+import logging
+from appium import webdriver
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
+from selenium.webdriver.support.ui import WebDriverWait
+from gz_start_appium import StartAppium
+import time
 
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
+def get_dsc(device="SamsungA51"):
+    path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+    yaml_url = os.path.join(path, 'gz_ui_auto\\devices.yaml')
+    print("yaml配置文件地址：%s" % yaml_url)
+    f = open(yaml_url, 'r', encoding='utf-8')
+    file = f.read()
+    f.close()
+    data = yaml.load(file, Loader=yaml.FullLoader)
+    for content in data:
+        if device in content["desc"]:
+            return content
 
 def isAwake(deviceId = ''):
     if deviceId == '':
@@ -178,7 +193,29 @@ def aosu_admin_get_dev_info(sn_sys='H1L2AH110000650', pid='glazero', gz_username
     print("tuya状态为：", rsp.json()['data']['list'][0]['tuyayOnline'])
 
 if __name__ == '__main__':
-    aosu_admin_get_dev_info('H1L2AH110000650')
+    devices = ['SamsungA51', 'moto_z4']
+
+    dev_tmp = []
+
+    for i in devices:
+        tmp = get_dsc(device=i)
+        dev_tmp.append(tmp)
+
+        phone_1 = dev_tmp.pop(0)
+        print('phone_1: ', phone_1)
+        phone_2 = dev_tmp.pop(0)
+        print('phone_2: ', phone_2)
+
+    global master, slave
+
+    StartAppium.start_appium(port=phone_1["port"])
+    time.sleep(3)
+    master = webdriver.Remote("http://127.0.0.1:%s/wd/hub" % phone_1["port"], phone_1["des"])
+    master.implicitly_wait(10)
+
+
+
+    # aosu_admin_get_dev_info('H1L2AH110000650')
     # aosu_admin_login()
     # get_pid(4723)
     # change_password('Qwe101010', 'Qwe222222', '1010642719@qq.com', 1, 'api-cn.snser.wang', 'CN', '86')
