@@ -1,5 +1,5 @@
-from appium import webdriver
-import gz_public
+# from appium import webdriver
+# import gz_public
 import os
 import time
 import subprocess

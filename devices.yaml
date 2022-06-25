@@ -9,6 +9,7 @@
     appActivity: com.glazero.android.SplashActivity
     noReset: !!bool True
     autoGrantPermissions: !!bool True
+    newCommandTimeout: 360000
 
 - desc: HuaweiMate8,port_4725
   port: 4725
@@ -21,6 +22,7 @@
     appActivity: com.glazero.android.SplashActivity
     noReset: !!bool True
     autoGrantPermissions: !!bool True
+    newCommandTimeout: 360000
 
 - desc: moto_z4,port_4727
   port: 4727
@@ -32,3 +34,4 @@
     appPackage: com.glazero.android
     appActivity: com.glazero.android.SplashActivity
     noReset: !!bool True
+    newCommandTimeout: 360000

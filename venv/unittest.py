@@ -12,12 +12,13 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from selenium.webdriver.support.ui import WebDriverWait
 from gz_start_appium import StartAppium
 import time
+import yaml
 
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 def get_dsc(device="SamsungA51"):
     path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-    yaml_url = os.path.join(path, 'gz_ui_auto\\devices.yaml')
+    yaml_url = os.path.join(path, 'devices.yaml')
     print("yaml配置文件地址：%s" % yaml_url)
     f = open(yaml_url, 'r', encoding='utf-8')
     file = f.read()
@@ -193,28 +194,6 @@ def aosu_admin_get_dev_info(sn_sys='H1L2AH110000650', pid='glazero', gz_username
     print("tuya状态为：", rsp.json()['data']['list'][0]['tuyayOnline'])
 
 if __name__ == '__main__':
-    devices = ['SamsungA51', 'moto_z4']
-
-    dev_tmp = []
-
-    for i in devices:
-        tmp = get_dsc(device=i)
-        dev_tmp.append(tmp)
-
-        phone_1 = dev_tmp.pop(0)
-        print('phone_1: ', phone_1)
-        phone_2 = dev_tmp.pop(0)
-        print('phone_2: ', phone_2)
-
-    global master, slave
-
-    StartAppium.start_appium(port=phone_1["port"])
-    time.sleep(3)
-    master = webdriver.Remote("http://127.0.0.1:%s/wd/hub" % phone_1["port"], phone_1["des"])
-    master.implicitly_wait(10)
-
-
-
     # aosu_admin_get_dev_info('H1L2AH110000650')
     # aosu_admin_login()
     # get_pid(4723)

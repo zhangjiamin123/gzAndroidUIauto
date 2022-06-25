@@ -288,10 +288,12 @@ class TestAddDevices(object):
         # 调用解绑接口，默认是中国区‘api-cn.aosulife.com’
         # gz_public._unbind('V8P1AH110002353', 1, 1)
         # 335
-        gz_public._unbind('C2E2BH110000278', 1, 1)
+        # gz_public._unbind('C2E2BH110000278', 1, 1)
         # 337
         # gz_public._unbind('C2E2BH110000233', 1, 1)
-        time.sleep(2)
+        # C6SP 基站
+        # gz_public._unbind('H1L2AH110000650', 1, 1)
+        # time.sleep(2)
 
         # 如果绑定失败的话，会停留在失败页面，每次执行完成后要回到首页
         if not gz_public.isElementPresent(driver=master, by="id", value="com.glazero.android:id/img_menu"):
@@ -305,9 +307,11 @@ class TestAddDevices(object):
         # c2e特殊场景验证，等待1小时后进行绑定
         # 强制等待时间过程driver会断开
         # time.sleep(600)
+        '''
         for _i in range(1, 2):
             time.sleep(10)
             master.find_element_by_id('com.glazero.android:id/img_tab_device').click()
+        '''
 
     @allure.title('V8P 绑定-解绑')
     @allure.story('用户循环测试V8P的绑定和解绑')
@@ -563,8 +567,7 @@ class TestAddDevices(object):
             master.implicitly_wait(10)
 
         with allure.step('step2：选择c6sp套装'):
-            master.find_element_by_xpath('//android.widget.TextView[@text="Max/Pro   \
-            System"]').click()
+            master.find_element_by_xpath('//android.widget.TextView[@text="Max/Pro\nSystem"]').click()
             master.implicitly_wait(10)
 
         with allure.step('step3：弹出照相机权限后点击cancel'):
@@ -590,17 +593,21 @@ class TestAddDevices(object):
         with allure.step('step8：等待基站SN出现后，选择基站的SN'):
             try:
                 WebDriverWait(master, timeout=30, poll_frequency=2).until(
-                    lambda x: x.find_element_by_xpath('//android.widget.TextView[@text=%s]' % home_base_sn))
-            except NoSuchElementException:
-                logging.error('没有找到要绑定的基站sn')
+                    lambda x: x.find_element_by_xpath('//android.widget.TextView[@text="%s"]' % home_base_sn))
+            except TimeoutException:    # 此处不能写NoSuchElementException:
+                logging.error('没有找到要绑定的基站sn: %s' % home_base_sn)
                 ts_fail = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
                 master.save_screenshot('./report/C6SP/fail_%s.png' % ts_fail)
                 time.sleep(3)
                 allure.attach.file("./report/C6SP/fail_%s.png" % ts_fail, name="fail",
                                    attachment_type=allure.attachment_type.JPG)
                 master.implicitly_wait(10)
+
+                # 没有找到待绑定的sn可能是因为没有解绑，在这里解绑一下，保证后面步骤的运行
+                gz_public._unbind(home_base_sn, 1, 1)
+                time.sleep(3)
             else:
-                logging.info('找到了要绑定的基站sn')
+                logging.info('找到了要绑定的基站sn: %s' % home_base_sn)
                 ts_success = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
                 master.save_screenshot('./report/C6SP/success_%s.png' % ts_success)
                 time.sleep(3)
@@ -609,31 +616,36 @@ class TestAddDevices(object):
                 master.implicitly_wait(10)
 
                 # 出现后点击SN
-                master.find_element_by_xpath('//android.widget.TextView[@text=%s]' % home_base_sn).click()
+                master.find_element_by_xpath('//android.widget.TextView[@text="%s"]' % home_base_sn).click()
                 master.implicitly_wait(10)
 
         with allure.step('step9：跳转到Name Your HomeBase页面后，点击continue'):
             try:
                 WebDriverWait(master, timeout=30, poll_frequency=2).until(
-                    lambda x: x.find_element_by_xpath('//android.widget.TextView[@text="Name Your HomeBase"]'))
-            except NoSuchElementException:
-                logging('没有找到Name Your HomeBase这个元素')
+                    lambda x: x.find_element_by_id('com.glazero.android:id/subtitle'))
+
+            except TimeoutException:
+                logging.error('没有找到Name Your HomeBase这个元素')
                 ts_fail = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
                 master.save_screenshot('./report/C6SP/fail_%s.png' % ts_fail)
                 time.sleep(3)
                 allure.attach.file("./report/C6SP/fail_%s.png" % ts_fail, name="fail",
                                    attachment_type=allure.attachment_type.JPG)
                 master.implicitly_wait(10)
+
+                # 虽然绑定失败了，解绑一下，为下一次绑定做好准备，以免提示已绑定
+                gz_public._unbind(home_base_sn, 1, 1)
+                time.sleep(3)
             else:
-                logging('已经跳转到了Name Your HomeBase')
+                logging.info('已经跳转到了Name Your HomeBase')
                 master.find_element_by_xpath('//android.widget.Button[@text="CONTINUE"]').click()
                 master.implicitly_wait(10)
 
-        with allure.step('step10：跳转到绑定成功页面，关闭当前页面'):
+        with allure.step('step10：跳转到绑定成功页面，超时时间是5分钟，每2秒检查一次页面，结束时间为：%s' % time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())):
             try:
-                WebDriverWait(master, timeout=420, poll_frequency=2).until(
-                    lambda x: x.find_element_by_xpath('//android.widget.TextView[@text="HomeBase added successfully"]'))
-            except NoSuchElementException:
+                WebDriverWait(master, timeout=300, poll_frequency=2).until(
+                    lambda x: x.find_element_by_id('com.glazero.android:id/subtitle'))
+            except TimeoutException:
                 logging.error('绑定失败')
                 ts_fail = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
                 master.save_screenshot('./report/C6SP/fail_%s.png' % ts_fail)
@@ -641,6 +653,10 @@ class TestAddDevices(object):
                 allure.attach.file("./report/C6SP/fail_%s.png" % ts_fail, name="fail",
                                    attachment_type=allure.attachment_type.JPG)
                 master.implicitly_wait(10)
+
+                # 虽然绑定失败了，解绑一下，为下一次绑定做好准备，以免提示已绑定
+                gz_public._unbind(home_base_sn, 1, 1)
+                time.sleep(3)
             else:
                 logging.info('绑定成功')
                 ts_success = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
@@ -649,15 +665,36 @@ class TestAddDevices(object):
                 allure.attach.file("./report/C6SP/success_%s.png" % ts_success, name="success",
                                    attachment_type=allure.attachment_type.JPG)
                 master.implicitly_wait(10)
+
                 # 点击右上角的关闭X按钮，回到首页
                 master.find_element_by_id('com.glazero.android:id/img_title_close').click()
                 master.implicitly_wait(10)
-                # 绑定成功后，检查设备的涂鸦状态是否为在线
-                rsp = gz_public.aosu_admin_get_dev_info('H1L2AH110000650')
-                if rsp.json()['data']['list'][0]['online'] == 1:
-                    print("aosu状态为：", rsp.json()['data']['list'][0]['online'])
-                elif rsp.json()['data']['list'][0]['tuyayOnline'] is True:
-                    print("tuya状态为：", rsp.json()['data']['list'][0]['tuyayOnline'])
+                gz_public.swipe_down(driver=master)
+                time.sleep(3)
+
+                ts_success = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+                master.save_screenshot('./report/C6SP/success_%s.png' % ts_success)
+                time.sleep(3)
+                allure.attach.file("./report/C6SP/success_%s.png" % ts_success, name="success",
+                                   attachment_type=allure.attachment_type.JPG)
+                master.implicitly_wait(10)
+
+                # 等待1分钟后再查询涂鸦状态，保证有充分的时间设备在涂鸦端上线
+                time.sleep(60)
+
+                # 绑定成功后，检查设备的涂鸦状态是否为在线，如果涂鸦端不在线，问题复现，退出pytest
+                rsp = gz_public.aosu_admin_get_dev_info(home_base_sn)
+                logging.info("aosu状态为："+str(rsp.json()['data']['list'][0]['online']))
+                logging.info("tuya状态为："+str(rsp.json()['data']['list'][0]['tuyayOnline']))
+                print("aosu状态为：", rsp.json()['data']['list'][0]['online'])
+                print("tuya状态为：", rsp.json()['data']['list'][0]['tuyayOnline'])
+                if rsp.json()['data']['list'][0]['tuyayOnline'] is False:
+                    # pytest.exit('涂鸦在线，测试在这种情况下，是否执行teardown的内容   ---   结果是执行')
+                    pytest.exit('绑定完成1分钟后查询涂鸦状体为离线，问题复现，终止执行pytest，请查看固件日志！')
+                else:
+                    # 绑定成功后，涂鸦状态为在线，那么就解绑该设备
+                    gz_public._unbind(home_base_sn, 1, 1)
+                    time.sleep(3)
 
     @staticmethod
     def teardown_class():
@@ -813,5 +850,5 @@ class TestUserCenter(object):
 
 if __name__ == '__main__':
     # pytest.main(["-q", "-s", "-ra", "test_gzAndroidAuto.py::TestUserCenter::test_logOut"])
-    pytest.main(["-q", "-s", "-ra", "--count=%d" % 5, "test_gzAndroidAuto.py::TestAddDevices::test_addC2E",
-                 "--alluredir=./report/C2E"])
+    pytest.main(["-q", "-s", "-ra", "--count=%d" % 500, "test_gzAndroidAuto.py::TestAddDevices::test_addC6SP_station",
+                 "--alluredir=./report/C6SP"])
