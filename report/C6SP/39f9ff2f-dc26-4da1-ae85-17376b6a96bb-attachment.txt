@@ -1,7 +1,0 @@
-DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/5847460f-5d2d-4e60-9c4d-2a1fc41e6239/element {"using": "id", "value": "com.glazero.android:id/img_menu"}
-DEBUG    urllib3.connectionpool:connectionpool.py:272 Resetting dropped connection: 127.0.0.1
-DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/5847460f-5d2d-4e60-9c4d-2a1fc41e6239/element HTTP/1.1" 500 2435
-DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
-DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/5847460f-5d2d-4e60-9c4d-2a1fc41e6239/appium/app/launch {}
-DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/5847460f-5d2d-4e60-9c4d-2a1fc41e6239/appium/app/launch HTTP/1.1" 500 1763
-DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
