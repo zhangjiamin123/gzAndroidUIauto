@@ -1,30 +1,5000 @@
 [ {
-  "uid" : "3bd773ccf9c6f6dd",
-  "name" : "test_logOut",
+  "uid" : "5e629d4cbf7946f4",
+  "name" : "C6SP基站绑定解绑",
   "time" : {
-    "start" : 1643976571541,
-    "stop" : 1643976576358,
-    "duration" : 4817
+    "start" : 1656183976711,
+    "stop" : 1656184085075,
+    "duration" : 108364
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "85bb61c9b861a9da",
-  "name" : "test_gzLoginClearShowHide",
+  "uid" : "492bc541cb538e09",
+  "name" : "C6SP基站绑定解绑",
   "time" : {
-    "start" : 1643976509588,
-    "stop" : 1643976522886,
-    "duration" : 13298
+    "start" : 1656170114605,
+    "stop" : 1656170222777,
+    "duration" : 108172
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "841fbdf0bbad2cec",
-  "name" : "test_gzLogin",
+  "uid" : "182a8e85f046ab67",
+  "name" : "C6SP基站绑定解绑",
   "time" : {
-    "start" : 1643976526683,
-    "stop" : 1643976567158,
-    "duration" : 40475
+    "start" : 1656196459369,
+    "stop" : 1656196567636,
+    "duration" : 108267
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "18a1b2236546e1b6",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656183279177,
+    "stop" : 1656183388117,
+    "duration" : 108940
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1a8162a5fb4d7a8c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656190905155,
+    "stop" : 1656191013089,
+    "duration" : 107934
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c02eb0f800d94334",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656164228825,
+    "stop" : 1656164337025,
+    "duration" : 108200
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6286d94326912a6",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656156754486,
+    "stop" : 1656156863589,
+    "duration" : 109103
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8e611e3f0599f2a9",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656186917406,
+    "stop" : 1656187027612,
+    "duration" : 110206
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6848f8eb03c06078",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656197819280,
+    "stop" : 1656197928130,
+    "duration" : 108850
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ad2598d49aeda357",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656164113573,
+    "stop" : 1656164223818,
+    "duration" : 110245
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f1e6e686c91b7a42",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656165825064,
+    "stop" : 1656165932190,
+    "duration" : 107126
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "48c9f1118c2a2fc1",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656169205619,
+    "stop" : 1656169313388,
+    "duration" : 107769
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b9b94da9406c3d50",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656178381237,
+    "stop" : 1656178489800,
+    "duration" : 108563
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cf4599fcfefc5d26",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656179636703,
+    "stop" : 1656179745169,
+    "duration" : 108466
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f8c830e708cd4e07",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656189433714,
+    "stop" : 1656189541552,
+    "duration" : 107838
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7e5b6b2d1090bb2a",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656162513862,
+    "stop" : 1656162621745,
+    "duration" : 107883
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bfd254ff0f0ee932",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656208281201,
+    "stop" : 1656208388866,
+    "duration" : 107665
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8fa5d4e5ce8b3e4c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656166953826,
+    "stop" : 1656167061556,
+    "duration" : 107730
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5cdc3dce4bfe88f7",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656198956642,
+    "stop" : 1656199065791,
+    "duration" : 109149
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a7f2f7dc4bb6d2e6",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656206223167,
+    "stop" : 1656206331111,
+    "duration" : 107944
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fae7c37bf89ee532",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656160147577,
+    "stop" : 1656160257171,
+    "duration" : 109594
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "209e41fcd4c7fdcf",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656178723677,
+    "stop" : 1656178831174,
+    "duration" : 107497
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f803a98fa903455a",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656195887499,
+    "stop" : 1656195995994,
+    "duration" : 108495
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "40784b962fa5b560",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656165133083,
+    "stop" : 1656165247354,
+    "duration" : 114271
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2cbc64bbf2fa4214",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656173596897,
+    "stop" : 1656173706073,
+    "duration" : 109176
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fa4807a2e02dd999",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656165020004,
+    "stop" : 1656165128317,
+    "duration" : 108313
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5575ead4457a4189",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656163889913,
+    "stop" : 1656163997370,
+    "duration" : 107457
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5cb680851cb202ff",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656163547476,
+    "stop" : 1656163656706,
+    "duration" : 109230
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "706e357d011ee354",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656167969049,
+    "stop" : 1656168077298,
+    "duration" : 108249
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "22940299e007da74",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656154728278,
+    "stop" : 1656154835541,
+    "duration" : 107263
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d9590b2ab8cdc377",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656171916143,
+    "stop" : 1656172022568,
+    "duration" : 106425
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f3e8fff368e6171b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656188062354,
+    "stop" : 1656188169773,
+    "duration" : 107419
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7673dce2f3f9e8f6",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656181675155,
+    "stop" : 1656181783501,
+    "duration" : 108346
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d2229c072545142c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656199184913,
+    "stop" : 1656199292298,
+    "duration" : 107385
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2b8d9b2e0ad70caf",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656198612120,
+    "stop" : 1656198723100,
+    "duration" : 110980
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5fe902d09a860938",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656196115412,
+    "stop" : 1656196224508,
+    "duration" : 109096
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c83ca955d1092df",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656199297034,
+    "stop" : 1656199405112,
+    "duration" : 108078
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "71350e95876ed28d",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656176664746,
+    "stop" : 1656176772883,
+    "duration" : 108137
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2c00fb75438e9564",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656185114244,
+    "stop" : 1656185220855,
+    "duration" : 106611
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7d8aabe83877db01",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656155399968,
+    "stop" : 1656155506084,
+    "duration" : 106116
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f089a75545f760d1",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656199977744,
+    "stop" : 1656200085489,
+    "duration" : 107745
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "52620a60e71a91a2",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656186236003,
+    "stop" : 1656186345695,
+    "duration" : 109692
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aac92e65d8501063",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656176097795,
+    "stop" : 1656176205764,
+    "duration" : 107969
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b7c2fbb2d84c5d7",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656201681261,
+    "stop" : 1656201789837,
+    "duration" : 108576
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9208605abb0162ba",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656176437400,
+    "stop" : 1656176545404,
+    "duration" : 108004
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "58afb94884c8a53b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656177590679,
+    "stop" : 1656177698213,
+    "duration" : 107534
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "551c4dec2bba2273",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656171578744,
+    "stop" : 1656171686626,
+    "duration" : 107882
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "559fbed4091e8e86",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656187145342,
+    "stop" : 1656187260880,
+    "duration" : 115538
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b69eb493c38af8a6",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656182244462,
+    "stop" : 1656182355133,
+    "duration" : 110671
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2386e1e67deaf591",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656191131212,
+    "stop" : 1656191241630,
+    "duration" : 110418
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "807214527e7a6bc5",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656204284880,
+    "stop" : 1656204392909,
+    "duration" : 108029
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c0864c0597fd93dc",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656205306975,
+    "stop" : 1656205414619,
+    "duration" : 107644
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9acf1e0d0ab5f5ed",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656176550175,
+    "stop" : 1656176660007,
+    "duration" : 109832
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c837aaa45aed0f1a",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656152600859,
+    "stop" : 1656152705838,
+    "duration" : 104979
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "49254c04b6fdfd94",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656169430627,
+    "stop" : 1656169540465,
+    "duration" : 109838
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e618d45f32047394",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656199070542,
+    "stop" : 1656199180133,
+    "duration" : 109591
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c99e75ffd40871c3",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656170339598,
+    "stop" : 1656170446359,
+    "duration" : 106761
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1de9b081e06a660a",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656179176222,
+    "stop" : 1656179284674,
+    "duration" : 108452
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "15fa9594dc622ed5",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656189209517,
+    "stop" : 1656189317099,
+    "duration" : 107582
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4c1e718a5a71866a",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656179749864,
+    "stop" : 1656179857910,
+    "duration" : 108046
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "74ea92323516b7ad",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656174502660,
+    "stop" : 1656174614119,
+    "duration" : 111459
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f7ef7fb90e557e3",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656175985780,
+    "stop" : 1656176093046,
+    "duration" : 107266
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3b449db3f6965a2",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656208506655,
+    "stop" : 1656208614239,
+    "duration" : 107584
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fec531ce47990ad1",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656202583363,
+    "stop" : 1656202690919,
+    "duration" : 107556
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4d34b1bae111fb6",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656202921051,
+    "stop" : 1656203028754,
+    "duration" : 107703
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "713f058dde467ea",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656179408420,
+    "stop" : 1656179518852,
+    "duration" : 110432
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b50c96c473176212",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656162061674,
+    "stop" : 1656162168218,
+    "duration" : 106544
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e94c46e351448dee",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656199409793,
+    "stop" : 1656199517047,
+    "duration" : 107254
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "332afa661313d6d0",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656178949143,
+    "stop" : 1656179058597,
+    "duration" : 109454
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a330d5e020f1607e",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656171803815,
+    "stop" : 1656171911391,
+    "duration" : 107576
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7c8e224451fa9ff8",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656154615960,
+    "stop" : 1656154723588,
+    "duration" : 107628
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5ab4242cb18370a3",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656166165954,
+    "stop" : 1656166274116,
+    "duration" : 108162
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e2459dd1e6286d75",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656199636491,
+    "stop" : 1656199746773,
+    "duration" : 110282
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d01b1c407f78634b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656175757604,
+    "stop" : 1656175865497,
+    "duration" : 107893
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ecafde1fdba97e0",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656188979589,
+    "stop" : 1656189089805,
+    "duration" : 110216
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "722f8e75964097dc",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656154840245,
+    "stop" : 1656154947522,
+    "duration" : 107277
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6e18c1f4ff944ddb",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656190790800,
+    "stop" : 1656190900402,
+    "duration" : 109602
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1eea55c79c3a0fdd",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656178610206,
+    "stop" : 1656178718948,
+    "duration" : 108742
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "617c270f252938bc",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656158565154,
+    "stop" : 1656158674226,
+    "duration" : 109072
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4405db6e6a1810ef",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656174276855,
+    "stop" : 1656174384853,
+    "duration" : 107998
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5969b2895ea0a54b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656200203008,
+    "stop" : 1656200312754,
+    "duration" : 109746
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a5366149d620cff",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656201451321,
+    "stop" : 1656201561308,
+    "duration" : 109987
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d9adad5655ad4435",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656175417443,
+    "stop" : 1656175527216,
+    "duration" : 109773
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9cb76bdc454d5b7a",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656188174469,
+    "stop" : 1656188282624,
+    "duration" : 108155
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "63ff3abcea4d8f37",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656161049132,
+    "stop" : 1656161157036,
+    "duration" : 107904
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d5bec53b9b182a07",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656171243456,
+    "stop" : 1656171349456,
+    "duration" : 106000
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f03fb7dee7046a73",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656177471335,
+    "stop" : 1656177585926,
+    "duration" : 114591
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e99ac7169d6aa22",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656186124065,
+    "stop" : 1656186231327,
+    "duration" : 107262
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5dc34bace810118a",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656160599174,
+    "stop" : 1656160708430,
+    "duration" : 109256
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ed89a4917d302e79",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656176890141,
+    "stop" : 1656176997928,
+    "duration" : 107787
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2de77a703db68c79",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656209761853,
+    "stop" : 1656209870535,
+    "duration" : 108682
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d2c2cad9ff7f39bf",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656155175802,
+    "stop" : 1656155282585,
+    "duration" : 106783
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "72d4b7a1efe12fb0",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656185675857,
+    "stop" : 1656185783220,
+    "duration" : 107363
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a68dd59ff229c36",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656191359392,
+    "stop" : 1656191477566,
+    "duration" : 118174
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd2a6ee1d855dee6",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656180431271,
+    "stop" : 1656180540339,
+    "duration" : 109068
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "18c99ee3c010ca14",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656167066327,
+    "stop" : 1656167172948,
+    "duration" : 106621
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e272fa0bd22663fb",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656209875253,
+    "stop" : 1656209984143,
+    "duration" : 108890
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "936adf5a1f079f34",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656172589761,
+    "stop" : 1656172697777,
+    "duration" : 108016
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4902d98b268b00c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656200546649,
+    "stop" : 1656200653333,
+    "duration" : 106684
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "409525d08e718a98",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656178269561,
+    "stop" : 1656178376587,
+    "duration" : 107026
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5528aba80fd27c6f",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656153734599,
+    "stop" : 1656153837694,
+    "duration" : 103095
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8e859c66afc45f26",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656155287379,
+    "stop" : 1656155394621,
+    "duration" : 107242
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f552be97cc41f25d",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656172139785,
+    "stop" : 1656172249317,
+    "duration" : 109532
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "122dd7e5bc9e1abb",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656200998241,
+    "stop" : 1656201106049,
+    "duration" : 107808
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2c56cf1362bf2ecf",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656162626456,
+    "stop" : 1656162756378,
+    "duration" : 129922
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3511f2e8747cee94",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656175304224,
+    "stop" : 1656175412718,
+    "duration" : 108494
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "469d38c4717fbafe",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656153052286,
+    "stop" : 1656153166308,
+    "duration" : 114022
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "265cbddc26e036ea",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656189321809,
+    "stop" : 1656189428969,
+    "duration" : 107160
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "81aea5a198093f71",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656205082363,
+    "stop" : 1656205189627,
+    "duration" : 107264
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eef1dc9fb5b8bc92",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656179862646,
+    "stop" : 1656179973502,
+    "duration" : 110856
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a972ab7dc9368f1",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656159580309,
+    "stop" : 1656159689653,
+    "duration" : 109344
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cec95bd8901faed2",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656165479526,
+    "stop" : 1656165593370,
+    "duration" : 113844
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d628beea536b78cb",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656197706555,
+    "stop" : 1656197814551,
+    "duration" : 107996
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f5a844c4f7d40c97",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656181109118,
+    "stop" : 1656181217454,
+    "duration" : 108336
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5f7ad01af62b481",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656192949784,
+    "stop" : 1656193059414,
+    "duration" : 109630
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f5d079fcfa1a78f6",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656195662341,
+    "stop" : 1656195769102,
+    "duration" : 106761
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b9404b69093095b0",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656201338173,
+    "stop" : 1656201446554,
+    "duration" : 108381
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "143015a180b4bfcb",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656176323713,
+    "stop" : 1656176432638,
+    "duration" : 108925
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a6b2f151107803cd",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656167404042,
+    "stop" : 1656167513509,
+    "duration" : 109467
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "edf1cc02dc136251",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656196572373,
+    "stop" : 1656196683110,
+    "duration" : 110737
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b81375f130c4aba1",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656201794552,
+    "stop" : 1656201902763,
+    "duration" : 108211
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8f7e32b2d72ca817",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656170900938,
+    "stop" : 1656171009246,
+    "duration" : 108308
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1a910eaae6280d2b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656198273341,
+    "stop" : 1656198380587,
+    "duration" : 107246
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "69b0968dfdec671a",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656155849802,
+    "stop" : 1656155957501,
+    "duration" : 107699
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8696d52c2b52d45f",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656207247149,
+    "stop" : 1656207356942,
+    "duration" : 109793
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "179e9f28fc140d0a",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656194420407,
+    "stop" : 1656194528310,
+    "duration" : 107903
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8c77dd9af70b995",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656192273865,
+    "stop" : 1656192381814,
+    "duration" : 107949
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ec2eb93d8d80d0ee",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656201110771,
+    "stop" : 1656201218448,
+    "duration" : 107677
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e376bf1d355e7a1",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656206562380,
+    "stop" : 1656206672791,
+    "duration" : 110411
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e80c0b032ecabb32",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656208731580,
+    "stop" : 1656208839646,
+    "duration" : 108066
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a6ffebc9fa6d2797",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656162873788,
+    "stop" : 1656162981338,
+    "duration" : 107550
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b748fcd5f44894f0",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656182587128,
+    "stop" : 1656182696565,
+    "duration" : 109437
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e2f2fcfc89bb1600",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656182701266,
+    "stop" : 1656182816654,
+    "duration" : 115388
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aa73d74637e039bd",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656161614678,
+    "stop" : 1656161721694,
+    "duration" : 107016
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "14a31b5c41271a77",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656207134537,
+    "stop" : 1656207242428,
+    "duration" : 107891
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c8a482dad205a873",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656205759903,
+    "stop" : 1656205878347,
+    "duration" : 118444
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ce905b4c5e068383",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656198727890,
+    "stop" : 1656198836150,
+    "duration" : 108260
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6554bf1460577b29",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656200090295,
+    "stop" : 1656200198258,
+    "duration" : 107963
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "308f1c6444ad3874",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656156526823,
+    "stop" : 1656156634687,
+    "duration" : 107864
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "65596e70cc7fba58",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656163322681,
+    "stop" : 1656163430303,
+    "duration" : 107622
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f4c682c57624fbb8",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656173710881,
+    "stop" : 1656173821473,
+    "duration" : 110592
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aa61804a5b2581b6",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656157663645,
+    "stop" : 1656157770779,
+    "duration" : 107134
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4fb8d836889511d0",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656180091100,
+    "stop" : 1656180199693,
+    "duration" : 108593
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2c4f6e664ca973f6",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656184772110,
+    "stop" : 1656184881978,
+    "duration" : 109868
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "42178873e281f455",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656205533065,
+    "stop" : 1656205641295,
+    "duration" : 108230
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d3af6d6851840036",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656187494910,
+    "stop" : 1656187602983,
+    "duration" : 108073
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f421cb59e44b3f8",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656191935616,
+    "stop" : 1656192043864,
+    "duration" : 108248
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "136941a5459698e0",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656186462603,
+    "stop" : 1656186572354,
+    "duration" : 109751
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4516f4a44b61e19f",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656193064185,
+    "stop" : 1656193171096,
+    "duration" : 106911
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9fe81b47e49e8d81",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656207361696,
+    "stop" : 1656207470149,
+    "duration" : 108453
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1989ab4f955cd823",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656188753207,
+    "stop" : 1656188861412,
+    "duration" : 108205
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "67626861291f1536",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656198841073,
+    "stop" : 1656198951858,
+    "duration" : 110785
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8c8d662604fb9cb5",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656174164139,
+    "stop" : 1656174272048,
+    "duration" : 107909
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c714912f614ce2ff",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656207700463,
+    "stop" : 1656207808721,
+    "duration" : 108258
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2acd1d6a3001d630",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656196229247,
+    "stop" : 1656196339634,
+    "duration" : 110387
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6cd0c7923fede33c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656189546325,
+    "stop" : 1656189654480,
+    "duration" : 108155
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "640113f32f8873f1",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656163210282,
+    "stop" : 1656163317905,
+    "duration" : 107623
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2df4c59f3aa4b4bb",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656191482282,
+    "stop" : 1656191591582,
+    "duration" : 109300
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "83e9ade5b9af4792",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656208966637,
+    "stop" : 1656209074566,
+    "duration" : 107929
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e8c07baa2d976df",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656189659220,
+    "stop" : 1656189767008,
+    "duration" : 107788
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1666f4b2863f576a",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656175870275,
+    "stop" : 1656175981049,
+    "duration" : 110774
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b31a38a0d081749b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656196000651,
+    "stop" : 1656196110682,
+    "duration" : 110031
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5cfe8d6795b5fa4a",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656177002690,
+    "stop" : 1656177110740,
+    "duration" : 108050
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "27ea3cac795ca285",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656171128659,
+    "stop" : 1656171238668,
+    "duration" : 110009
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "972f9e307a9ca979",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656166278889,
+    "stop" : 1656166387193,
+    "duration" : 108304
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3401b2ebe1d1eed6",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656209191604,
+    "stop" : 1656209299720,
+    "duration" : 108116
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cb3025956ea1d584",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656157093631,
+    "stop" : 1656157200432,
+    "duration" : 106801
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a84420f982abf60",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656198497969,
+    "stop" : 1656198607383,
+    "duration" : 109414
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7bc08207582d43fe",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656166616437,
+    "stop" : 1656166723824,
+    "duration" : 107387
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5dbb1f2b244e1f0f",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656169774616,
+    "stop" : 1656169883129,
+    "duration" : 108513
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "87e55c28f23b307",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656202357759,
+    "stop" : 1656202466710,
+    "duration" : 108951
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e7ef62dd70b6d145",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656153170971,
+    "stop" : 1656153278522,
+    "duration" : 107551
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2250986c546093db",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656197933054,
+    "stop" : 1656198040901,
+    "duration" : 107847
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d406fb64335a59f1",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656200317519,
+    "stop" : 1656200427560,
+    "duration" : 110041
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "91807c50d806d912",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656199521928,
+    "stop" : 1656199631799,
+    "duration" : 109871
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a83c0e68e2b87cc5",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656193175863,
+    "stop" : 1656193286252,
+    "duration" : 110389
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d47a02595d34fdbe",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656174050371,
+    "stop" : 1656174159347,
+    "duration" : 108976
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "18526fe15048fe98",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656184430287,
+    "stop" : 1656184537203,
+    "duration" : 106916
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bb9f470d0fb3bba5",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656194195033,
+    "stop" : 1656194301966,
+    "duration" : 106933
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "337aca9abefc2467",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656201223190,
+    "stop" : 1656201333422,
+    "duration" : 110232
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "205b33053cc36451",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656158453343,
+    "stop" : 1656158560463,
+    "duration" : 107120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f80309547925b03b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656208054952,
+    "stop" : 1656208163212,
+    "duration" : 108260
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5379398f7cd7eee3",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656153623040,
+    "stop" : 1656153729990,
+    "duration" : 106950
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e8f94a9059c17255",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656167518277,
+    "stop" : 1656167627415,
+    "duration" : 109138
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b47d9636688801a",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656187032377,
+    "stop" : 1656187140568,
+    "duration" : 108191
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4dc877ba30645462",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656171466390,
+    "stop" : 1656171574015,
+    "duration" : 107625
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e71e5d594e5d43f3",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656204510135,
+    "stop" : 1656204619593,
+    "duration" : 109458
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5f9f5d73dbfd779f",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656167744795,
+    "stop" : 1656167852742,
+    "duration" : 107947
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8c56f4b8731a24c2",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656160487031,
+    "stop" : 1656160594411,
+    "duration" : 107380
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f5d3ea7857513134",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656182013015,
+    "stop" : 1656182121503,
+    "duration" : 108488
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a26d02363a546cf3",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656157775572,
+    "stop" : 1656157883795,
+    "duration" : 108223
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a8bb6b406d476adc",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656200658121,
+    "stop" : 1656200766634,
+    "duration" : 108513
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7ea180a87573cbd8",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656192723974,
+    "stop" : 1656192831776,
+    "duration" : 107802
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "acd1a63bb74ee641",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656163774956,
+    "stop" : 1656163885132,
+    "duration" : 110176
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b173567109dd232",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656198157574,
+    "stop" : 1656198268533,
+    "duration" : 110959
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9100be8835249a8b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656206677545,
+    "stop" : 1656206785909,
+    "duration" : 108364
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6e48df4d837684dd",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656177928646,
+    "stop" : 1656178039023,
+    "duration" : 110377
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d45dc78b2757a03",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656168980640,
+    "stop" : 1656169088031,
+    "duration" : 107391
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "36389cb70a5390f",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656181562637,
+    "stop" : 1656181670389,
+    "duration" : 107752
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d321a72cff5d7fc8",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656179289461,
+    "stop" : 1656179403685,
+    "duration" : 114224
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b50d7fb0b242516e",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656179978242,
+    "stop" : 1656180086339,
+    "duration" : 108097
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "32d6c08b9b94d065",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656197593233,
+    "stop" : 1656197701759,
+    "duration" : 108526
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ca05291b604569c0",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656157439959,
+    "stop" : 1656157546422,
+    "duration" : 106463
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85c1c8e2a78cec16",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656194082211,
+    "stop" : 1656194190359,
+    "duration" : 108148
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a6b8597679dbd32f",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656184656552,
+    "stop" : 1656184767376,
+    "duration" : 110824
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "294ab886f7849229",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656168530340,
+    "stop" : 1656168638084,
+    "duration" : 107744
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33a6327484268371",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656185338630,
+    "stop" : 1656185446282,
+    "duration" : 107652
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9ef478bfc1429fe1",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656200771325,
+    "stop" : 1656200878885,
+    "duration" : 107560
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e63a23851966b892",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656153952274,
+    "stop" : 1656154056244,
+    "duration" : 103970
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "487f213f20a861ff",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656186577068,
+    "stop" : 1656186684196,
+    "duration" : 107128
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "26d022a55fa1528b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656208844369,
+    "stop" : 1656208961888,
+    "duration" : 117519
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "666f66225cb319e6",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656165365257,
+    "stop" : 1656165474410,
+    "duration" : 109153
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c8fe3c5d5b463d20",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656154503585,
+    "stop" : 1656154611257,
+    "duration" : 107672
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a42552bd9167d2b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656179523570,
+    "stop" : 1656179631992,
+    "duration" : 108422
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2260b861f0753abf",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656193857255,
+    "stop" : 1656193964661,
+    "duration" : 107406
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7c4b071b758c3d21",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656187835501,
+    "stop" : 1656187945344,
+    "duration" : 109843
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "496feabe6f744b42",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656163097883,
+    "stop" : 1656163205550,
+    "duration" : 107667
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "15387da81c4a5e96",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656203033497,
+    "stop" : 1656203141132,
+    "duration" : 107635
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1d5c14ba10aeb1b0",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656181450032,
+    "stop" : 1656181557960,
+    "duration" : 107928
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c7ca92e352b9bc11",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656190448835,
+    "stop" : 1656190557703,
+    "duration" : 108868
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6cd836f820c1079c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656203821219,
+    "stop" : 1656203931288,
+    "duration" : 110069
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3b141a9c001a4678",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656185900210,
+    "stop" : 1656186007022,
+    "duration" : 106812
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e2cc610e86bdea4f",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656184999321,
+    "stop" : 1656185109471,
+    "duration" : 110150
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7e9302513aae577d",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656203706896,
+    "stop" : 1656203816405,
+    "duration" : 109509
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "43f87587cec72159",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656196344348,
+    "stop" : 1656196454616,
+    "duration" : 110268
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d603036e86e77a9a",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656164907505,
+    "stop" : 1656165015285,
+    "duration" : 107780
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7bc82be9687191aa",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656202471425,
+    "stop" : 1656202578611,
+    "duration" : 107186
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "855e0c9a79890dbe",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656185450975,
+    "stop" : 1656185558338,
+    "duration" : 107363
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "274ec4895f4b6d33",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656178494550,
+    "stop" : 1656178605407,
+    "duration" : 110857
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "703417ca3d149fd2",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656192048603,
+    "stop" : 1656192155998,
+    "duration" : 107395
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe6e4b7abd0b3cdf",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656157205271,
+    "stop" : 1656157311718,
+    "duration" : 106447
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "27cd3a79b1b44032",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656168304012,
+    "stop" : 1656168411033,
+    "duration" : 107021
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "18d2ddd3990d5f1e",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656201907447,
+    "stop" : 1656202015362,
+    "duration" : 107915
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a5727ff96223f6d9",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656161161767,
+    "stop" : 1656161268561,
+    "duration" : 106794
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fc6337779512e8df",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656158906212,
+    "stop" : 1656159013045,
+    "duration" : 106833
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5434a3a471c54c33",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656186011781,
+    "stop" : 1656186119340,
+    "duration" : 107559
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6f21b2de9fa74549",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656159017840,
+    "stop" : 1656159127085,
+    "duration" : 109245
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b57392b62979de3",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656203369706,
+    "stop" : 1656203477129,
+    "duration" : 107423
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "83a32953df9ab41c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656184204655,
+    "stop" : 1656184312701,
+    "duration" : 108046
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fad7dd0944e62511",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656169318102,
+    "stop" : 1656169425850,
+    "duration" : 107748
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d10a82b1538754c0",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656155063853,
+    "stop" : 1656155171087,
+    "duration" : 107234
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a67af04f63d308d",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656167177803,
+    "stop" : 1656167286941,
+    "duration" : 109138
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9faf9c56d6366702",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656163661396,
+    "stop" : 1656163770309,
+    "duration" : 108913
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ad33e5238cfbb70",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656207813414,
+    "stop" : 1656207937248,
+    "duration" : 123834
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b3c27ee00ca56bf0",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656160035559,
+    "stop" : 1656160142881,
+    "duration" : 107322
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "37480fb9691f7c02",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656162761127,
+    "stop" : 1656162869048,
+    "duration" : 107921
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "742f671154c55144",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656198045781,
+    "stop" : 1656198152842,
+    "duration" : 107061
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "359b51fdc6d7eb88",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656188405754,
+    "stop" : 1656188514245,
+    "duration" : 108491
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d4df9bf4f4956bf3",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656186803161,
+    "stop" : 1656186912657,
+    "duration" : 109496
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "38459a65a20550b6",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656153511551,
+    "stop" : 1656153618383,
+    "duration" : 106832
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "25a1fce234bbed1d",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656155623383,
+    "stop" : 1656155729912,
+    "duration" : 106529
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6d14e6443dcfc81f",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656182126248,
+    "stop" : 1656182239747,
+    "duration" : 113499
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4b3f6604d646526e",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656206906268,
+    "stop" : 1656207016237,
+    "duration" : 109969
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "99dff8164810a98b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656198385359,
+    "stop" : 1656198493225,
+    "duration" : 107866
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e138775aeb3e5389",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656203936027,
+    "stop" : 1656204045928,
+    "duration" : 109901
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c6cda82edd48a3a3",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656185787947,
+    "stop" : 1656185895451,
+    "duration" : 107504
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba9dc045ab01e133",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656195549542,
+    "stop" : 1656195657554,
+    "duration" : 108012
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "50a91a4c4746f1c1",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656185225568,
+    "stop" : 1656185333871,
+    "duration" : 108303
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a96208256a170f28",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656190108910,
+    "stop" : 1656190216632,
+    "duration" : 107722
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "26ae4d1ddd52338a",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656156868297,
+    "stop" : 1656156976597,
+    "duration" : 108300
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3488ad13c0687ac",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656191711693,
+    "stop" : 1656191818646,
+    "duration" : 106953
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cc7e820c9b73a7c7",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656152710638,
+    "stop" : 1656152818747,
+    "duration" : 108109
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "db6cc38757dc1888",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656156301422,
+    "stop" : 1656156409640,
+    "duration" : 108218
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2c1e55dfc4e00796",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656187950096,
+    "stop" : 1656188057623,
+    "duration" : 107527
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b03bb4783e7fdfb2",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656199863709,
+    "stop" : 1656199973032,
+    "duration" : 109323
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "30f021b01f671476",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656195773876,
+    "stop" : 1656195882689,
+    "duration" : 108813
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "af364296c4da0dbd",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656191596355,
+    "stop" : 1656191706905,
+    "duration" : 110550
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "893f2df634b32bcf",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656169092792,
+    "stop" : 1656169200903,
+    "duration" : 108111
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "52cfe2a93e2a6e2c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656186688980,
+    "stop" : 1656186798406,
+    "duration" : 109426
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "602384c43900b560",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656192611828,
+    "stop" : 1656192719265,
+    "duration" : 107437
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8ab430372a0327cd",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656162986099,
+    "stop" : 1656163093065,
+    "duration" : 106966
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6b7c0f6ebe0e355c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656159805620,
+    "stop" : 1656159916105,
+    "duration" : 110485
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1393cefbeba97578",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656177115501,
+    "stop" : 1656177223785,
+    "duration" : 108284
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "634dd7f76c5a16c0",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656189771813,
+    "stop" : 1656189879506,
+    "duration" : 107693
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "efb8e33867f20cd7",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656192386686,
+    "stop" : 1656192494623,
+    "duration" : 107937
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1c746e8c0d133f6c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656162173017,
+    "stop" : 1656162281552,
+    "duration" : 108535
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d8c04a1358e29a1e",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656152938543,
+    "stop" : 1656153047607,
+    "duration" : 109064
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff119c036e61ae1e",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656197254437,
+    "stop" : 1656197362937,
+    "duration" : 108500
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bb30eed76c185dd7",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656204172611,
+    "stop" : 1656204280110,
+    "duration" : 107499
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "968d29ce2e1826c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656209646988,
+    "stop" : 1656209757116,
+    "duration" : 110128
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "208c1a9f67e9f036",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656187722652,
+    "stop" : 1656187830676,
+    "duration" : 108024
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5faa09bf667a3e46",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656175531964,
+    "stop" : 1656175640644,
+    "duration" : 108680
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fbe31412bbfa7b38",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656205646008,
+    "stop" : 1656205755158,
+    "duration" : 109150
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1153aebe26feaab8",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656170227505,
+    "stop" : 1656170334846,
+    "duration" : 107341
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f748d072824e7abd",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656161386292,
+    "stop" : 1656161498285,
+    "duration" : 111993
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "50c34a0a55199a2c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656191017921,
+    "stop" : 1656191126465,
+    "duration" : 108544
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "78598da5c5c5b8a9",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656197139754,
+    "stop" : 1656197249713,
+    "duration" : 109959
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a46c01fbcde2561",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656181336249,
+    "stop" : 1656181445293,
+    "duration" : 109044
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "233b094bc0a95e03",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656169999748,
+    "stop" : 1656170109845,
+    "duration" : 110097
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f716ca2b83c9c45e",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656187265635,
+    "stop" : 1656187373993,
+    "duration" : 108358
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f13c1d7461f99a01",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656161503016,
+    "stop" : 1656161609959,
+    "duration" : 106943
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "376f2c131c66fbc1",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656158792399,
+    "stop" : 1656158901410,
+    "duration" : 109011
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "65edd5410337e89e",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656177702988,
+    "stop" : 1656177810736,
+    "duration" : 107748
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "980413e561420cf3",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656158001574,
+    "stop" : 1656158109032,
+    "duration" : 107458
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fc7570e4dda9ce69",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656190221398,
+    "stop" : 1656190329276,
+    "duration" : 107878
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "507532017f9765cf",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656181222165,
+    "stop" : 1656181331469,
+    "duration" : 109304
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2cc65148bc5660be",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656178155453,
+    "stop" : 1656178264810,
+    "duration" : 109357
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bcca6f052fa33080",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656157551237,
+    "stop" : 1656157658861,
+    "duration" : 107624
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1b46a57d37a75d63",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656168754835,
+    "stop" : 1656168862658,
+    "duration" : 107823
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "37f398412f2456f4",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656172702533,
+    "stop" : 1656172811898,
+    "duration" : 109365
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4114589035ab8cd7",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656158341210,
+    "stop" : 1656158448567,
+    "duration" : 107357
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9b9410b38f5f0218",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656185563080,
+    "stop" : 1656185671104,
+    "duration" : 108024
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c7c72016d5c0dd4",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656184541862,
+    "stop" : 1656184651838,
+    "duration" : 109976
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f34e14bad1be9e3",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656166048607,
+    "stop" : 1656166161191,
+    "duration" : 112584
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6007073d03df265d",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656182474043,
+    "stop" : 1656182582402,
+    "duration" : 108359
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "50a3515263d39fa5",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656167291693,
+    "stop" : 1656167399290,
+    "duration" : 107597
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9db15c86592d3b7f",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656206335936,
+    "stop" : 1656206444699,
+    "duration" : 108763
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3d2876bf5f1a6f4e",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656160937788,
+    "stop" : 1656161044338,
+    "duration" : 106550
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3f691fe14cfa200b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656206449459,
+    "stop" : 1656206557648,
+    "duration" : 108189
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6f882ce6f395e9dc",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656160374452,
+    "stop" : 1656160482257,
+    "duration" : 107805
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "25962c5252e3199c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656200432311,
+    "stop" : 1656200541897,
+    "duration" : 109586
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5e96458e0baff3c2",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656164568206,
+    "stop" : 1656164675227,
+    "duration" : 107021
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "641a70ed967b0438",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656155962275,
+    "stop" : 1656156070141,
+    "duration" : 107866
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e360d9d2057bafd0",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656204050674,
+    "stop" : 1656204167830,
+    "duration" : 117156
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "def3c50289b64049",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656156981326,
+    "stop" : 1656157088856,
+    "duration" : 107530
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a6e9e921c33d212c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656169545234,
+    "stop" : 1656169658012,
+    "duration" : 112778
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6be18cee6b31a321",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656154391909,
+    "stop" : 1656154498941,
+    "duration" : 107032
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "13292d75d1662a71",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656166843246,
+    "stop" : 1656166948949,
+    "duration" : 105703
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "59b93d7766228f97",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656174733984,
+    "stop" : 1656175136645,
+    "duration" : 402661
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "181b7af2de913c4f",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656193744204,
+    "stop" : 1656193852538,
+    "duration" : 108334
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "be7ce084336198f5",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656207474829,
+    "stop" : 1656207583334,
+    "duration" : 108505
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f25bfdc3e5eef3f6",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656171013970,
+    "stop" : 1656171123915,
+    "duration" : 109945
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d2dff65524ba0d61",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656194533061,
+    "stop" : 1656194641042,
+    "duration" : 107981
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ab0c3fdfad360e5",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656183164708,
+    "stop" : 1656183274495,
+    "duration" : 109787
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e5df94bb6088f526",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656208393614,
+    "stop" : 1656208501884,
+    "duration" : 108270
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d0394327f599c842",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656173039268,
+    "stop" : 1656173443385,
+    "duration" : 404117
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "3ab2ed221f5f6e41",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656197367733,
+    "stop" : 1656197475366,
+    "duration" : 107633
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "52a7ba6f51199977",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656202245665,
+    "stop" : 1656202352990,
+    "duration" : 107325
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d8bd76d715e6c109",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656186350501,
+    "stop" : 1656186457844,
+    "duration" : 107343
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e0929e92fdf849cc",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656156187069,
+    "stop" : 1656156296674,
+    "duration" : 109605
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b8fb3719c33afbd0",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656190562431,
+    "stop" : 1656190672577,
+    "duration" : 110146
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f05b3ff0466583d0",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656178043741,
+    "stop" : 1656178150718,
+    "duration" : 106977
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "95a817af44e92323",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656161950260,
+    "stop" : 1656162056948,
+    "duration" : 106688
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1a187365b1718a49",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656158113820,
+    "stop" : 1656158222694,
+    "duration" : 108874
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "54923c695c01aa1f",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656180884323,
+    "stop" : 1656180992295,
+    "duration" : 107972
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d61881d4d41328bc",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656166391898,
+    "stop" : 1656166498749,
+    "duration" : 106851
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5ea820bb9a395d89",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656153283175,
+    "stop" : 1656153389908,
+    "duration" : 106733
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "148b8aea5b4e38d6",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656168867417,
+    "stop" : 1656168975934,
+    "duration" : 108517
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "263c386c4b56b041",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656193291013,
+    "stop" : 1656193399315,
+    "duration" : 108302
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5ea2362a167f3ab5",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656200883617,
+    "stop" : 1656200993561,
+    "duration" : 109944
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b28db82998f688e",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656188519033,
+    "stop" : 1656188626783,
+    "duration" : 107750
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c7ec5bfd6aa6569d",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656188287317,
+    "stop" : 1656188400823,
+    "duration" : 113506
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5ecb5e27732b7e1",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656194984502,
+    "stop" : 1656195093119,
+    "duration" : 108617
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8125457190c531e0",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656201566093,
+    "stop" : 1656201676512,
+    "duration" : 110419
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "614e88eb68583c23",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656177815520,
+    "stop" : 1656177923895,
+    "duration" : 108375
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "19eb33b02396d4e7",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656191246398,
+    "stop" : 1656191354686,
+    "duration" : 108288
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c00b93615f185b5c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656199751611,
+    "stop" : 1656199859047,
+    "duration" : 107436
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e7cda2ac1dd3c28",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656184317483,
+    "stop" : 1656184425538,
+    "duration" : 108055
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fea8553bb88eb420",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656205996030,
+    "stop" : 1656206103671,
+    "duration" : 107641
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "60e2ea6e64a530e7",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656183051711,
+    "stop" : 1656183159938,
+    "duration" : 108227
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "144699b27d431b86",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656205883124,
+    "stop" : 1656205991264,
+    "duration" : 108140
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4b63238224a012e",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656157888529,
+    "stop" : 1656157996854,
+    "duration" : 108325
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d6cf7ef563a1556d",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656187378774,
+    "stop" : 1656187490155,
+    "duration" : 111381
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c10bd06776bd5365",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656194871465,
+    "stop" : 1656194979767,
+    "duration" : 108302
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "216ccb0ffd3caeae",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656181788241,
+    "stop" : 1656181896842,
+    "duration" : 108601
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4ce5292a440149f5",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656159920894,
+    "stop" : 1656160030797,
+    "duration" : 109903
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6998d0b00416be8a",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656204397636,
+    "stop" : 1656204505427,
+    "duration" : 107791
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1026c0b7977bf720",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656156639418,
+    "stop" : 1656156749670,
+    "duration" : 110252
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f4fe7bfbd4f7b7f0",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656203145853,
+    "stop" : 1656203252613,
+    "duration" : 106760
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "72003f36d8c233fa",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656156414389,
+    "stop" : 1656156522081,
+    "duration" : 107692
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "58f5d7981778c1c2",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656180316960,
+    "stop" : 1656180426562,
+    "duration" : 109602
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c15f41099f633101",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656188631525,
+    "stop" : 1656188748423,
+    "duration" : 116898
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1b57f8ed7dfb0bdf",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656180771035,
+    "stop" : 1656180879585,
+    "duration" : 108550
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b925ff4af575dc8b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656167632137,
+    "stop" : 1656167740052,
+    "duration" : 107915
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "52f337bf6a7fdc05",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656179063320,
+    "stop" : 1656179171447,
+    "duration" : 108127
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b8106c64a45bdd14",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656171354232,
+    "stop" : 1656171461592,
+    "duration" : 107360
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4aaf3fffffee51b9",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656154060950,
+    "stop" : 1656154164943,
+    "duration" : 103993
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b01be4703852201",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656168193936,
+    "stop" : 1656168299277,
+    "duration" : 105341
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "583d79329dca2eb",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656158227476,
+    "stop" : 1656158336363,
+    "duration" : 108887
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "12ee9db639bff34b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656177342578,
+    "stop" : 1656177466570,
+    "duration" : 123992
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3dbb6cad442ff47c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656171691396,
+    "stop" : 1656171799077,
+    "duration" : 107681
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ce43d753dc013562",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656209417959,
+    "stop" : 1656209527139,
+    "duration" : 109180
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b6803259bdc624b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656207588098,
+    "stop" : 1656207695664,
+    "duration" : 107566
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cc6e6a97ad679fa",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656169887874,
+    "stop" : 1656169994955,
+    "duration" : 107081
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f99446d89fe9f1be",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656159355344,
+    "stop" : 1656159463343,
+    "duration" : 107999
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "591e5ec95588d98b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656202133038,
+    "stop" : 1656202240948,
+    "duration" : 107910
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1de149bca658adf9",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656209531858,
+    "stop" : 1656209642214,
+    "duration" : 110356
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2a0f9d7f8b6f409a",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656164795017,
+    "stop" : 1656164902770,
+    "duration" : 107753
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "19acc2da77bcdaec",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656196913327,
+    "stop" : 1656197021763,
+    "duration" : 108436
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d129552aa88454e0",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656170451140,
+    "stop" : 1656170557633,
+    "duration" : 106493
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f1b088c2f1e6d006",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656190334008,
+    "stop" : 1656190444103,
+    "duration" : 110095
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "57d9ca7c3fce40cc",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656196687847,
+    "stop" : 1656196795828,
+    "duration" : 107981
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8e73858141ab7904",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656165252095,
+    "stop" : 1656165360503,
+    "duration" : 108408
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "db6a66889260cce3",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656172365477,
+    "stop" : 1656172472111,
+    "duration" : 106634
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a7c39dfe78be582b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656205419344,
+    "stop" : 1656205528383,
+    "duration" : 109039
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1bad8b72e2a9f138",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656204738932,
+    "stop" : 1656204851771,
+    "duration" : 112839
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7ad853163c1fde80",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656168082099,
+    "stop" : 1656168189208,
+    "duration" : 107109
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "761a67b1c667be00",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656203594118,
+    "stop" : 1656203702156,
+    "duration" : 108038
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e961ab55fde1dfc",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656155511242,
+    "stop" : 1656155618629,
+    "duration" : 107387
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ef0c74e4e291c01c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656172476848,
+    "stop" : 1656172584689,
+    "duration" : 107841
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cad368e06a4ff24f",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656193404070,
+    "stop" : 1656193513194,
+    "duration" : 109124
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6f45bd80cad4b09a",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656183863754,
+    "stop" : 1656183972018,
+    "duration" : 108264
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "437a6d69b6ead1ca",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656165937028,
+    "stop" : 1656166043759,
+    "duration" : 106731
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "98675bfdf946d057",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656164341761,
+    "stop" : 1656164450822,
+    "duration" : 109061
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6116c5b3afb01db4",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656182359928,
+    "stop" : 1656182469239,
+    "duration" : 109311
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9db4e32b0d393620",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656157316456,
+    "stop" : 1656157435119,
+    "duration" : 118663
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8266c3074c150790",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656194645753,
+    "stop" : 1656194753420,
+    "duration" : 107667
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f6c41ddc4a0b6092",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656192836514,
+    "stop" : 1656192944960,
+    "duration" : 108446
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6114717917ee731b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656183620815,
+    "stop" : 1656183745909,
+    "duration" : 125094
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fff2e869dba8bedb",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656190677305,
+    "stop" : 1656190786042,
+    "duration" : 108737
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7e7f753b207008e1",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656209079385,
+    "stop" : 1656209186881,
+    "duration" : 107496
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a2ff94447a4f0fb4",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656172254058,
+    "stop" : 1656172360680,
+    "duration" : 106622
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f79b7b51cc847f6",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656184089824,
+    "stop" : 1656184199905,
+    "duration" : 110081
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5f3dd28b0205a4d5",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656156074902,
+    "stop" : 1656156182311,
+    "duration" : 107409
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "467a9c2ed446797",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656159243271,
+    "stop" : 1656159350508,
+    "duration" : 107237
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f3a50cc12c214eac",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656204856494,
+    "stop" : 1656204964191,
+    "duration" : 107697
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cb1930651d8cfe2",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656197026545,
+    "stop" : 1656197134990,
+    "duration" : 108445
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fde74e3bf54b252",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656159131964,
+    "stop" : 1656159238597,
+    "duration" : 106633
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33465c5f58dea7e8",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656194306705,
+    "stop" : 1656194415635,
+    "duration" : 108930
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2d477af57ab0d5",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656169662777,
+    "stop" : 1656169769896,
+    "duration" : 107119
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ad735af5b3373a7c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656183750659,
+    "stop" : 1656183859043,
+    "duration" : 108384
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3aac96ae0e46d664",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656195097950,
+    "stop" : 1656195205323,
+    "duration" : 107373
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6e1c69f628c0b0ac",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656181901661,
+    "stop" : 1656182008337,
+    "duration" : 106676
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a1ff3239edf86cd",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656189094582,
+    "stop" : 1656189204748,
+    "duration" : 110166
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7263b6f897c1c67",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656172027305,
+    "stop" : 1656172135060,
+    "duration" : 107755
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b028c9eace5534d0",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656161273294,
+    "stop" : 1656161381545,
+    "duration" : 108251
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "124eec489ffebe",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656180997104,
+    "stop" : 1656181104337,
+    "duration" : 107233
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a8390c657c7c3b4d",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656196801166,
+    "stop" : 1656196908626,
+    "duration" : 107460
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "44474a80f16608ac",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656174618864,
+    "stop" : 1656174729220,
+    "duration" : 110356
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e0000973a25074c1",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656178835957,
+    "stop" : 1656178944382,
+    "duration" : 108425
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "32bfcad625ed9991",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656172816645,
+    "stop" : 1656172933434,
+    "duration" : 116789
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "a5091639f649db52",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656194758105,
+    "stop" : 1656194866792,
+    "duration" : 108687
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2bb1cf66db615d4b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656182821417,
+    "stop" : 1656182935058,
+    "duration" : 113641
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a7706376f87348d",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656205194294,
+    "stop" : 1656205302171,
+    "duration" : 107877
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "42a9492994f57a66",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656177228542,
+    "stop" : 1656177337813,
+    "duration" : 109271
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f3aff8b912c8a84d",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656164002141,
+    "stop" : 1656164108831,
+    "duration" : 106690
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d3e30e58ccb6e499",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656154169580,
+    "stop" : 1656154274440,
+    "duration" : 104860
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "45e4ce781369420",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656202695659,
+    "stop" : 1656202802488,
+    "duration" : 106829
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28310cfeb8587771",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656176210542,
+    "stop" : 1656176318924,
+    "duration" : 108382
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "21c42c927cacd840",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656166503464,
+    "stop" : 1656166611667,
+    "duration" : 108203
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e501f3e3bb0e8044",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656159468084,
+    "stop" : 1656159575572,
+    "duration" : 107488
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9216bc5c6c8636a3",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656195210044,
+    "stop" : 1656195320883,
+    "duration" : 110839
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c564f3e93895f87d",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656160261891,
+    "stop" : 1656160369708,
+    "duration" : 107817
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1de13f66001c08e6",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656203481920,
+    "stop" : 1656203589366,
+    "duration" : 107446
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3d4b684c926a8583",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656197480068,
+    "stop" : 1656197588497,
+    "duration" : 108429
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f846da354c9117b7",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656207020954,
+    "stop" : 1656207129856,
+    "duration" : 108902
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cf3cf19f62204bbd",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656203257348,
+    "stop" : 1656203364927,
+    "duration" : 107579
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2f3e849e5dc0e40a",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656167857524,
+    "stop" : 1656167964303,
+    "duration" : 106779
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b23530a6cc46d613",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656208168001,
+    "stop" : 1656208276411,
+    "duration" : 108410
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e582582009fbbcb3",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656188866124,
+    "stop" : 1656188974802,
+    "duration" : 108678
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e59747d6dbd2f79f",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656164455598,
+    "stop" : 1656164563473,
+    "duration" : 107875
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "90e3c253b8c889f7",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656162399755,
+    "stop" : 1656162509158,
+    "duration" : 109403
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "65db0c2a60d81909",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656158678972,
+    "stop" : 1656158787620,
+    "duration" : 108648
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a29e564c3e7000f",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656192499390,
+    "stop" : 1656192607088,
+    "duration" : 107698
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2a2a4a023a81bffa",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656193969451,
+    "stop" : 1656194077561,
+    "duration" : 108110
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "13a556b6d232c9c2",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656183508867,
+    "stop" : 1656183616003,
+    "duration" : 107136
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "af0d88bda7d73faa",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656202020643,
+    "stop" : 1656202128283,
+    "duration" : 107640
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e9f7808c47d4362",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656209304465,
+    "stop" : 1656209413217,
+    "duration" : 108752
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b30dc4e088e803b7",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656163435010,
+    "stop" : 1656163542703,
+    "duration" : 107693
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "de663e17c864db78",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656191823404,
+    "stop" : 1656191930927,
+    "duration" : 107523
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "59dfcf469d198c70",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656161726443,
+    "stop" : 1656161833831,
+    "duration" : 107388
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a553a793dd4a1f7b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656172939179,
+    "stop" : 1656172994294,
+    "duration" : 55115
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "ec52169d8f72c22",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656170790203,
+    "stop" : 1656170896180,
+    "duration" : 105977
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "88ba141c21719d40",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656161838590,
+    "stop" : 1656161945523,
+    "duration" : 106933
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "50a3ee16d84c345c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656155734695,
+    "stop" : 1656155845028,
+    "duration" : 110333
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9bb517147d78de46",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656195325596,
+    "stop" : 1656195432980,
+    "duration" : 107384
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a24583c14197cc",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656174389616,
+    "stop" : 1656174497930,
+    "duration" : 108314
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f21618853b5cd39e",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656154952242,
+    "stop" : 1656155059231,
+    "duration" : 106989
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "31d517692b4d1b05",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656184886760,
+    "stop" : 1656184994554,
+    "duration" : 107794
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1e2ea53492718ab7",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656193631938,
+    "stop" : 1656193739460,
+    "duration" : 107522
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fbdf044c59ba5985",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656168415739,
+    "stop" : 1656168525536,
+    "duration" : 109797
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "884ee28e79312040",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656189884177,
+    "stop" : 1656189991340,
+    "duration" : 107163
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "79204fbb20fb9685",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656195437670,
+    "stop" : 1656195544808,
+    "duration" : 107138
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cab169e4ccac3319",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656165712447,
+    "stop" : 1656165820324,
+    "duration" : 107877
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "caf4da6a01276a27",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656180204438,
+    "stop" : 1656180312248,
+    "duration" : 107810
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1d3ee26bb324f45",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656180545088,
+    "stop" : 1656180653560,
+    "duration" : 108472
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "69a8d603cc4fee33",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656182939836,
+    "stop" : 1656183046886,
+    "duration" : 107050
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b3a69ab016c67367",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656175645470,
+    "stop" : 1656175752839,
+    "duration" : 107369
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bd6ed884ed150c2c",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656207941968,
+    "stop" : 1656208050132,
+    "duration" : 108164
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e0f99d5ed425a569",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656189996067,
+    "stop" : 1656190104154,
+    "duration" : 108087
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7bf6d4608c2074c7",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656160713200,
+    "stop" : 1656160819513,
+    "duration" : 106313
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "86dd1c1813563f35",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656208619018,
+    "stop" : 1656208726843,
+    "duration" : 107825
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "20655acb4247a268",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656202807309,
+    "stop" : 1656202916241,
+    "duration" : 108932
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f40d8724b91f4b05",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656173826271,
+    "stop" : 1656173932609,
+    "duration" : 106338
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "922f28e42bb3e500",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656183392808,
+    "stop" : 1656183504097,
+    "duration" : 111289
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "82d3b7553ab6dfc",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656206108416,
+    "stop" : 1656206218381,
+    "duration" : 109965
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cfcb70eff8556847",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656175181428,
+    "stop" : 1656175299402,
+    "duration" : 117974
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "baba228595f34a08",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656192160809,
+    "stop" : 1656192269160,
+    "duration" : 108351
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ba9ce8fc1f1167e",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656154279143,
+    "stop" : 1656154387147,
+    "duration" : 108004
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c05a09af083a73db",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656173488069,
+    "stop" : 1656173592064,
+    "duration" : 103995
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "92f0f7a8e1fc0cfd",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656187607847,
+    "stop" : 1656187717876,
+    "duration" : 110029
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b88e04b14576afe9",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656160824290,
+    "stop" : 1656160933019,
+    "duration" : 108729
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a4981b4ed53763a",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656206790658,
+    "stop" : 1656206901567,
+    "duration" : 110909
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c463df840d295b58",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656152823446,
+    "stop" : 1656152933851,
+    "duration" : 110405
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a753b62796eb02e1",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656168642861,
+    "stop" : 1656168750105,
+    "duration" : 107244
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2c05107a862ba815",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656153842321,
+    "stop" : 1656153947717,
+    "duration" : 105396
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5127c57d4ed3220d",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656164679962,
+    "stop" : 1656164790210,
+    "duration" : 110248
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f4ed60e899b5e7a7",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656176777647,
+    "stop" : 1656176885367,
+    "duration" : 107720
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e752cb83081c2745",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656165598139,
+    "stop" : 1656165707708,
+    "duration" : 109569
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a7b8d4709393224",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656153394566,
+    "stop" : 1656153506948,
+    "duration" : 112382
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d1244258bde7081e",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656173937409,
+    "stop" : 1656174045644,
+    "duration" : 108235
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eaf8b29c10b37242",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656159694359,
+    "stop" : 1656159800892,
+    "duration" : 106533
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ef67a2e84d48c7e2",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656204968911,
+    "stop" : 1656205077632,
+    "duration" : 108721
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "44dda6efaf5be8ea",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656170562313,
+    "stop" : 1656170669070,
+    "duration" : 106757
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d1fa638e5cc4d745",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656166728548,
+    "stop" : 1656166838093,
+    "duration" : 109545
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f35fc75cc7ed0674",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656193517895,
+    "stop" : 1656193627175,
+    "duration" : 109280
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "72ee4457cd4c5227",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656180658329,
+    "stop" : 1656180766310,
+    "duration" : 107981
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "288a715b20afc63b",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656162286274,
+    "stop" : 1656162394936,
+    "duration" : 108662
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "676a909c7247938f",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656204624311,
+    "stop" : 1656204734201,
+    "duration" : 109890
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9899109a8f5a4a5f",
+  "name" : "C6SP基站绑定解绑",
+  "time" : {
+    "start" : 1656170673824,
+    "stop" : 1656170785459,
+    "duration" : 111635
   },
   "status" : "passed",
   "severity" : "normal"

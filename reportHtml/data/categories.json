@@ -1,5 +1,69 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api-cn.aosulife.com', port=443): Read timed out. (read timeout=10)",
+      "children" : [ {
+        "name" : "C6SP基站绑定解绑",
+        "uid" : "32bfcad625ed9991",
+        "parentUid" : "0192acc9cfdb6f8c548a3ef96f549fe8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1656172816645,
+          "stop" : 1656172933434,
+          "duration" : 116789
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "179" ]
+      }, {
+        "name" : "C6SP基站绑定解绑",
+        "uid" : "a553a793dd4a1f7b",
+        "parentUid" : "0192acc9cfdb6f8c548a3ef96f549fe8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1656172939179,
+          "stop" : 1656172994294,
+          "duration" : 55115
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "180" ]
+      } ],
+      "uid" : "0192acc9cfdb6f8c548a3ef96f549fe8"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.",
+      "children" : [ {
+        "name" : "C6SP基站绑定解绑",
+        "uid" : "d0394327f599c842",
+        "parentUid" : "7a823ebd65a5f17ad39e628108c6e522",
+        "status" : "broken",
+        "time" : {
+          "start" : 1656173039268,
+          "stop" : 1656173443385,
+          "duration" : 404117
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "181" ]
+      }, {
+        "name" : "C6SP基站绑定解绑",
+        "uid" : "59b93d7766228f97",
+        "parentUid" : "7a823ebd65a5f17ad39e628108c6e522",
+        "status" : "broken",
+        "time" : {
+          "start" : 1656174733984,
+          "stop" : 1656175136645,
+          "duration" : 402661
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "193" ]
+      } ],
+      "uid" : "7a823ebd65a5f17ad39e628108c6e522"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }
