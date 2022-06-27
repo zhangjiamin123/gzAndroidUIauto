@@ -1,0 +1,438 @@
+{
+  "uid" : "caf4da6a01276a27",
+  "name" : "C6SP基站绑定解绑",
+  "fullName" : "test_gzAndroidAuto.TestAddDevices#test_addC6SP_station",
+  "historyId" : "664f80f8c3a088d356c53ee137ca9275",
+  "time" : {
+    "start" : 1656180204438,
+    "stop" : 1656180312248,
+    "duration" : 107810
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestAddDevices",
+    "time" : {
+      "start" : 1656152541547,
+      "stop" : 1656152596213,
+      "duration" : 54666
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "step1：在splash页，点击 登录 按钮",
+      "time" : {
+        "start" : 1656152556100,
+        "stop" : 1656152556332,
+        "duration" : 232
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "step2：输入用户名",
+      "time" : {
+        "start" : 1656152556332,
+        "stop" : 1656152561245,
+        "duration" : 4913
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "step3: 输入密码",
+      "time" : {
+        "start" : 1656152562844,
+        "stop" : 1656152566086,
+        "duration" : 3242
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "step4：选择地区",
+      "time" : {
+        "start" : 1656152567024,
+        "stop" : 1656152573568,
+        "duration" : 6544
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "step5：点击 登录 按钮",
+      "time" : {
+        "start" : 1656152577338,
+        "stop" : 1656152578130,
+        "duration" : 792
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d6de3237c6a36cad",
+        "name" : "登录页面",
+        "source" : "d6de3237c6a36cad.jpg",
+        "type" : "image/jpg",
+        "size" : 101563
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "step6: 登录成功",
+      "time" : {
+        "start" : 1656152583817,
+        "stop" : 1656152583824,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2543713d570d0f51",
+        "name" : "登陆成功 进入首页",
+        "source" : "2543713d570d0f51.jpg",
+        "type" : "image/jpg",
+        "size" : 214560
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2,
+    "stepsCount" : 6,
+    "hasContent" : true
+  }, {
+    "name" : "xunit_setup_method_fixture_TestAddDevices",
+    "time" : {
+      "start" : 1656180199816,
+      "stop" : 1656180204435,
+      "duration" : 4619
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_module_fixture_test_gzAndroidAuto",
+    "time" : {
+      "start" : 1656152501387,
+      "stop" : 1656152541546,
+      "duration" : 40159
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "step1：点击右上角的+号，开始执行时间为：2022-06-26 02:03:24",
+      "time" : {
+        "start" : 1656180204439,
+        "stop" : 1656180204613,
+        "duration" : 174
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "step2：选择c6sp套装",
+      "time" : {
+        "start" : 1656180204613,
+        "stop" : 1656180205473,
+        "duration" : 860
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "step3：弹出照相机权限后点击cancel",
+      "time" : {
+        "start" : 1656180205473,
+        "stop" : 1656180206360,
+        "duration" : 887
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "step4：点击Use other methods",
+      "time" : {
+        "start" : 1656180206360,
+        "stop" : 1656180206982,
+        "duration" : 622
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "step5：点击continue",
+      "time" : {
+        "start" : 1656180206982,
+        "stop" : 1656180207737,
+        "duration" : 755
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "step6：继续点击continue",
+      "time" : {
+        "start" : 1656180207738,
+        "stop" : 1656180208427,
+        "duration" : 689
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "step7：继续点击continue",
+      "time" : {
+        "start" : 1656180208428,
+        "stop" : 1656180209073,
+        "duration" : 645
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "step8：等待基站SN出现后，选择基站的SN",
+      "time" : {
+        "start" : 1656180209073,
+        "stop" : 1656180220277,
+        "duration" : 11204
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5a70662274267194",
+        "name" : "success",
+        "source" : "5a70662274267194.jpg",
+        "type" : "image/jpg",
+        "size" : 125501
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "step9：跳转到Name Your HomeBase页面后，点击continue",
+      "time" : {
+        "start" : 1656180220277,
+        "stop" : 1656180233535,
+        "duration" : 13258
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "step10：跳转到绑定成功页面，超时时间是5分钟，每2秒检查一次页面，结束时间为：2022-06-26 02:03:53",
+      "time" : {
+        "start" : 1656180233536,
+        "stop" : 1656180312248,
+        "duration" : 78712
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a61de1068739f37c",
+        "name" : "success",
+        "source" : "a61de1068739f37c.jpg",
+        "type" : "image/jpg",
+        "size" : 84032
+      }, {
+        "uid" : "ab6ef60478481b7a",
+        "name" : "success",
+        "source" : "ab6ef60478481b7a.jpg",
+        "type" : "image/jpg",
+        "size" : 74183
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "3aac1742a002a3c9",
+      "name" : "log",
+      "source" : "3aac1742a002a3c9.txt",
+      "type" : "text/plain",
+      "size" : 25424
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 4,
+    "stepsCount" : 10,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestAddDevices::0",
+    "time" : {
+      "start" : 1656209984228,
+      "stop" : 1656209984575,
+      "duration" : 347
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_method_fixture_TestAddDevices::0",
+    "time" : {
+      "start" : 1656180312250,
+      "stop" : 1656180312314,
+      "duration" : 64
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_module_fixture_test_gzAndroidAuto::0",
+    "time" : {
+      "start" : 1656209984615,
+      "stop" : 1656209985278,
+      "duration" : 663
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "添加设备-配网"
+  }, {
+    "name" : "story",
+    "value" : "C6SP基站绑定后涂鸦状态和aosu状态不一致，涂鸦状态是离线，aosu状态是在线，等待一段时间后状态仍然不同步"
+  }, {
+    "name" : "suite",
+    "value" : "test_gzAndroidAuto"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAddDevices"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-V9T4AUSR"
+  }, {
+    "name" : "thread",
+    "value" : "74536-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_gzAndroidAuto"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "__pytest_repeat_step_number",
+    "value" : "238"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "caf4da6a01276a27.json",
+  "parameterValues" : [ "238" ]
+}
