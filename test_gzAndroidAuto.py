@@ -594,7 +594,7 @@ class TestAddDevices(object):
             try:
                 WebDriverWait(master, timeout=30, poll_frequency=2).until(
                     lambda x: x.find_element_by_xpath('//android.widget.TextView[@text="%s"]' % home_base_sn))
-            except TimeoutException:    # 此处不能写NoSuchElementException:
+            except TimeoutException:  # 此处不能写NoSuchElementException:
                 logging.error('没有找到要绑定的基站sn: %s' % home_base_sn)
                 ts_fail = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
                 master.save_screenshot('./report/C6SP/fail_%s.png' % ts_fail)
@@ -641,7 +641,8 @@ class TestAddDevices(object):
                 master.find_element_by_xpath('//android.widget.Button[@text="CONTINUE"]').click()
                 master.implicitly_wait(10)
 
-        with allure.step('step10：跳转到绑定成功页面，超时时间是5分钟，每2秒检查一次页面，结束时间为：%s' % time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())):
+        with allure.step(
+                'step10：跳转到绑定成功页面，超时时间是5分钟，每2秒检查一次页面，结束时间为：%s' % time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())):
             try:
                 WebDriverWait(master, timeout=300, poll_frequency=2).until(
                     lambda x: x.find_element_by_id('com.glazero.android:id/subtitle'))
@@ -684,8 +685,8 @@ class TestAddDevices(object):
 
                 # 绑定成功后，检查设备的涂鸦状态是否为在线，如果涂鸦端不在线，问题复现，退出pytest
                 rsp = gz_public.aosu_admin_get_dev_info(home_base_sn)
-                logging.info("aosu状态为："+str(rsp.json()['data']['list'][0]['online']))
-                logging.info("tuya状态为："+str(rsp.json()['data']['list'][0]['tuyayOnline']))
+                logging.info("aosu状态为：" + str(rsp.json()['data']['list'][0]['online']))
+                logging.info("tuya状态为：" + str(rsp.json()['data']['list'][0]['tuyayOnline']))
                 print("aosu状态为：", rsp.json()['data']['list'][0]['online'])
                 print("tuya状态为：", rsp.json()['data']['list'][0]['tuyayOnline'])
                 if rsp.json()['data']['list'][0]['tuyayOnline'] is False:
@@ -848,7 +849,118 @@ class TestUserCenter(object):
         master.implicitly_wait(10)
 
 
+@allure.feature('设备列表/首页 模块')
+class TestDeviceList(object):
+    # 执行这个测试类，前提条件是要登录，登录后才能执行这组用例
+    # 登录前先要启动app
+    # 那么就要使用setup_class
+    @staticmethod
+    def setup_class():
+        master.close_app()
+        master.implicitly_wait(10)
+        master.launch_app()
+        master.implicitly_wait(10)
+
+        # 登录状态下启动app 进入首页 activity 是：.SplashActivity，不是：.account.login.LoginActivity，所以不能通过activity判断是否在首页
+        # 通过登录后首页左上角的menu图标判断
+        if not gz_public.isElementPresent(driver=master, by="id", value="com.glazero.android:id/img_menu"):
+            TestGzLogin.test_gzLogin(self=NotImplemented)
+            master.implicitly_wait(10)
+
+    @staticmethod
+    def setup_method(self):
+        # 检查屏幕是否点亮
+        if not initPhone.InitPhone.isAwake():
+            # 26 电源键
+            initPhone.InitPhone.keyEventSend(26)
+            time.sleep(1)
+
+        # 在首页的话下滑刷新一下设备列表
+        if gz_public.isElementPresent(driver=master, by="id", value="com.glazero.android:id/img_menu") is True:
+            gz_public.swipe_down(driver=master)
+            # 等待下来刷新完成
+            time.sleep(3)
+
+    @staticmethod
+    def teardown_method(self):
+        pass
+
+    @allure.title('C2E校准')
+    @allure.story('C2E重复校准是否会出现问题')
+    def test_C2E_Calibrate(self, dev_name='IndoorCam'):
+        # 在首页的话执行step1-3
+        if gz_public.isElementPresent(driver=master, by="id",
+                                      value="com.glazero.android:id/img_menu") is True:
+            with allure.step('step1: 在设备列表中滑动找到C2E设备（默认名字是IndoorCam，可在参数中修改名字）'):
+                master.find_element_by_android_uiautomator(
+                    'new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text('
+                    '"%s")).scrollToEnd(10,5)' % dev_name)
+                master.implicitly_wait(10)
+
+            with allure.step('step2: 点击设备名称，例如，IndoorCam'):
+                master.find_element_by_xpath('//android.widget.TextView[@text="%s"]' % dev_name).click()
+                master.implicitly_wait(10)
+                time.sleep(3)  # 等待开流页面加载完成
+
+            with allure.step('step3：点击Holder'):
+                master.find_element_by_xpath('//android.widget.TextView[@text="Holder"]').click()
+                master.implicitly_wait(10)
+                time.sleep(2)  # 等待Holder菜单加载完成
+
+        # 如果停留在校准页面，那么就直接点击校准按钮，执行step4-5
+        if gz_public.isElementPresent(driver=master, by="id",
+                                      value="com.glazero.android:id/btn_calibration") is True:
+            with allure.step('step4：点击Calibrate'):
+                master.find_element_by_xpath('//android.widget.TextView[@text="Calibrate"]').click()
+                master.implicitly_wait(10)
+                time.sleep(1)
+
+                # 点击校准后，有可能会弹出提示弹窗（turn on the tracking, and the camera will follow the moving object），发现后点击“GOT
+                # IT”，关闭弹窗
+                if gz_public.isElementPresent(driver=master, by="id",
+                                              value="com.glazero.android:id/positive_btn") is True:
+                    master.find_element_by_id("com.glazero.android:id/positive_btn").click()
+                    master.implicitly_wait(10)
+
+                # 检验校准过程中的状态
+                WebDriverWait(master, timeout=30, poll_frequency=1).until(lambda x: x.find_element_by_id('com.glazero'
+                                                                                                         '.android:id'
+                                                                                                         '/pb_calibtating'))
+                # master.find_element_by_xpath('//android.widget.ProgressBar[@index=3]')
+                # 添加日志
+                logging.info('校准中')
+                # 添加截图
+                calibrating = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+                master.save_screenshot('./report/C2E/calibrating_%s.png' % calibrating)
+                time.sleep(3)
+                allure.attach.file("./report/C2E/calibrating_%s.png" % calibrating, name="calibrating",
+                                   attachment_type=allure.attachment_type.JPG)
+                master.implicitly_wait(10)
+
+            with allure.step('step5：等待校准完成，校准按钮变成初始状态'):
+                # 等待校准过程中的图标消失
+                WebDriverWait(master, timeout=50, poll_frequency=1).until_not(
+                    lambda x: x.find_element_by_id('com.glazero.android:id/pb_calibtating'))
+                # 添加截图
+                calibrate_after = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+                master.save_screenshot('./report/C2E/calibrate_after_%s.png' % calibrate_after)
+                # 添加日志
+                logging.info('校准完成')
+                time.sleep(3)
+                allure.attach.file("./report/C2E/calibrate_after_%s.png" % calibrate_after, name="calibrate_after",
+                                   attachment_type=allure.attachment_type.JPG)
+                master.implicitly_wait(10)
+
+    @staticmethod
+    def teardown_class():
+        pass
+        # master.close_app()
+        # master.implicitly_wait(10)
+
+
 if __name__ == '__main__':
     # pytest.main(["-q", "-s", "-ra", "test_gzAndroidAuto.py::TestUserCenter::test_logOut"])
-    pytest.main(["-q", "-s", "-ra", "--count=%d" % 500, "test_gzAndroidAuto.py::TestAddDevices::test_addC6SP_station",
-                 "--alluredir=./report/C6SP"])
+    # pytest.main(["-q", "-s", "-ra", "--count=%d" % 500, "test_gzAndroidAuto.py::TestAddDevices::test_addC6SP_station",
+    #             "--alluredir=./report/C6SP"])
+    pytest.main(["-q", "-s", "-ra", "--count=%d" % 1000, "test_gzAndroidAuto.py::TestDeviceList::test_C2E_Calibrate",
+                 "--alluredir=./report/C2E"])
