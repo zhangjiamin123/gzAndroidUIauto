@@ -1,0 +1,44 @@
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/element {"using": "id", "value": "com.glazero.android:id/img_menu"}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/element HTTP/1.1" 404 916
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/element {"using": "id", "value": "com.glazero.android:id/img_menu"}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/element HTTP/1.1" 404 916
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/element {"using": "id", "value": "com.glazero.android:id/btn_calibration"}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/element HTTP/1.1" 200 137
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/element {"using": "xpath", "value": "//android.widget.TextView[@text=\"Calibrate\"]"}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/element HTTP/1.1" 200 137
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/element/00000000-0000-029a-ffff-ffff00000272/click {"id": "00000000-0000-029a-ffff-ffff00000272"}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/element/00000000-0000-029a-ffff-ffff00000272/click HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/timeouts {"implicit": 10000}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/timeouts HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/element {"using": "id", "value": "com.glazero.android:id/positive_btn"}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/element HTTP/1.1" 404 916
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/element {"using": "id", "value": "com.glazero.android:id/pb_calibtating"}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/element HTTP/1.1" 200 137
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+INFO     root:test_gzAndroidAuto.py:931 校准中
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 GET http://127.0.0.1:4723/wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/screenshot {}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "GET /wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/screenshot HTTP/1.1" 200 1240352
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/timeouts {"implicit": 10000}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/timeouts HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/element {"using": "id", "value": "com.glazero.android:id/pb_calibtating"}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/element HTTP/1.1" 200 137
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/element {"using": "id", "value": "com.glazero.android:id/pb_calibtating"}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/element HTTP/1.1" 404 916
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 GET http://127.0.0.1:4723/wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/screenshot {}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "GET /wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/screenshot HTTP/1.1" 200 1256338
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+INFO     root:test_gzAndroidAuto.py:948 校准完成
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/timeouts {"implicit": 10000}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/660534cd-5dea-49ce-b872-58f1612cf3d8/timeouts HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request

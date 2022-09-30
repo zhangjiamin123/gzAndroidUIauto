@@ -1,0 +1,26 @@
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/90ca8a12-6103-4153-a61e-fcfabc537fd2/element {"using": "id", "value": "com.glazero.android:id/img_menu"}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/90ca8a12-6103-4153-a61e-fcfabc537fd2/element HTTP/1.1" 500 2435
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/90ca8a12-6103-4153-a61e-fcfabc537fd2/appium/app/launch {}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/90ca8a12-6103-4153-a61e-fcfabc537fd2/appium/app/launch HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 GET http://127.0.0.1:4723/wd/hub/session/90ca8a12-6103-4153-a61e-fcfabc537fd2/appium/device/current_activity {}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "GET /wd/hub/session/90ca8a12-6103-4153-a61e-fcfabc537fd2/appium/device/current_activity HTTP/1.1" 200 27
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/90ca8a12-6103-4153-a61e-fcfabc537fd2/element {"using": "id", "value": "com.glazero.android:id/img_menu"}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/90ca8a12-6103-4153-a61e-fcfabc537fd2/element HTTP/1.1" 500 2435
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/90ca8a12-6103-4153-a61e-fcfabc537fd2/element {"using": "id", "value": "com.glazero.android:id/img_add_device"}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/90ca8a12-6103-4153-a61e-fcfabc537fd2/element HTTP/1.1" 500 2435
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    urllib3.connectionpool:connectionpool.py:971 Starting new HTTPS connection (1): api-cn.aosulife.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:452 https://api-cn.aosulife.com:443 "POST /v1/user/login?uuid=android_ui_auto&t=001 HTTP/1.1" 200 261
+DEBUG    urllib3.connectionpool:connectionpool.py:971 Starting new HTTPS connection (1): api-cn.aosulife.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:452 https://api-cn.aosulife.com:443 "POST /v1/bind/unbind?uuid=android_ui_auto&t=003 HTTP/1.1" 200 59
+INFO     root:gz_public.py:178 {'errno': 701, 'errmsg': '已解绑或者未绑定', 'data': {}}
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/90ca8a12-6103-4153-a61e-fcfabc537fd2/element {"using": "id", "value": "com.glazero.android:id/img_menu"}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/90ca8a12-6103-4153-a61e-fcfabc537fd2/element HTTP/1.1" 500 2435
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/90ca8a12-6103-4153-a61e-fcfabc537fd2/element {"using": "id", "value": "com.glazero.android:id/tv_tip"}
+DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/90ca8a12-6103-4153-a61e-fcfabc537fd2/element HTTP/1.1" 500 2435
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
