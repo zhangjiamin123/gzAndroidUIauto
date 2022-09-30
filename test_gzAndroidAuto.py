@@ -288,7 +288,7 @@ class TestAddDevices(object):
         # 调用解绑接口，默认是中国区‘api-cn.aosulife.com’
         # gz_public._unbind('V8P1AH110002353', 1, 1)
         # 335
-        # gz_public._unbind('C2E2BH110000278', 1, 1)
+        gz_public._unbind('C2E2BH110000278', 1, 1)
         # 337
         # gz_public._unbind('C2E2BH110000233', 1, 1)
         # C6SP 基站
@@ -960,7 +960,15 @@ class TestDeviceList(object):
 
 if __name__ == '__main__':
     # pytest.main(["-q", "-s", "-ra", "test_gzAndroidAuto.py::TestUserCenter::test_logOut"])
+
+    # C6SP 绑定
     # pytest.main(["-q", "-s", "-ra", "--count=%d" % 500, "test_gzAndroidAuto.py::TestAddDevices::test_addC6SP_station",
     #             "--alluredir=./report/C6SP"])
-    pytest.main(["-q", "-s", "-ra", "--count=%d" % 1000, "test_gzAndroidAuto.py::TestDeviceList::test_C2E_Calibrate",
+
+    # C2E 绑定
+    pytest.main(["-q", "-s", "-ra", "--count=%d" % 500, "test_gzAndroidAuto.py::TestAddDevices::test_addC2E",
                  "--alluredir=./report/C2E"])
+
+    # C2E 校准
+    # pytest.main(["-q", "-s", "-ra", "--count=%d" % 1000, "test_gzAndroidAuto.py::TestDeviceList::test_C2E_Calibrate",
+    #             "--alluredir=./report/C2E"])
