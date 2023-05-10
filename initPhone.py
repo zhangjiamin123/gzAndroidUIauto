@@ -22,7 +22,7 @@ class InitPhone(object):
     def getPackageName():
         global packageName
         appPackageName = list(
-            os.popen('aapt dump badging ' + './resource/gz-app-debug-1.4.0.2864-1654561808980.apk').readlines())
+            os.popen('aapt dump badging ' + './resource/aosu_app_android_debug_1.11.18.5119_1683367354540.apk').readlines())
         appPackage = re.findall(r'\'com\w*.*?\'', appPackageName[0])[0]
         packageName = appPackage[1:-1]
         return packageName
@@ -50,7 +50,8 @@ class InitPhone(object):
 
     @staticmethod
     def installApp():
-        os.system('adb -s ' + deviceId + ' install ' + './resource/gz-app-debug-1.4.0.2864-1654561808980.apk')
+        os.system('adb -s ' + deviceId + ' install ' + './resource/aosu_app_android_debug_1.11.18.5119_1683367354540'
+                                                       '.apk')
         time.sleep(5)
 
     @staticmethod

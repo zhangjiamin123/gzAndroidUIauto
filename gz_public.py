@@ -1,5 +1,6 @@
 import random
 import os
+import re
 import yaml
 import initPhone
 import requests
@@ -137,8 +138,7 @@ def _headers():
 
 
 def aosu_headers():
-    headers = {}
-    headers['Content-Type'] = 'application/x-www-form-urlencoded'
+    headers = {'Content-Type': 'application/x-www-form-urlencoded'}
     return headers
 
 
@@ -182,6 +182,32 @@ def _unbind(sn='V8P1AH110002353', dev_type=1, delete_cloud_data=0, gz_host=gzHos
         print('已解绑：', rsp.json())
 
 
+def get_devices_list(model='V8P', gz_host=gzHostCnTmp):
+    """
+    获取设备列表中指定的model的设备，并将其返回
+    :param gz_host: 域名，默认为中国区
+    :param model: 默认是V8P
+    :return: 将设备的名称返回
+    """
+    pwd_md5 = _md5(pwd)
+    _login(gz_host, _email=email, _region='CN', country_code='86', _password=pwd_md5, _type=1)
+    url = 'https://' + gz_host + '/v1/dev/getList' + '?' + 'uuid=' + 'android_ui_auto' + '&' + 't=' + '004'
+    headers = _headers()
+    headers['Gz-Sid'] = SID
+    headers['Gz-Uid'] = UID
+    rsp = requests.post(url, headers=headers, timeout=(10, 10), verify=False)
+    logging.info(rsp.json())
+
+    # 变量设备列表，筛选指定设备类型的设备名称并返回，例如，默认类型是V8P
+    devices = list(rsp.json()["data"]["list"])
+    if devices:
+        for device in devices:
+            # 获取指定设备类型的设备的名称，并且是主人设备，并且是在线的设备 满足条件的第一个
+            if device["model"] == model and device["role"] == 0 and device["online"] == 1:
+                dev_name = device["name"]
+                return dev_name
+
+
 def aosu_admin_login(aosu_host='admin-cn.aosulife.com', pid='glazero', username='zhangjiamin', password='123'):
     pwd_md5 = _md5(password)
     headers = aosu_headers()
@@ -218,3 +244,35 @@ def get_dsc(device="SamsungA51"):
     for content in data:
         if device in content["desc"]:
             return content
+
+
+def get_app_log(log_type, log_date, numbers_of_lines=1000):
+    """
+    获取app日志或者涂鸦日志
+    :param log_type: app 或者 ty
+    :param log_date: 日志文件中的日期例如，20230510，用于选择对应的日志文件
+    :param numbers_of_lines：返回日志的行数，默认是最新的1000行
+    :结果: 将重定向的日志文件pull到本地，作为allure的attachment
+    """
+    if log_type == 'app':
+        file_name = 'glazero_app_android_' + str(log_date) + '.log'
+    elif log_type == 'ty':
+        file_name = 'glazero_app_android_ty_' + str(log_date) + '.log'
+
+    # 获取device id
+    devs_id = list(os.popen('adb devices').readlines())
+    dev_id = re.findall(r'^\w*\b', devs_id[1])[0]
+
+    # 进入adb shell后进入日志目录，获取对应日期和对应日志类型的的日志
+    cmd = 'adb -s %s shell "cd /sdcard/Android/data/com.glazero.android/files/log && ls && cat %s | tail -n %d > ' \
+          '%s_log.log && ls"' % (dev_id, file_name, numbers_of_lines, log_type)
+    with os.popen(cmd, 'r') as f_log:
+        log_files = f_log.readlines()
+        print('手机端log目录：', log_files)
+
+    # 将到出的日志pull到本地
+    cmd = 'adb pull /sdcard/Android/data/com.glazero.android/files/log/%s_log.log ./report/V8P/log_attch' % log_type
+    with os.popen(cmd, 'r') as f_log:
+        redirect_file = f_log.readlines()
+        print('导出完成：', redirect_file)
+

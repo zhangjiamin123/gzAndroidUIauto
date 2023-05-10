@@ -166,6 +166,11 @@ class TestGzLogin(object):
 
     @allure.story('输入用户名和密码登录aosu app')
     def test_gzLogin(self, user_name=gz_public.email, pass_word=gz_public.pwd, region=gz_public.REGION):
+        # 点击 aosu 图标7次，在地区列表中出现中国
+        for ii in range(1, 8):
+            master.find_elements_by_class_name("android.widget.ImageView")[0].click()
+            master.implicitly_wait(1)
+
         with allure.step('step1：在splash页，点击 登录 按钮'):
             master.find_element_by_id("com.glazero.android:id/splash_login").click()
             master.implicitly_wait(10)
@@ -191,14 +196,19 @@ class TestGzLogin(object):
         master.hide_keyboard()
 
         with allure.step('step4：选择地区'):
-            master.find_elements_by_id("com.glazero.android:id/edit_text")[2].click()
-            master.implicitly_wait(10)
-            master.find_element_by_android_uiautomator(
-                'new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text("%s"))' % region)
-            master.implicitly_wait(10)
-            master.find_element_by_xpath(
-                '//android.widget.TextView[@text="%s"]' % region).click()  # 此时只能写类名
-            master.implicitly_wait(10)
+            # 如果默认是指定的地区，那么就直接点击登录
+            if master.find_elements_by_id("com.glazero.android:id/edit_text")[2].text[-3:] == region:
+                time.sleep(1)
+            else:
+                # 如果默认不是指定的地区，那么就在地区列表中选择
+                master.find_elements_by_id("com.glazero.android:id/edit_text")[2].click()
+                master.implicitly_wait(10)
+                master.find_element_by_android_uiautomator(
+                    'new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text("%s"))' % region)
+                master.implicitly_wait(10)
+                master.find_element_by_xpath(
+                    '//android.widget.TextView[@text="%s"]' % region).click()  # 此时只能写类名
+                master.implicitly_wait(10)
         # 点击登录按钮之前截图
         time.sleep(3)
         ts = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
@@ -206,7 +216,8 @@ class TestGzLogin(object):
         master.implicitly_wait(10)
 
         with allure.step('step5：点击 登录 按钮'):
-            allure.attach.file("./report/login_%s.png" % ts, name="登录页面", attachment_type=allure.attachment_type.JPG)
+            allure.attach.file("./report/login_%s.png" % ts, name="登录页面",
+                               attachment_type=allure.attachment_type.JPG)
             master.find_element_by_id("com.glazero.android:id/button").click()
             master.implicitly_wait(10)
 
@@ -216,7 +227,8 @@ class TestGzLogin(object):
         master.implicitly_wait(10)
 
         with allure.step('step6: 登录成功'):
-            allure.attach.file("./report/homePage.png", name="登陆成功 进入首页", attachment_type=allure.attachment_type.JPG)
+            allure.attach.file("./report/homePage.png", name="登陆成功 进入首页",
+                               attachment_type=allure.attachment_type.JPG)
 
         # 登录后进入首页，有可能会弹出低电量的弹窗，发现后点击“知道了”关闭弹窗
         if gz_public.isElementPresent(driver=master, by="id",
@@ -231,9 +243,11 @@ class TestGzLogin(object):
                 master.implicitly_wait(10)
 
         # 断言是否进入首页，关键元素是：菜单按钮、logo、添加设备按钮、设备tab、回放tab、在线客服tab
+        # 20230509：以下图标在1.11.18版本中已经发生变化
         assert master.current_activity in (".main.MainActivity", ".account.login.LoginActivity")
         assert master.find_element_by_id("com.glazero.android:id/img_menu")
-        assert master.find_element_by_id("com.glazero.android:id/img_logo")
+        # 20230509：这个图标没有了
+        # assert master.find_element_by_id("com.glazero.android:id/img_logo")
         assert master.find_element_by_id("com.glazero.android:id/img_add_device")
         assert master.find_element_by_id("com.glazero.android:id/img_tab_device")
         assert master.find_elements_by_id("com.glazero.android:id/img_tab_playback")
@@ -247,9 +261,13 @@ class TestGzLogin(object):
 
 @allure.feature('添加设备-配网')
 class TestAddDevices(object):
-    # 执行这个测试类，前提条件是要登录，登录后才能执行这组用例
-    # 登录前先要启动app
-    # 那么就要使用setup_class
+    """
+    前提：
+    1、执行这个测试类，前提条件是要登录，登录后才能执行这组用例
+    2、登录前先要启动app
+    3、那么就要使用setup_class
+    """
+
     @staticmethod
     def setup_class():
         master.close_app()
@@ -316,7 +334,8 @@ class TestAddDevices(object):
     @allure.title('V8P 绑定-解绑')
     @allure.story('用户循环测试V8P的绑定和解绑')
     def test_addV8P(self, ssid='11111111', pwd='12345678'):
-        with allure.step('step1：点击右上角的+号，开始执行时间为：%s' % time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())):
+        with allure.step(
+                'step1：点击右上角的+号，开始执行时间为：%s' % time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())):
             master.find_element_by_id('com.glazero.android:id/img_add_device').click()
             master.implicitly_wait(10)
 
@@ -402,7 +421,8 @@ class TestAddDevices(object):
             assert master.find_element_by_id('com.glazero.android:id/button').is_enabled() is True
 
         with allure.step(
-                'step13：等待配网成功页面出现，超时时间是7分钟，每2秒检查一次页面，结束时间为：%s' % time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())):
+                'step13：等待配网成功页面出现，超时时间是7分钟，每2秒检查一次页面，结束时间为：%s' % time.strftime(
+                    "%Y-%m-%d %H:%M:%S", time.localtime())):
             WebDriverWait(master, timeout=420, poll_frequency=2).until(
                 lambda x: x.find_element_by_xpath('//android.widget.TextView[@text="Connected successfully"]'))
         # 出现后点击下一步
@@ -436,7 +456,8 @@ class TestAddDevices(object):
     @allure.title('C2E 绑定-解绑')
     @allure.story('用户循环测试C2E的绑定和解绑，每次绑定间隔1个小时')
     def test_addC2E(self, ssid='11111111-5g', pwd='12345678'):
-        with allure.step('step1：点击右上角的+号，开始执行时间为：%s' % time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())):
+        with allure.step(
+                'step1：点击右上角的+号，开始执行时间为：%s' % time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())):
             master.find_element_by_id('com.glazero.android:id/img_add_device').click()
             master.implicitly_wait(10)
 
@@ -514,7 +535,8 @@ class TestAddDevices(object):
                 master.implicitly_wait(10)
 
         with allure.step(
-                'step10：等待配网成功页面出现，超时时间是7分钟，每2秒检查一次页面，结束时间为：%s' % time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())):
+                'step10：等待配网成功页面出现，超时时间是7分钟，每2秒检查一次页面，结束时间为：%s' % time.strftime(
+                    "%Y-%m-%d %H:%M:%S", time.localtime())):
             try:
                 WebDriverWait(master, timeout=420, poll_frequency=2).until(
                     lambda x: x.find_element_by_xpath('//android.widget.TextView[@text="Connected successfully"]'))
@@ -562,7 +584,8 @@ class TestAddDevices(object):
     @allure.title('C6SP基站绑定解绑')
     @allure.story('C6SP基站绑定后涂鸦状态和aosu状态不一致，涂鸦状态是离线，aosu状态是在线，等待一段时间后状态仍然不同步')
     def test_addC6SP_station(self, ssid='11111111-5g', pwd='12345678', home_base_sn='H1L2AH110000650'):
-        with allure.step('step1：点击右上角的+号，开始执行时间为：%s' % time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())):
+        with allure.step(
+                'step1：点击右上角的+号，开始执行时间为：%s' % time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())):
             master.find_element_by_id('com.glazero.android:id/img_add_device').click()
             master.implicitly_wait(10)
 
@@ -642,7 +665,8 @@ class TestAddDevices(object):
                 master.implicitly_wait(10)
 
         with allure.step(
-                'step10：跳转到绑定成功页面，超时时间是5分钟，每2秒检查一次页面，结束时间为：%s' % time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())):
+                'step10：跳转到绑定成功页面，超时时间是5分钟，每2秒检查一次页面，结束时间为：%s' % time.strftime(
+                    "%Y-%m-%d %H:%M:%S", time.localtime())):
             try:
                 WebDriverWait(master, timeout=300, poll_frequency=2).until(
                     lambda x: x.find_element_by_id('com.glazero.android:id/subtitle'))
@@ -958,6 +982,166 @@ class TestDeviceList(object):
         # master.implicitly_wait(10)
 
 
+@allure.feature("开流专项")
+class TestOpenFlow(object):
+    """
+    20230424 zhang jia min
+    开流专项：多次开流、长时间开流
+    设备：V8S C2E
+    手机：三星、moto
+    前提：
+    1、执行这个测试类，前提条件是要登录，登录后才能执行这组用例
+    2、登录前先要启动app
+    3、那么就要使用setup_class
+    """
+    # 在pytest中不能使用__init__(self, dev_name)方法，所以在setup_method中采用全局变量的方式获取设备名称
+    @staticmethod
+    def setup_class():
+        master.close_app()
+        master.implicitly_wait(10)
+        master.launch_app()
+        master.implicitly_wait(10)
+
+        # 登录状态下启动app 进入首页 activity 是：.SplashActivity，不是：.account.login.LoginActivity，所以不能通过activity判断是否在首页
+        # 通过登录后首页左上角的menu图标判断
+        if not gz_public.isElementPresent(driver=master, by="id", value="com.glazero.android:id/img_menu"):
+            TestGzLogin.test_gzLogin(self=NotImplemented)
+            master.implicitly_wait(10)
+
+    @staticmethod
+    def setup_method(self):
+        # 检查屏幕是否点亮
+        if not initPhone.InitPhone.isAwake():
+            # 26 电源键
+            initPhone.InitPhone.keyEventSend(26)
+            time.sleep(1)
+
+        # 不在首页的话 启动一下app
+        if gz_public.isElementPresent(driver=master, by="id", value="com.glazero.android:id/img_menu") is False:
+            master.launch_app()
+            master.wait_activity("com.glazero.android.SplashActivity", 2, 2)
+            time.sleep(3)
+
+        # 在首页的话下滑刷新一下设备列表
+        if gz_public.isElementPresent(driver=master, by="id", value="com.glazero.android:id/img_menu") is True:
+            gz_public.swipe_down(driver=master)
+            # 等待下来刷新完成
+            time.sleep(3)
+
+    @allure.title('V8P 开流')
+    @allure.story('用户循环测试V8P的开流-关流，即多次开流')
+    def test_v8p_open_flow(self):
+        """
+        :前提条件：① 账号下要绑定V8P设备；② 关闭消息通知，不要弹push，会遮挡按钮的点击
+        :设备为在线状态，可以开流
+        :网络稳定，可以考虑放在屏蔽箱里执行
+        :电量充足，不能关机
+        :如果中间有升级弹窗出现，点击取消或忽略本次升级，其他弹窗类似
+        """
+        # 获取v8p设备的名字
+        dev_name = gz_public.get_devices_list(model='V8P')
+
+        with allure.step('step1: 在设备列表中滑动找到要开流的设备，例如，v8p'):
+            master.find_element_by_android_uiautomator(
+                'new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text('
+                '"%s")).scrollToEnd(10,5)' % dev_name)
+            master.implicitly_wait(10)
+
+            # 确认找到了设备
+            assert master.find_element_by_id('com.glazero.android:id/device_name').text == dev_name
+
+        with allure.step('step2: 点击设备名称，例如，可视门铃Pro'):
+            master.find_element_by_xpath('//android.widget.TextView[@text="%s"]' % dev_name).click()
+            master.implicitly_wait(10)
+
+            # 确认进入了指定设备的开流页面，页面title应为设备名称
+            assert master.find_element_by_id('com.glazero.android:id/tv_title').text == dev_name
+
+        with allure.step('step3: 进入指定设备的开流页面后开流40秒，开始时间点为：%s' % time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())):
+
+            # 实时视频加载中… 等待3秒
+            if gz_public.isElementPresent(driver=master, by="id",
+                                              value="com.glazero.android:id/tv_live_play_loading") is True:
+                time.sleep(3)
+
+            # 如果出现：当前网络不可用，请检查网络连接，点击：刷新重试
+            if gz_public.isElementPresent(driver=master, by="id",
+                                              value="com.glazero.android:id/bt_play_retry") is True:
+                master.find_element_by_id('com.glazero.android:id/bt_play_retry').click()
+                master.implicitly_wait(10)
+
+            # 开流开始后 截一张图
+            start_flow = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+            master.save_screenshot('./report/V8P/start_flow_%s.png' % start_flow)
+            time.sleep(3)
+
+            # 将截图添加到报告中
+            allure.attach.file("./report/V8P/start_flow_%s.png" % start_flow, name="start flow",
+                                   attachment_type=allure.attachment_type.JPG)
+            master.implicitly_wait(10)
+
+            # 开流40秒
+            for ii in range(1, 3):
+                # 如果出现：长时间查看实时视频会加速门铃电量消耗，是否为您退出实时视频？，点击：继续观看
+                if gz_public.isElementPresent(driver=master, by="id",
+                                                  value="com.glazero.android:id/liveplay_power_prompt_got_it") is True:
+                    master.find_element_by_id('com.glazero.android:id/liveplay_power_prompt_got_it').click()
+
+        with allure.step('step4：点击页面左上角的 返回，结束开流，结束时间点为：%s' % time.strftime("%Y-%m-%d %H:%M:%S",
+                                                                                                    time.localtime())):
+            # 开流结束时 截一张图：
+            close_flow = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+            master.save_screenshot('./report/V8P/close_flow_%s.png' % close_flow)
+            time.sleep(3)
+
+            # 将截图添加到报告中
+            allure.attach.file("./report/V8P/close_flow_%s.png" % close_flow, name="close flow",
+                                   attachment_type=allure.attachment_type.JPG)
+            master.implicitly_wait(10)
+
+            # 开流失败判定条件及处理：
+            # ①开流40秒后如果播放器上的控件状态为不可用，即，视频质量切换、录像、截屏、静音的enabled is false；
+            # ②或者开流40秒后如果app崩溃了，找不到播放器上的控件都视为开流失败；
+            # ③截取app日志最新1000行、截取ty日志最新1000行，添加到allure的附件当中；
+            if master.find_element_by_id("com.glazero.android:id/btn_in_video_clarity_hd").is_enabled() is False and \
+                    master.find_element_by_id("com.glazero.android:id/btn_record_start").is_enabled() is False and \
+                    master.find_element_by_id("com.glazero.android:id/btn_snapshot").is_enabled() is False and \
+                    master.find_element_by_id("com.glazero.android:id/btn_unmute").is_enabled() is False:
+                current_time = time.strftime("%Y%m%d", time.localtime())
+
+                # 获取app日志
+                gz_public.get_app_log('app', current_time, 1000)
+                # 将日志添加到报告中
+                allure.attach.file("./report/V8P/log_attch/app_log.log", name="app log", attachment_type=allure.attachment_type.TEXT)
+                master.implicitly_wait(10)
+
+                # 获取ty日志
+                gz_public.get_app_log('ty', current_time, 1000)
+                # 将日志添加到报告中
+                allure.attach.file("./report/V8P/log_attch/ty_log.log", name="ty log", attachment_type=allure.attachment_type.TEXT)
+                master.implicitly_wait(10)
+
+            elif gz_public.isElementPresent(driver=master, by="id", value="com.glazero.android:id"
+                                                                          "/btn_in_video_clarity_hd") is False and \
+                    gz_public.isElementPresent(driver=master, by="id",
+                                               value="com.glazero.android:id/btn_record_start") is False:
+                current_time = time.strftime("%Y%m%d", time.localtime())
+                # 获取app日志
+                gz_public.get_app_log('app', current_time, 1000)
+                # 获取ty日志
+                gz_public.get_app_log('ty', current_time, 1000)
+
+            # 点击左上角的 返回按钮
+            master.find_element_by_id('com.glazero.android:id/btn_back').click()
+            master.implicitly_wait(10)
+
+            # 确认回到了首页
+            assert master.find_element_by_id("com.glazero.android:id/img_tab_device")
+
+    def test_addV8S(self):
+        pass
+
+
 if __name__ == '__main__':
     # pytest.main(["-q", "-s", "-ra", "test_gzAndroidAuto.py::TestUserCenter::test_logOut"])
 
@@ -966,9 +1150,13 @@ if __name__ == '__main__':
     #             "--alluredir=./report/C6SP"])
 
     # C2E 绑定
-    pytest.main(["-q", "-s", "-ra", "--count=%d" % 500, "test_gzAndroidAuto.py::TestAddDevices::test_addC2E",
-                 "--alluredir=./report/C2E"])
+    # pytest.main(["-q", "-s", "-ra", "--count=%d" % 500, "test_gzAndroidAuto.py::TestAddDevices::test_addC2E",
+    #              "--alluredir=./report/C2E"])
 
     # C2E 校准
     # pytest.main(["-q", "-s", "-ra", "--count=%d" % 1000, "test_gzAndroidAuto.py::TestDeviceList::test_C2E_Calibrate",
     #             "--alluredir=./report/C2E"])
+
+    # V8P 开流
+    pytest.main(["-q", "-s", "-ra", "--count=%d" % 500, "test_gzAndroidAuto.py::TestOpenFlow::test_v8p_open_flow",
+                 "--alluredir=./report/V8P"])
