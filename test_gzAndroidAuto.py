@@ -27,8 +27,8 @@ devices = ['SamsungA51', 'moto_z4']
 
 dev_tmp = []
 
-for i in devices:
-    tmp = get_dsc(device=i)
+for device in devices:
+    tmp = get_dsc(device=device)
     dev_tmp.append(tmp)
 
 
@@ -61,30 +61,30 @@ def setup_module():
     # slave.set_network_connection(ConnectionType.WIFI_ONLY)
 
     # 检查屏幕是否点亮
-    if not initPhone.InitPhone.isAwake():
+    if not initPhone.isAwake():
         # 26 电源键
-        initPhone.InitPhone.keyEventSend(26)
+        initPhone.keyEventSend(26)
         # 82 解锁键 去掉密码后可以注释掉下面的code
-        # initPhone.InitPhone.keyEventSend(82)
+        # initPhone.keyEventSend(82)
         # 1
-        # initPhone.InitPhone.keyEventSend(8)
+        # initPhone.keyEventSend(8)
         # 2
-        # initPhone.InitPhone.keyEventSend(9)
+        # initPhone.keyEventSend(9)
         # 3
-        # initPhone.InitPhone.keyEventSend(10)
+        # initPhone.keyEventSend(10)
         # 4
-        # initPhone.InitPhone.keyEventSend(11)
+        # initPhone.keyEventSend(11)
         # 回车键
-        # initPhone.InitPhone.keyEventSend(66)
+        # initPhone.keyEventSend(66)
         # 回到桌面
-        initPhone.InitPhone.keyEventSend(3)
+        initPhone.keyEventSend(3)
 
     # 已安装aosu 先卸载
-    if initPhone.InitPhone.isAppExist():
-        initPhone.InitPhone.uninstallApp()
+    if initPhone.isAppExist():
+        initPhone.uninstallApp()
 
     # 安装aosu app
-    initPhone.InitPhone.installApp()
+    initPhone.installApp()
 
 
 def teardown_module():
@@ -284,9 +284,9 @@ class TestAddDevices(object):
     @staticmethod
     def setup_method(self):
         # 检查屏幕是否点亮
-        if not initPhone.InitPhone.isAwake():
+        if not initPhone.isAwake():
             # 26 电源键
-            initPhone.InitPhone.keyEventSend(26)
+            initPhone.keyEventSend(26)
             time.sleep(1)
 
         # 不在首页的话 启动一下app
@@ -894,9 +894,9 @@ class TestDeviceList(object):
     @staticmethod
     def setup_method(self):
         # 检查屏幕是否点亮
-        if not initPhone.InitPhone.isAwake():
+        if not initPhone.isAwake():
             # 26 电源键
-            initPhone.InitPhone.keyEventSend(26)
+            initPhone.keyEventSend(26)
             time.sleep(1)
 
         # 在首页的话下滑刷新一下设备列表
@@ -988,12 +988,13 @@ class TestOpenFlow(object):
     20230424 zhang jia min
     开流专项：多次开流、长时间开流
     设备：V8S C2E
-    手机：三星、moto
+    手机：三星A51
     前提：
     1、执行这个测试类，前提条件是要登录，登录后才能执行这组用例
     2、登录前先要启动app
     3、那么就要使用setup_class
     """
+
     # 在pytest中不能使用__init__(self, dev_name)方法，所以在setup_method中采用全局变量的方式获取设备名称
     @staticmethod
     def setup_class():
@@ -1011,9 +1012,9 @@ class TestOpenFlow(object):
     @staticmethod
     def setup_method(self):
         # 检查屏幕是否点亮
-        if not initPhone.InitPhone.isAwake():
+        if not initPhone.isAwake():
             # 26 电源键
-            initPhone.InitPhone.keyEventSend(26)
+            initPhone.keyEventSend(26)
             time.sleep(1)
 
         # 不在首页的话 启动一下app
@@ -1028,9 +1029,9 @@ class TestOpenFlow(object):
             # 等待下来刷新完成
             time.sleep(3)
 
-    @allure.title('V8P 开流')
+    @allure.title('V8P 多次开流')
     @allure.story('用户循环测试V8P的开流-关流，即多次开流')
-    def test_v8p_open_flow(self):
+    def test_v8p_open_flow(self, dev_name=gz_public.get_devices_list(model='V8P')):
         """
         :前提条件：① 账号下要绑定V8P设备；② 关闭消息通知，不要弹push，会遮挡按钮的点击
         :设备为在线状态，可以开流
@@ -1039,34 +1040,37 @@ class TestOpenFlow(object):
         :如果中间有升级弹窗出现，点击取消或忽略本次升级，其他弹窗类似
         """
         # 获取v8p设备的名字
-        dev_name = gz_public.get_devices_list(model='V8P')
+        print("找到的设备名称是：", dev_name)
 
         with allure.step('step1: 在设备列表中滑动找到要开流的设备，例如，v8p'):
-            master.find_element_by_android_uiautomator(
-                'new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text('
-                '"%s")).scrollToEnd(10,5)' % dev_name)
+            # 确认找到了设备
+            assert master.find_element_by_android_uiautomator('new UiScrollable(new UiSelector().scrollable('
+                                                              'true)).scrollIntoView(new UiSelector().text("%s"))' %
+                                                              dev_name)
             master.implicitly_wait(10)
 
             # 确认找到了设备
-            assert master.find_element_by_id('com.glazero.android:id/device_name').text == dev_name
+            # 这样写有问题，如果页面中有多个设备，目标设备在下方，该方法会找上面的设备的对应的控件名字，所以不能这样写
+            # assert master.find_element_by_id('com.glazero.android:id/device_name').text == dev_name
 
-        with allure.step('step2: 点击设备名称，例如，可视门铃Pro'):
+        with allure.step('step2: 点击前面拿到的设备名称，例如，可视门铃Pro'):
             master.find_element_by_xpath('//android.widget.TextView[@text="%s"]' % dev_name).click()
             master.implicitly_wait(10)
 
             # 确认进入了指定设备的开流页面，页面title应为设备名称
             assert master.find_element_by_id('com.glazero.android:id/tv_title').text == dev_name
 
-        with allure.step('step3: 进入指定设备的开流页面后开流40秒，开始时间点为：%s' % time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())):
+        with allure.step('step3: 进入指定设备的开流页面后开流60秒，开始时间点为：%s' % time.strftime("%Y-%m-%d %H:%M:%S",
+                                                                                                   time.localtime())):
 
             # 实时视频加载中… 等待3秒
             if gz_public.isElementPresent(driver=master, by="id",
-                                              value="com.glazero.android:id/tv_live_play_loading") is True:
+                                          value="com.glazero.android:id/tv_live_play_loading") is True:
                 time.sleep(3)
 
             # 如果出现：当前网络不可用，请检查网络连接，点击：刷新重试
             if gz_public.isElementPresent(driver=master, by="id",
-                                              value="com.glazero.android:id/bt_play_retry") is True:
+                                          value="com.glazero.android:id/bt_play_retry") is True:
                 master.find_element_by_id('com.glazero.android:id/bt_play_retry').click()
                 master.implicitly_wait(10)
 
@@ -1077,28 +1081,26 @@ class TestOpenFlow(object):
 
             # 将截图添加到报告中
             allure.attach.file("./report/V8P/start_flow_%s.png" % start_flow, name="start flow",
-                                   attachment_type=allure.attachment_type.JPG)
+                               attachment_type=allure.attachment_type.JPG)
             master.implicitly_wait(10)
 
-            # 开流40秒
+            # 开流开始，大概60秒
             for ii in range(1, 3):
+                # 如果出现：当前网络不可用，请检查网络连接，点击：刷新重试
+                # 排除在开流阶段的网络波动导致开流中断的情况，如果在结束时仍为：刷新重试，那么认为开流失败。
+                if gz_public.isElementPresent(driver=master, by="id",
+                                              value="com.glazero.android:id/bt_play_retry") is True:
+                    master.find_element_by_id('com.glazero.android:id/bt_play_retry').click()
+                    master.implicitly_wait(10)
+
                 # 如果出现：长时间查看实时视频会加速门铃电量消耗，是否为您退出实时视频？，点击：继续观看
                 if gz_public.isElementPresent(driver=master, by="id",
-                                                  value="com.glazero.android:id/liveplay_power_prompt_got_it") is True:
+                                              value="com.glazero.android:id/liveplay_power_prompt_got_it") is True:
                     master.find_element_by_id('com.glazero.android:id/liveplay_power_prompt_got_it').click()
+                    master.implicitly_wait(10)
 
         with allure.step('step4：点击页面左上角的 返回，结束开流，结束时间点为：%s' % time.strftime("%Y-%m-%d %H:%M:%S",
-                                                                                                    time.localtime())):
-            # 开流结束时 截一张图：
-            close_flow = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
-            master.save_screenshot('./report/V8P/close_flow_%s.png' % close_flow)
-            time.sleep(3)
-
-            # 将截图添加到报告中
-            allure.attach.file("./report/V8P/close_flow_%s.png" % close_flow, name="close flow",
-                                   attachment_type=allure.attachment_type.JPG)
-            master.implicitly_wait(10)
-
+                                                                                                time.localtime())):
             # 开流失败判定条件及处理：
             # ①开流40秒后如果播放器上的控件状态为不可用，即，视频质量切换、录像、截屏、静音的enabled is false；
             # ②或者开流40秒后如果app崩溃了，找不到播放器上的控件都视为开流失败；
@@ -1107,29 +1109,96 @@ class TestOpenFlow(object):
                     master.find_element_by_id("com.glazero.android:id/btn_record_start").is_enabled() is False and \
                     master.find_element_by_id("com.glazero.android:id/btn_snapshot").is_enabled() is False and \
                     master.find_element_by_id("com.glazero.android:id/btn_unmute").is_enabled() is False:
-                current_time = time.strftime("%Y%m%d", time.localtime())
+
+                # 在手机中查找对应的日志文件
+                current_date = time.strftime("%Y%m%d", time.localtime())
+
+                # 获取当前时间，用于区分不同的日志文件作为附件。
+                current_time = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
 
                 # 获取app日志
-                gz_public.get_app_log('app', current_time, 1000)
+                gz_public.get_app_log('app', current_date, current_time, 1000)
+
                 # 将日志添加到报告中
-                allure.attach.file("./report/V8P/log_attch/app_log.log", name="app log", attachment_type=allure.attachment_type.TEXT)
+                allure.attach.file("./report/V8P/log_attch/app_log_%s.log" % current_time, name="app log",
+                                   attachment_type=allure.attachment_type.TEXT)
                 master.implicitly_wait(10)
 
                 # 获取ty日志
-                gz_public.get_app_log('ty', current_time, 1000)
+                gz_public.get_app_log('ty', current_date, current_time, 4000)
                 # 将日志添加到报告中
-                allure.attach.file("./report/V8P/log_attch/ty_log.log", name="ty log", attachment_type=allure.attachment_type.TEXT)
+                allure.attach.file("./report/V8P/log_attch/ty_log_%s.log" % current_time, name="ty log",
+                                   attachment_type=allure.attachment_type.TEXT)
                 master.implicitly_wait(10)
+
+                # 进入这个条件分支说明开流失败了
+                # 断言失败后就不执行后面的步骤了，所以在这里截一张图
+                # 因为获取日志比较重要，所以截图放在获取日志的后面
+                # 开流结束时 截一张图：
+                close_flow = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+                master.save_screenshot('./report/V8P/close_flow_%s.png' % close_flow)
+                time.sleep(3)
+
+                # 将截图添加到报告中
+                allure.attach.file("./report/V8P/close_flow_%s.png" % close_flow, name="close flow",
+                                   attachment_type=allure.attachment_type.JPG)
+                master.implicitly_wait(10)
+
+                # 将这个步骤的状态置为fail，该用例执行结果是：失败
+                assert True is False
 
             elif gz_public.isElementPresent(driver=master, by="id", value="com.glazero.android:id"
                                                                           "/btn_in_video_clarity_hd") is False and \
                     gz_public.isElementPresent(driver=master, by="id",
                                                value="com.glazero.android:id/btn_record_start") is False:
-                current_time = time.strftime("%Y%m%d", time.localtime())
+
+                # 在手机中查找对应的日志文件
+                current_date = time.strftime("%Y%m%d", time.localtime())
+
+                # 获取当前时间，用于区分不同的日志文件作为附件。
+                current_time = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+
                 # 获取app日志
-                gz_public.get_app_log('app', current_time, 1000)
+                gz_public.get_app_log('app', current_date, current_time, 1000)
+
+                # 将日志添加到报告中
+                allure.attach.file("./report/V8P/log_attch/app_log_%s.log" % current_time, name="app log",
+                                   attachment_type=allure.attachment_type.TEXT)
+                master.implicitly_wait(10)
+
                 # 获取ty日志
-                gz_public.get_app_log('ty', current_time, 1000)
+                gz_public.get_app_log('ty', current_date, current_time, 4000)
+                # 将日志添加到报告中
+                allure.attach.file("./report/V8P/log_attch/ty_log_%s.log" % current_time, name="ty log",
+                                   attachment_type=allure.attachment_type.TEXT)
+                master.implicitly_wait(10)
+
+                # 进入这个条件分支说明开流失败了
+                # 断言失败后就不执行后面的步骤了，所以在这里截一张图
+                # 因为获取日志比较重要，所以截图放在获取日志的后面
+                # 开流结束时 截一张图：
+                close_flow = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+                master.save_screenshot('./report/V8P/close_flow_%s.png' % close_flow)
+                time.sleep(3)
+
+                # 将截图添加到报告中
+                allure.attach.file("./report/V8P/close_flow_%s.png" % close_flow, name="close flow",
+                                   attachment_type=allure.attachment_type.JPG)
+                master.implicitly_wait(10)
+
+                # 将这个step置为fail，用例执行结果为失败
+                assert True is False
+
+            # 开流成功，走到这里
+            # 开流结束时 截一张图：
+            close_flow = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+            master.save_screenshot('./report/V8P/close_flow_%s.png' % close_flow)
+            time.sleep(3)
+
+            # 将截图添加到报告中
+            allure.attach.file("./report/V8P/close_flow_%s.png" % close_flow, name="close flow",
+                               attachment_type=allure.attachment_type.JPG)
+            master.implicitly_wait(10)
 
             # 点击左上角的 返回按钮
             master.find_element_by_id('com.glazero.android:id/btn_back').click()
@@ -1138,11 +1207,213 @@ class TestOpenFlow(object):
             # 确认回到了首页
             assert master.find_element_by_id("com.glazero.android:id/img_tab_device")
 
-    def test_addV8S(self):
-        pass
+    @allure.title('V8P 长时间开流')
+    @allure.story('用户使用V8P长时间开流')
+    def test_v8p_open_flow_long_time(self, dev_name=gz_public.get_devices_list(model='V8P')):
+        """
+        :前提条件：① 账号下要绑定V8P设备；② 关闭消息通知，不要弹push，会遮挡按钮的点击
+        :设备为在线状态，可以开流
+        :网络稳定，可以考虑放在屏蔽箱里执行
+        :电量充足，不能关机
+        :如果中间有升级弹窗出现，点击取消或忽略本次升级，其他弹窗类似
+        :处理流程：在开流过程中任何时候都可能失败，所以要定时检查当前开流状态，
+        :例如，开流时长1小时，每5分钟检查一次，检查内容包括：①检查控件状态 ②如果失败则获取日志，并停止本次开流 ③截图
+        """
+        # 获取v8p设备的名字
+        print("找到的设备名称是：", dev_name)
+
+        with allure.step('step1: 在设备列表中滑动找到要开流的设备，例如，v8p'):
+            # 确认找到了设备
+            assert master.find_element_by_android_uiautomator('new UiScrollable(new UiSelector().scrollable('
+                                                              'true)).scrollIntoView(new UiSelector().text("%s"))' %
+                                                              dev_name)
+            master.implicitly_wait(10)
+
+            # 确认找到了设备
+            # 这样写有问题，如果页面中有多个设备，目标设备在下方，该方法会找上面的设备的对应的控件名字，所以不能这样写
+            # assert master.find_element_by_id('com.glazero.android:id/device_name').text == dev_name
+
+        with allure.step('step2: 点击前面拿到的设备名称，例如，可视门铃Pro'):
+            master.find_element_by_xpath('//android.widget.TextView[@text="%s"]' % dev_name).click()
+            master.implicitly_wait(10)
+
+            # 确认进入了指定设备的开流页面，页面title应为设备名称
+            assert master.find_element_by_id('com.glazero.android:id/tv_title').text == dev_name
+
+        with allure.step(
+                'step3: 进入指定设备的开流页面后开流60分钟，开始时间点为：%s' % time.strftime("%Y-%m-%d %H:%M:%S",
+                                                                                            time.localtime())):
+
+            # 实时视频加载中… 等待3秒
+            if gz_public.isElementPresent(driver=master, by="id",
+                                          value="com.glazero.android:id/tv_live_play_loading") is True:
+                time.sleep(3)
+
+            # 开流开始后 截一张图
+            start_flow = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+            master.save_screenshot('./report/V8P/start_flow_%s.png' % start_flow)
+            time.sleep(3)
+
+            # 将截图添加到报告中
+            allure.attach.file("./report/V8P/start_flow_%s.png" % start_flow, name="start_flow_%s" % start_flow,
+                               attachment_type=allure.attachment_type.JPG)
+            master.implicitly_wait(10)
+
+            # 开流时长设置为：12*300 = 3600秒
+            for ii in range(1, 13):
+                print("当前是第%s次" % ii)
+                # 如果出现：当前网络不可用，请检查网络连接，点击：刷新重试
+                # 排除在开流阶段的网络波动导致开流中断的情况，如果在结束时仍为：刷新重试，那么认为开流失败
+                if gz_public.isElementPresent(driver=master, by="id",
+                                              value="com.glazero.android:id/bt_play_retry") is True:
+                    master.find_element_by_id('com.glazero.android:id/bt_play_retry').click()
+                    master.implicitly_wait(10)
+
+                # 如果出现：长时间查看实时视频会加速门铃电量消耗，是否为您退出实时视频？，点击：继续观看
+                if gz_public.isElementPresent(driver=master, by="id",
+                                              value="com.glazero.android:id/liveplay_power_prompt_got_it") is True:
+                    master.find_element_by_id('com.glazero.android:id/liveplay_power_prompt_got_it').click()
+                    master.implicitly_wait(10)
+
+                # 每5分钟检查一次，每次执行时间大概是20秒，15次一共是300秒
+                for jj in range(1, 16):
+                    print("当前是第 %s 次中的第 %s 次" % (ii, jj))
+                    # 如果出现：当前网络不可用，请检查网络连接，点击：刷新重试
+                    # 排除在开流阶段的网络波动导致开流中断的情况，如果在结束时仍为：刷新重试，那么认为开流失败
+                    if gz_public.isElementPresent(driver=master, by="id",
+                                                  value="com.glazero.android:id/bt_play_retry") is True:
+                        master.find_element_by_id('com.glazero.android:id/bt_play_retry').click()
+                        master.implicitly_wait(10)
+
+                    # 如果出现：长时间查看实时视频会加速门铃电量消耗，是否为您退出实时视频？，点击：继续观看
+                    if gz_public.isElementPresent(driver=master, by="id",
+                                                  value="com.glazero.android:id/liveplay_power_prompt_got_it") is True:
+                        master.find_element_by_id('com.glazero.android:id/liveplay_power_prompt_got_it').click()
+                        master.implicitly_wait(10)
+                    time.sleep(1)
+
+                # 检查内容包括：①检查控件状态 ②如果失败则获取日志，并停止本次开流 ③截图
+                # 开流失败判定条件及处理：
+                # ①5分钟后如果播放器上的控件状态为不可用，即，视频质量切换、录像、截屏、静音的enabled is false；
+                # ②或者开流5分钟后如果app崩溃了，找不到播放器上的控件都视为开流失败；
+                # ③截取app日志最新1000行、截取ty日志最新1000行，添加到allure的附件当中；
+                if master.find_element_by_id("com.glazero.android:id/btn_in_video_clarity_hd").is_enabled() is False and \
+                        master.find_element_by_id("com.glazero.android:id/btn_record_start").is_enabled() is False and \
+                        master.find_element_by_id("com.glazero.android:id/btn_snapshot").is_enabled() is False and \
+                        master.find_element_by_id("com.glazero.android:id/btn_unmute").is_enabled() is False:
+
+                    # 在手机中查找对应的日志文件
+                    current_date = time.strftime("%Y%m%d", time.localtime())
+
+                    # 获取当前时间，用于区分不同的日志文件作为附件。
+                    current_time = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+
+                    # 获取app日志
+                    gz_public.get_app_log('app', current_date, current_time, 1000)
+
+                    # 将日志添加到报告中
+                    allure.attach.file("./report/V8P/log_attch/app_log_%s.log" % current_time, name="app log",
+                                       attachment_type=allure.attachment_type.TEXT)
+                    master.implicitly_wait(10)
+
+                    # 获取ty日志
+                    gz_public.get_app_log('ty', current_date, current_time, 4000)
+                    # 将日志添加到报告中
+                    allure.attach.file("./report/V8P/log_attch/ty_log_%s.log" % current_time, name="ty log",
+                                       attachment_type=allure.attachment_type.TEXT)
+                    master.implicitly_wait(10)
+
+                    # 进入这个条件分支说明开流失败了
+                    # 断言失败后就不执行后面的步骤了，所以在这里截一张图
+                    # 因为获取日志比较重要，所以截图放在获取日志的后面
+                    # 开流结束时 截一张图：
+                    close_flow = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+                    master.save_screenshot('./report/V8P/close_flow_%s.png' % close_flow)
+                    time.sleep(3)
+
+                    # 将截图添加到报告中
+                    allure.attach.file("./report/V8P/close_flow_%s.png" % close_flow, name="close_flow_%s" % close_flow,
+                                       attachment_type=allure.attachment_type.JPG)
+                    master.implicitly_wait(10)
+
+                    # 将这个步骤的状态置为fail，该用例执行结果是：失败
+                    assert True is False
+
+                elif gz_public.isElementPresent(driver=master, by="id", value="com.glazero.android:id"
+                                                                              "/btn_in_video_clarity_hd") is False and \
+                        gz_public.isElementPresent(driver=master, by="id",
+                                                   value="com.glazero.android:id/btn_record_start") is False:
+
+                    # 在手机中查找对应的日志文件
+                    current_date = time.strftime("%Y%m%d", time.localtime())
+
+                    # 获取当前时间，用于区分不同的日志文件作为附件。
+                    current_time = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+
+                    # 获取app日志
+                    gz_public.get_app_log('app', current_date, current_time, 1000)
+
+                    # 将日志添加到报告中
+                    allure.attach.file("./report/V8P/log_attch/app_log_%s.log" % current_time, name="app log",
+                                       attachment_type=allure.attachment_type.TEXT)
+                    master.implicitly_wait(10)
+
+                    # 获取ty日志
+                    gz_public.get_app_log('ty', current_date, current_time, 4000)
+                    # 将日志添加到报告中
+                    allure.attach.file("./report/V8P/log_attch/ty_log_%s.log" % current_time, name="ty log",
+                                       attachment_type=allure.attachment_type.TEXT)
+                    master.implicitly_wait(10)
+
+                    # 进入这个条件分支说明开流失败了
+                    # 断言失败后就不执行后面的步骤了，所以在这里截一张图
+                    # 因为获取日志比较重要，所以截图放在获取日志的后面
+                    # 开流结束时 截一张图：
+                    close_flow = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+                    master.save_screenshot('./report/V8P/close_flow_%s.png' % close_flow)
+                    time.sleep(3)
+
+                    # 将截图添加到报告中
+                    allure.attach.file("./report/V8P/close_flow_%s.png" % close_flow, name="close_flow_%s" % close_flow,
+                                       attachment_type=allure.attachment_type.JPG)
+                    master.implicitly_wait(10)
+
+                    # 将这个step置为fail，用例执行结果为失败
+                    assert True is False
+
+                # 每次检查开流状态，都截一张图，如果长时间开流成功，一共会截12张图：
+                current_time = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+                master.save_screenshot('./report/V8P/check_flow_status_%s.png' % current_time)
+                time.sleep(3)
+
+                # 将截图添加到报告中
+                allure.attach.file("./report/V8P/check_flow_status_%s.png" % current_time,
+                                   name="第 %s 次检查开流状态_开流状态正常_%s" % (ii, current_time),
+                                   attachment_type=allure.attachment_type.JPG)
+                master.implicitly_wait(10)
+
+        with allure.step('step4：点击页面左上角的 返回，结束开流，结束时间点为：%s' % time.strftime("%Y-%m-%d %H:%M:%S",
+                                                                                                time.localtime())):
+
+            # 关闭开流时 截一张图：
+            close_flow = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+            master.save_screenshot('./report/V8P/close_flow_%s.png' % close_flow)
+            time.sleep(3)
+
+            # 将截图添加到报告中
+            allure.attach.file("./report/V8P/close_flow_%s.png" % close_flow, name="close_flow_%s" % close_flow,
+                               attachment_type=allure.attachment_type.JPG)
+            master.implicitly_wait(10)
+
+            # 点击左上角的 返回按钮
+            master.find_element_by_id('com.glazero.android:id/btn_back').click()
+            master.implicitly_wait(10)
+
+            # 确认回到了首页
+            assert master.find_element_by_id("com.glazero.android:id/img_tab_device")
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
     # pytest.main(["-q", "-s", "-ra", "test_gzAndroidAuto.py::TestUserCenter::test_logOut"])
 
     # C6SP 绑定
@@ -1157,6 +1428,10 @@ if __name__ == '__main__':
     # pytest.main(["-q", "-s", "-ra", "--count=%d" % 1000, "test_gzAndroidAuto.py::TestDeviceList::test_C2E_Calibrate",
     #             "--alluredir=./report/C2E"])
 
-    # V8P 开流
-    pytest.main(["-q", "-s", "-ra", "--count=%d" % 500, "test_gzAndroidAuto.py::TestOpenFlow::test_v8p_open_flow",
-                 "--alluredir=./report/V8P"])
+    # V8P 多次开流
+    # pytest.main(["-q", "-s", "-ra", "--count=%d" % 500, "test_gzAndroidAuto.py::TestOpenFlow::test_v8p_open_flow",
+    #              "--alluredir=./report/V8P"])
+
+    # V8P 长时间开流
+    # pytest.main(["-q", "-s", "-ra", "--count=%d" % 1, "test_gzAndroidAuto.py::TestOpenFlow"
+    #                                                   "::test_v8p_open_flow_long_time", "--alluredir=./report/V8P"])

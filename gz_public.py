@@ -23,7 +23,7 @@ gzHostCnTmp = 'api-cn.aosulife.com'
 gzPlatformN = "Android"
 
 # 包信息
-gzAppPack = initPhone.InitPhone.getPackageName()
+gzAppPack = initPhone.get_package_name()
 gzAppActivity = "com.glazero.android.SplashActivity"
 
 # 登录账号
@@ -54,9 +54,9 @@ gzRegionList = [
 
 # default 默认连接三星A51 中国区
 # CONNECTTO = gzPhoneList[0]['gzDeviceN']
-CONNECTTO = initPhone.InitPhone.getDeviceId()
+CONNECTTO = initPhone.get_dev_id()
 # PLATFORMVER = gzPhoneList[0]['gzPlatformVer']
-PLATFORMVER = initPhone.InitPhone.getAndroidVersion()
+PLATFORMVER = initPhone.get_android_version()
 REGION = gzRegionList[0]['code']
 
 
@@ -208,6 +208,28 @@ def get_devices_list(model='V8P', gz_host=gzHostCnTmp):
                 return dev_name
 
 
+def get_user_type(model='V8P', gz_host=gzHostCnTmp):
+    """
+    获取设备列表中指定的model的设备，并将其返回
+    :param gz_host: 域名，默认为中国区
+    :param model: 默认是V8P
+    :return: 将设备的名称返回
+    """
+    pwd_md5 = _md5(pwd)
+    _login(gz_host, _email=email, _region='CN', country_code='86', _password=pwd_md5, _type=1)
+    url = 'https://' + gz_host + '/v1/cloud/getStatusList' + '?' + 'uuid=' + 'android_ui_auto' + '&' + 't=' + '005'
+    headers = _headers()
+    headers['Gz-Sid'] = SID
+    headers['Gz-Uid'] = UID
+    rsp = requests.post(url, headers=headers, timeout=(10, 10), verify=False)
+    logging.info(rsp.json())
+
+    # 变量设备列表，筛选指定设备类型的设备名称并返回，例如，默认类型是V8P
+    user_type = rsp.json()["data"]["userType"]
+    if user_type:
+        return user_type
+
+
 def aosu_admin_login(aosu_host='admin-cn.aosulife.com', pid='glazero', username='zhangjiamin', password='123'):
     pwd_md5 = _md5(password)
     headers = aosu_headers()
@@ -246,9 +268,10 @@ def get_dsc(device="SamsungA51"):
             return content
 
 
-def get_app_log(log_type, log_date, numbers_of_lines=1000):
+def get_app_log(log_type, log_date, current_time, numbers_of_lines=1000):
     """
     获取app日志或者涂鸦日志
+    :param current_time: 取日志时的时间，格式：年月日-时分秒，用于命名文件，不同的附件要对应不同的文件
     :param log_type: app 或者 ty
     :param log_date: 日志文件中的日期例如，20230510，用于选择对应的日志文件
     :param numbers_of_lines：返回日志的行数，默认是最新的1000行
@@ -260,19 +283,17 @@ def get_app_log(log_type, log_date, numbers_of_lines=1000):
         file_name = 'glazero_app_android_ty_' + str(log_date) + '.log'
 
     # 获取device id
-    devs_id = list(os.popen('adb devices').readlines())
-    dev_id = re.findall(r'^\w*\b', devs_id[1])[0]
+    cmd = 'adb devices'
+    with os.popen(cmd, 'r') as f_log:
+        devs_id = f_log.readlines()
+        dev_id = re.findall(r'^\w*\b', devs_id[1])[0]
 
     # 进入adb shell后进入日志目录，获取对应日期和对应日志类型的的日志
     cmd = 'adb -s %s shell "cd /sdcard/Android/data/com.glazero.android/files/log && ls && cat %s | tail -n %d > ' \
-          '%s_log.log && ls"' % (dev_id, file_name, numbers_of_lines, log_type)
-    with os.popen(cmd, 'r') as f_log:
-        log_files = f_log.readlines()
-        print('手机端log目录：', log_files)
+          '%s_log_%s.log && ls"' % (dev_id, file_name, numbers_of_lines, log_type, current_time)
+    os.system(cmd)
 
     # 将到出的日志pull到本地
-    cmd = 'adb pull /sdcard/Android/data/com.glazero.android/files/log/%s_log.log ./report/V8P/log_attch' % log_type
-    with os.popen(cmd, 'r') as f_log:
-        redirect_file = f_log.readlines()
-        print('导出完成：', redirect_file)
-
+    cmd = 'adb pull /sdcard/Android/data/com.glazero.android/files/log/%s_log_%s.log ./report/V8P/log_attch' % (
+        log_type, current_time)
+    os.system(cmd)
