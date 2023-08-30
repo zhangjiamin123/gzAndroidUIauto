@@ -1,6 +1,0 @@
-DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/90ca8a12-6103-4153-a61e-fcfabc537fd2/element {"using": "id", "value": "com.glazero.android:id/img_menu"}
-DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/90ca8a12-6103-4153-a61e-fcfabc537fd2/element HTTP/1.1" 500 2435
-DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
-DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/90ca8a12-6103-4153-a61e-fcfabc537fd2/appium/app/launch {}
-DEBUG    urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:4723 "POST /wd/hub/session/90ca8a12-6103-4153-a61e-fcfabc537fd2/appium/app/launch HTTP/1.1" 500 2055
-DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
